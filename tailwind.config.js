@@ -8,8 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--bg-light)",
+        foreground: "var(--light-dark)",
+        primary: "var(--primary)",
+        primaryHover: "var(--primary-hover)",
+        primaryDark: "var(--primary-dark)",
+        secondary: "var(--secondary)",
+        secondaryHover: "var(--secondary-hover)",
+        secondaryDark: "var(--secondary-dark)",
       },
     },
   },

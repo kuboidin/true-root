@@ -232,6 +232,7 @@ Remove the inheritance of text transform in Edge and Firefox.
 button,
 select {
     text-transform: none;
+    outline: none;
 }
 
 /*
@@ -5714,7 +5715,7 @@ section {
     align-items: center;
     float: left;
     vertical-align: middle;
-    width: 180px;
+    /*width: 180px;*/
     height: 80px;
     position: relative;
     z-index: 9;

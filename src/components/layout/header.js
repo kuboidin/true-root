@@ -1,58 +1,41 @@
+import Link from "next/link";
+import app from "@/config/app";
+import Image from "next/image";
+import {Search} from "lucide-react";
+
 export default function Header({}) {
     return <>
     <header className="site-header mo-left header style-2">
         <div className="bg-light2 relative z-99 max-lg:hidden">
             <div className="container relative">
-                <div className="logo-header !h-[90px]">
-                    <a href="/"><img src="/assets/theme/images/logo.svg" alt="logo" className="!h-[90px] !max-w-48"/></a>
+                <div className="flex align-middle float-left items-center relative py-3">
+                    <Link href="/" className="mr-6 flex flex-row items-center gap-2 w-fit">
+                        <Image src={app.logo.default} alt={app.name} title={app.name} width={64} height={64}/>
+                        <div className="flex flex-col gap-1">
+                            <span className="hidden font-bold sm:inline-block text-3xl">{app.name}</span>
+                            <span className="text-xs text-primary">A Kuboid Product</span>
+                        </div>
+                    </Link>
                 </div>
 
-                <div className="extra-nav !h-[90px] md:flex hidden ml-3.6">
-                    <div className="extra-cell">
-                        <ul className="navbar-nav header-right !m-0">
-                            <li className="nav-item">
-                                <div className="flex gap-2.5 items-center py-2">
-                                    <div className="size-13.5 flex items-center justify-center">
-                                    {/*    svg */}
-                                    </div>
-                                    <div>
-                                        <span className="text-2xs font-semibold">24/7 SUPPORT</span>
-                                        <h6>+123 456 789</h6>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                {/*<div className="logo-header !h-[90px]">*/}
+                {/*    <Link href="/" className="flex flex-row justify-between">*/}
+                {/*        <img src={app.logo.default} alt={app.name} title={app.name} className="!h-[90px] !max-w-48"/>*/}
+                {/*        <div className="text-4xl font-bold mt-4">*/}
+                {/*            {app.name}*/}
+                {/*        </div>*/}
+                {/*    </Link>*/}
+                {/*</div>*/}
 
                 <div className="flex">
                     <form className="h-[90px] w-full ml-[120px] max-xl:ml-14.5 items-center flex relative">
                         <div className="relative flex flex-wrap items-center bg-white rounded-xl py-1.1 w-full">
-                            <div
-                                className="relative after:content-[''] after:absolute after:-translate-y-1/2 after:top-1/2 after:right-0 after:w-[1px] after:h-[22px] max-sm:after:h-6.1 after:bg-[#bbbbbbad]">
-                                <select className="nice-select style-1 border-0 leading-[45px] text-2sm pl-5 pr-16">
-                                    <option>All Categories</option>
-                                    <option>Photography</option>
-                                    <option>Arts</option>
-                                    <option>Adventure</option>
-                                    <option>Action</option>
-                                    <option>Games</option>
-                                    <option>Movies</option>
-                                    <option>Comics</option>
-                                    <option>Biographies</option>
-                                    <option>Children’s Books</option>
-                                    <option>Historical</option>
-                                    <option>Contemporary</option>
-                                    <option>Classics</option>
-                                    <option>Education</option>
-                                </select>
+                            <div className="relative px-4">
+                                How to grow
                             </div>
-                            <input type="text"
-                                   className="py-2.5 px-5 text-2sm text-title outline-none flex-auto w-[1%] h-[45px]"
-                                   aria-label="Text input with dropdown button" placeholder="Search for products"/>
-                            <button className="absolute right-0 size-12 justify-center inline-flex items-center"
-                                    type="button">
-                                <i className="iconly-Light-Search text-secondary"></i>
+                            <input type="text" className="py-2.5 px-5 text-2sm text-title outline-none flex-auto w-[1%] h-[45px]" aria-label="Text input with dropdown button" placeholder="Search for products"/>
+                            <button className="absolute right-0 size-12 justify-center inline-flex items-center" type="button">
+                                <Search className="text-secondary"/>
                             </button>
                         </div>
                     </form>
