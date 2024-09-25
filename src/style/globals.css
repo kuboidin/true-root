@@ -654,7 +654,7 @@ video {
 }
 
 .inset-0 {
-    inset: 0px;
+    inset: 0;
 }
 
 .inset-2 {
@@ -730,7 +730,7 @@ video {
 }
 
 .bottom-0 {
-    bottom: 0px;
+    bottom: 0;
 }
 
 .bottom-10 {
@@ -818,7 +818,7 @@ video {
 }
 
 .left-0 {
-    left: 0px;
+    left: 0;
 }
 
 .left-1\/2 {
@@ -938,7 +938,7 @@ video {
 }
 
 .right-0 {
-    right: 0px;
+    right: 0;
 }
 
 .right-0\.5 {
@@ -1050,7 +1050,7 @@ video {
 }
 
 .top-0 {
-    top: 0px;
+    top: 0;
 }
 
 .top-1 {
@@ -1274,7 +1274,7 @@ video {
 }
 
 .\!m-0 {
-    margin: 0px !important;
+    margin: 0 !important;
 }
 
 .-m-5 {
@@ -1282,7 +1282,7 @@ video {
 }
 
 .m-0 {
-    margin: 0px;
+    margin: 0;
 }
 
 .m-1 {
@@ -1318,8 +1318,8 @@ video {
 }
 
 .mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .mx-1 {
@@ -1466,7 +1466,7 @@ video {
 }
 
 .mb-0 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .mb-1 {
@@ -1630,7 +1630,7 @@ video {
 }
 
 .mr-0 {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .mr-0\.5 {
@@ -1722,7 +1722,7 @@ video {
 }
 
 .mt-0 {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .mt-1 {
@@ -2023,7 +2023,7 @@ video {
 }
 
 .h-0 {
-    height: 0px;
+    height: 0;
 }
 
 .h-1 {
@@ -2235,7 +2235,7 @@ video {
 }
 
 .w-0 {
-    width: 0px;
+    width: 0;
 }
 
 .w-1\/2 {
@@ -2574,7 +2574,7 @@ video {
 }
 
 .flex-1 {
-    flex: 1 1 0%;
+    flex: 1 1 0;
 }
 
 .flex-\[1\] {
@@ -2835,7 +2835,7 @@ video {
 }
 
 .gap-0 {
-    gap: 0px;
+    gap: 0;
 }
 
 .gap-0\.5 {
@@ -3091,7 +3091,7 @@ video {
 }
 
 .border-0 {
-    border-width: 0px;
+    border-width: 0;
 }
 
 .border-2 {
@@ -3140,7 +3140,7 @@ video {
 }
 
 .border-t-0 {
-    border-top-width: 0px;
+    border-top-width: 0;
 }
 
 .border-dashed {
@@ -3532,7 +3532,7 @@ video {
 }
 
 .\!p-0 {
-    padding: 0px !important;
+    padding: 0 !important;
 }
 
 .\!p-5 {
@@ -3540,7 +3540,7 @@ video {
 }
 
 .p-0 {
-    padding: 0px;
+    padding: 0;
 }
 
 .p-1 {
@@ -3620,8 +3620,8 @@ video {
 }
 
 .\!px-0 {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .\!px-25 {
@@ -3635,8 +3635,8 @@ video {
 }
 
 .px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .px-0\.5 {
@@ -3895,11 +3895,11 @@ video {
 }
 
 .\!pb-0 {
-    padding-bottom: 0px !important;
+    padding-bottom: 0 !important;
 }
 
 .pb-0 {
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .pb-1 {
@@ -3975,11 +3975,11 @@ video {
 }
 
 .pe-0 {
-    padding-inline-end: 0px;
+    padding-inline-end: 0;
 }
 
 .pl-0 {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .pl-0\.5 {
@@ -4099,7 +4099,7 @@ video {
 }
 
 .ps-0 {
-    padding-inline-start: 0px;
+    padding-inline-start: 0;
 }
 
 .ps-2 {
@@ -4111,7 +4111,7 @@ video {
 }
 
 .pt-0 {
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .pt-0\.5 {
@@ -4527,7 +4527,7 @@ video {
 }
 
 .tracking-normal {
-    letter-spacing: 0em;
+    letter-spacing: 0;
 }
 
 .tracking-wide {
@@ -4995,7 +4995,7 @@ video {
 }
 
 .\[text-shadow\:0px_0px_30px_\#000\] {
-    text-shadow: 0px 0px 30px #000;
+    text-shadow: 0 0 30px #000;
 }
 
 .\[text-transform\:unset\] {
@@ -5889,7 +5889,7 @@ section {
 
 .site-header .extra-nav .extra-cell ul li button, .site-header .extra-nav .extra-cell ul li a {
     min-width: 40px;
-    padding: 0px 15px;
+    padding: 0 15px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -5913,7 +5913,7 @@ section {
     top: -4px;
     right: 2px;
     font-size: 11px;
-    padding: 0px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6104,7 +6104,7 @@ a {
 }
 
 .header-nav .nav > li {
-    margin: 0px;
+    margin: 0;
     font-weight: 400;
     position: relative;
 }
@@ -6204,11 +6204,11 @@ a {
     float: right;
     font-size: 18px;
     opacity: 1;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .header-nav .nav > li .mega-menu {
-    right: 0px;
+    right: 0;
     width: 100%;
     z-index: 9;
     padding: 50px;
@@ -6636,7 +6636,7 @@ a {
     height: 8px;
     left: 7px;
     top: 0;
-    border-width: 2px 2px 0px 2px !important;
+    border-width: 2px 2px 0 2px !important;
     border-radius: 5px 5px 0 0;
 }
 
@@ -6866,7 +6866,7 @@ a {
 
 @media only screen and (max-width: 1480px) {
     .site-header .extra-nav .extra-cell ul li button, .site-header .extra-nav .extra-cell ul li a {
-        padding: 0px 10px;
+        padding: 0 10px;
     }
 
     .site-header .extra-nav .extra-cell .login-link {
@@ -6921,7 +6921,7 @@ a {
     }
 
     .navbar-toggler {
-        margin: 18px 0px 16px 30px;
+        margin: 18px 0 16px 30px;
     }
 
     .header-nav {
@@ -7286,7 +7286,7 @@ a {
     }
 
     .navbar-toggler {
-        margin: 10px 0px 10px 20px;
+        margin: 10px 0 10px 20px;
     }
 
     .month-deal {
@@ -7345,7 +7345,7 @@ a {
 }
 
 .header-nav.w3menu .nav > li {
-    margin: 0px;
+    margin: 0;
     font-weight: 400;
     position: relative;
 }
@@ -7473,11 +7473,11 @@ a {
     float: right;
     font-size: 18px;
     opacity: 1;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .header-nav.w3menu .nav > li .mega-menu {
-    right: 0px;
+    right: 0;
     z-index: 9;
     padding: 50px;
 }
@@ -7588,7 +7588,7 @@ a {
 
 .w3menu .mega-menu > ul > li {
     padding: 0 15px;
-    flex: 1 0 0%;
+    flex: 1 0 0;
 }
 
 .w3menu .mega-menu .line-left {
@@ -8175,7 +8175,7 @@ a {
 
 @keyframes animatedgradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 
     50% {
@@ -8183,7 +8183,7 @@ a {
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 
@@ -8347,7 +8347,7 @@ a {
 .form-check-input:checked {
     background-color: #CC0D39;
     border-color: #CC0D39;
-    box-shadow: 0 0 0 0rem rgba(204, 13, 57, 0.25);
+    box-shadow: 0 0 0 0 rgba(204, 13, 57, 0.25);
 }
 
 .form-check-input.radio:checked[type="radio"] {
@@ -8492,7 +8492,7 @@ li.option.selected.focus ,
         padding: 30px 35px;
         position: fixed;
         left: -445px;
-        top: 0px;
+        top: 0;
         z-index: 10000;
         background: #ffffff;
         height: 100%;
@@ -8520,7 +8520,7 @@ li.option.selected.focus ,
     }
 
     .compare-table tr.compare-product {
-        padding-top: 0px !important;
+        padding-top: 0 !important;
     }
 }
 
@@ -8529,7 +8529,7 @@ li.option.selected.focus ,
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 0;
     border: 1px solid;
     z-index: -1;
@@ -8816,7 +8816,7 @@ li.option.selected.focus ,
 }
 
 .lg-outer .lg-thumb-item {
-    border-radius: 0px;
+    border-radius: 0;
     width: 70px !important;
     height: 70px !important;
     margin-right: 5px !important;
@@ -8934,7 +8934,7 @@ li.option.selected.focus ,
 
     .registration-media {
         position: absolute;
-        margin-top: 0px;
+        margin-top: 0;
         right: 10%;
         bottom: 0;
     }
@@ -8942,13 +8942,13 @@ li.option.selected.focus ,
 
 @media only screen and (max-width: 1199px) {
     .start-side-content {
-        padding: 120px 20px 0px;
+        padding: 120px 20px 0;
     }
 }
 
 @media only screen and (max-width: 991px) {
     .start-side-content {
-        padding: 120px 15px 0px;
+        padding: 120px 15px 0;
     }
 }
 
@@ -9439,7 +9439,7 @@ blockquote:after {
     background: #fff;
     border: 1px solid var(--primary);
     color: var(--primary);
-    box-shadow: 0px 30px 60px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.25);
     padding: 15px 30px;
 }
 
@@ -10594,7 +10594,7 @@ blockquote:after {
 
 .before\:h-0::before {
     content: var(--tw-content);
-    height: 0px;
+    height: 0;
 }
 
 .before\:h-0\.5::before {
@@ -10706,7 +10706,7 @@ blockquote:after {
 
 .after\:bottom-0::after {
     content: var(--tw-content);
-    bottom: 0px;
+    bottom: 0;
 }
 
 .after\:bottom-0\.5::after {
@@ -10721,7 +10721,7 @@ blockquote:after {
 
 .after\:left-0::after {
     content: var(--tw-content);
-    left: 0px;
+    left: 0;
 }
 
 .after\:left-1::after {
@@ -10776,7 +10776,7 @@ blockquote:after {
 
 .after\:right-0::after {
     content: var(--tw-content);
-    right: 0px;
+    right: 0;
 }
 
 .after\:right-\[-17px\]::after {
@@ -10791,7 +10791,7 @@ blockquote:after {
 
 .after\:top-0::after {
     content: var(--tw-content);
-    top: 0px;
+    top: 0;
 }
 
 .after\:top-1\/2::after {
@@ -10904,7 +10904,7 @@ blockquote:after {
 
 .after\:h-0::after {
     content: var(--tw-content);
-    height: 0px;
+    height: 0;
 }
 
 .after\:h-0\.5::after {
@@ -10969,7 +10969,7 @@ blockquote:after {
 
 .after\:w-0::after {
     content: var(--tw-content);
-    width: 0px;
+    width: 0;
 }
 
 .after\:w-6::after {
@@ -11362,7 +11362,7 @@ blockquote:after {
 }
 
 .hover\:mt-0:hover {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .hover\:-translate-y-2:hover {
@@ -11441,7 +11441,7 @@ blockquote:after {
 }
 
 .group:hover .group-hover\:bottom-0 {
-    bottom: 0px;
+    bottom: 0;
 }
 
 .group:hover .group-hover\:bottom-17 {
@@ -11545,7 +11545,7 @@ blockquote:after {
     }
 
     .sm\:right-0 {
-        right: 0px;
+        right: 0;
     }
 
     .sm\:right-2 {
@@ -11680,7 +11680,7 @@ blockquote:after {
     }
 
     .sm\:mt-0 {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .sm\:mt-13\.5 {
@@ -12293,8 +12293,8 @@ blockquote:after {
     }
 
     .md\:\!px-0 {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     .md\:px-10 {
@@ -12354,7 +12354,7 @@ blockquote:after {
     }
 
     .md\:pr-0 {
-        padding-right: 0px;
+        padding-right: 0;
     }
 
     .md\:pt-17 {
@@ -12503,7 +12503,7 @@ blockquote:after {
     }
 
     .lg\:mb-0 {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .lg\:mb-10 {
@@ -12551,7 +12551,7 @@ blockquote:after {
     }
 
     .lg\:ml-0 {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .lg\:ml-auto {
@@ -12567,7 +12567,7 @@ blockquote:after {
     }
 
     .lg\:mt-0 {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .lg\:mt-9 {
@@ -12844,7 +12844,7 @@ blockquote:after {
     }
 
     .xl\:mb-0 {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .xl\:mb-10 {
@@ -13012,7 +13012,7 @@ blockquote:after {
     }
 
     .xl\:flex-1 {
-        flex: 1 1 0%;
+        flex: 1 1 0;
     }
 
     .xl\:items-center {
@@ -13024,7 +13024,7 @@ blockquote:after {
     }
 
     .xl\:gap-0 {
-        gap: 0px;
+        gap: 0;
     }
 
     .xl\:rounded-2xl {
@@ -13268,11 +13268,11 @@ blockquote:after {
     }
 
     .\33xl\:left-0 {
-        left: 0px;
+        left: 0;
     }
 
     .\33xl\:right-0 {
-        right: 0px;
+        right: 0;
     }
 
     .\33xl\:right-\[-25\%\] {
@@ -13502,7 +13502,7 @@ blockquote:after {
     }
 
     .max-sm\:m-0 {
-        margin: 0px;
+        margin: 0;
     }
 
     .max-sm\:m-auto {
@@ -13538,11 +13538,11 @@ blockquote:after {
     }
 
     .max-sm\:\!ml-0 {
-        margin-left: 0px !important;
+        margin-left: 0 !important;
     }
 
     .max-sm\:\!mr-0 {
-        margin-right: 0px !important;
+        margin-right: 0 !important;
     }
 
     .max-sm\:mb-1 {
@@ -13743,7 +13743,7 @@ blockquote:after {
     }
 
     .max-sm\:gap-0 {
-        gap: 0px;
+        gap: 0;
     }
 
     .max-sm\:gap-2 {
@@ -13886,8 +13886,8 @@ blockquote:after {
     }
 
     .max-sm\:py-0 {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .max-sm\:py-0\.5 {
@@ -13916,7 +13916,7 @@ blockquote:after {
     }
 
     .max-sm\:\!pb-0 {
-        padding-bottom: 0px !important;
+        padding-bottom: 0 !important;
     }
 
     .max-sm\:\!pb-10 {
@@ -14074,7 +14074,7 @@ blockquote:after {
 
 @media (max-width: 767px) {
     .max-md\:left-0 {
-        left: 0px;
+        left: 0;
     }
 
     .max-md\:left-1\/2 {
@@ -14149,7 +14149,7 @@ blockquote:after {
     }
 
     .max-md\:ml-0 {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .max-md\:ml-7 {
@@ -14309,7 +14309,7 @@ blockquote:after {
     }
 
     .max-md\:\!p-0 {
-        padding: 0px !important;
+        padding: 0 !important;
     }
 
     .max-md\:\!p-10 {
@@ -14344,7 +14344,7 @@ blockquote:after {
     }
 
     .max-md\:\!pb-0 {
-        padding-bottom: 0px !important;
+        padding-bottom: 0 !important;
     }
 
     .max-md\:\!pt-13\.5 {
@@ -14352,7 +14352,7 @@ blockquote:after {
     }
 
     .max-md\:pb-0 {
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     .max-md\:pb-13\.5 {
@@ -14502,7 +14502,7 @@ blockquote:after {
     }
 
     .max-lg\:mb-0 {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .max-lg\:mb-10 {
@@ -14522,7 +14522,7 @@ blockquote:after {
     }
 
     .max-lg\:mr-0 {
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .max-lg\:mr-3 {
@@ -14534,7 +14534,7 @@ blockquote:after {
     }
 
     .max-lg\:mt-0 {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .max-lg\:mt-3 {
@@ -14631,8 +14631,8 @@ blockquote:after {
     }
 
     .max-lg\:rounded-b-none {
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
     .max-lg\:rounded-t-3\.5xl {
@@ -14641,8 +14641,8 @@ blockquote:after {
     }
 
     .max-lg\:rounded-t-none {
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 
     .max-lg\:border-b {
@@ -14650,7 +14650,7 @@ blockquote:after {
     }
 
     .max-lg\:border-r-0 {
-        border-right-width: 0px;
+        border-right-width: 0;
     }
 
     .max-lg\:object-cover {
@@ -14690,8 +14690,8 @@ blockquote:after {
     }
 
     .max-lg\:px-0 {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .max-lg\:px-2 {
@@ -14728,7 +14728,7 @@ blockquote:after {
     }
 
     .max-lg\:pb-0 {
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     .max-lg\:pb-3 {
@@ -14740,7 +14740,7 @@ blockquote:after {
     }
 
     .max-lg\:pl-0 {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .max-lg\:pl-5 {
@@ -14748,7 +14748,7 @@ blockquote:after {
     }
 
     .max-lg\:pr-0 {
-        padding-right: 0px;
+        padding-right: 0;
     }
 
     .max-lg\:pr-5 {
@@ -14850,7 +14850,7 @@ blockquote:after {
 
 @media (max-width: 1199px) {
     .max-xl\:left-0 {
-        left: 0px;
+        left: 0;
     }
 
     .max-xl\:left-\[35px\] {
@@ -14870,7 +14870,7 @@ blockquote:after {
     }
 
     .max-xl\:mb-0 {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .max-xl\:mb-3 {
@@ -14890,7 +14890,7 @@ blockquote:after {
     }
 
     .max-xl\:ml-0 {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .max-xl\:ml-14 {
@@ -14914,7 +14914,7 @@ blockquote:after {
     }
 
     .max-xl\:mt-0 {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .max-xl\:mt-2 {
@@ -15018,7 +15018,7 @@ blockquote:after {
     }
 
     .max-xl\:border-0 {
-        border-width: 0px;
+        border-width: 0;
     }
 
     .max-xl\:p-10 {
@@ -15101,11 +15101,11 @@ blockquote:after {
     }
 
     .max-xl\:\!pl-0 {
-        padding-left: 0px !important;
+        padding-left: 0 !important;
     }
 
     .max-xl\:\!pr-0 {
-        padding-right: 0px !important;
+        padding-right: 0 !important;
     }
 
     .max-xl\:pb-5 {
@@ -15255,7 +15255,7 @@ blockquote:after {
     }
 
     .max-3xl\:\!mr-0 {
-        margin-right: 0px !important;
+        margin-right: 0 !important;
     }
 
     .max-3xl\:mb-5 {
@@ -15263,7 +15263,7 @@ blockquote:after {
     }
 
     .max-3xl\:ml-0 {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .max-3xl\:ml-\[-28\%\] {
@@ -15279,7 +15279,7 @@ blockquote:after {
     }
 
     .max-3xl\:mt-0 {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .max-3xl\:hidden {
@@ -15365,7 +15365,7 @@ blockquote:after {
     }
 
     .max-3xl\:pt-0 {
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     .max-3xl\:pt-1 {

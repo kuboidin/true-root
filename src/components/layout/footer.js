@@ -91,17 +91,17 @@ export default function Footer() {
                             <div className="mb-7.5 font-medium">
                                 <h5 className="text-xl leading-[1.2] mb-5">Our Stores</h5>
                                 <ul>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">New
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">New
                                         York</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">London
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">London
                                         SF</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Edinburgh</a>
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Edinburgh</a>
                                     </li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Los
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Los
                                         Angeles</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Chicago</a>
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Chicago</a>
                                     </li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Las
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Las
                                         Vegas</a></li>
                                 </ul>
                             </div>
@@ -110,17 +110,17 @@ export default function Footer() {
                             <div className="mb-7.5 font-medium">
                                 <h5 className="text-xl leading-[1.2] mb-5">Useful Links</h5>
                                 <ul>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Privacy
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Privacy
                                         Policy</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Returns</a>
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Returns</a>
                                     </li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Terms
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Terms
                                         & Conditions</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Contact
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Contact
                                         Us</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Latest
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Latest
                                         News</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Our
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Our
                                         Sitemap</a></li>
                                 </ul>
                             </div>
@@ -129,15 +129,15 @@ export default function Footer() {
                             <div className="mb-7.5 font-medium">
                                 <h5 className="text-xl leading-[1.2] mb-5">Footer Menu</h5>
                                 <ul>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Instagram
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Instagram
                                         profile</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">New
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">New
                                         Collection</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Woman
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Woman
                                         Dress</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Contact
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Contact
                                         Us</a></li>
-                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="javascript:void(0);">Latest
+                                    <li className="py-2 text-2sm"><a className="hover:text-primary" href="#">Latest
                                         News</a></li>
                                 </ul>
                             </div>
