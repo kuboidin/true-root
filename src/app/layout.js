@@ -1,7 +1,7 @@
+import AnimatedCursor from "react-animated-cursor";
 import "@/style/globals.css";
 import lufga from "@/app/lufga";
 import Header from "@/components/layout/header";
-import Script from "next/script";
 import app from "@/config/app";
 
 export const metadata = {
@@ -52,6 +52,22 @@ export default function RootLayout({ children }) {
             {children}
         </div>
     </div>
+    <AnimatedCursor
+        innerSize={10}
+        outerSize={34}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+            backgroundColor: 'var(--cursor-black-color)',
+            zIndex: 999999
+        }}
+        outerStyle={{
+            border: '2px solid var(--cursor-color)',
+            zIndex: 999999
+        }}
+    />
     </body>
     </html>
 );
