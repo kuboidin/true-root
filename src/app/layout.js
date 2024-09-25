@@ -1,8 +1,11 @@
 import AnimatedCursor from "react-animated-cursor";
 import "@/style/globals.css";
+import 'animate.css';
+import "@/style/custom.css";
 import lufga from "@/app/lufga";
 import Header from "@/components/layout/header";
 import app from "@/config/app";
+import Footer from "@/components/layout/footer";
 
 export const metadata = {
     title: app.title,
@@ -51,6 +54,7 @@ export default function RootLayout({ children }) {
         <div className="page-content bg-light overflow-hidden">
             {children}
         </div>
+        <Footer />
     </div>
     <AnimatedCursor
         innerSize={10}
