@@ -2,6 +2,7 @@ import SwiperComp from "@/components/comp/swiper";
 import InformationTab from "@/components/pages/vegitable/information-tab";
 import Breadcrumbs from "@/components/comp/breadcrumbs";
 import EcoBadge from "@/components/comp/eco-badge";
+import { Separator } from "@/components/ui/separator";
 
 export default function Page() {
 
@@ -40,102 +41,36 @@ export default function Page() {
                                         <div className="flex flex-row justify-between items-center text-center content-center">
                                             <EcoBadge score={4} />
                                             <div className="flex flex-col justify-start text-left text-sm">
-                                                <span>one of the easiest vegetables to grow</span>
-                                                <span>Fruiting withing 60-100 days</span>
-                                                <span>Can be grown hydroponically</span>
+                                                <span>One of the easiest vegetables to grow</span>
+                                                <span>Fruiting withing 60 to 85 days (depending on variety)</span>
+                                                <span>Highly suitable for hydroponic cultivation</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <p className="mt-2 mb-4 text-2sm">
-                                    This comfortable cotton crop-top features the Divi Engine logo on the front expressing how easy “data Divi Engine life” is. It is the perfect tee for any occasion.
+                                <p className="mt-2 mb-4 text-sm">
+                                    Tomatoes are not only nutrient-dense but also easy to grow, making them an ideal choice for home gardeners, whether in backyards, community gardens, or even balconies. <br/>
+                                    Rich in vitamins A and C, and loaded with lycopene, tomatoes offer numerous health benefits, including antioxidant properties that support heart health and may reduce cancer risks. <br/>
+                                    Additionally, they have applications in Ayurvedic medicine, promoting digestion and skin health. <br/>
+                                    Their versatility in culinary uses—from fresh salads to savory sauces—combined with their relatively low maintenance requirements, encourages anyone to cultivate their own supply of this vibrant fruit.
                                 </p>
-                                <div className="meta-content mb-5">
-                                    <span className="block text-sm text-body">Price</span>
-                                    <span className="font-medium text-2xl font-Lufga">$125.75 <del className="py-1.1 opacity-60 text-lg text-body">$132.17</del></span>
-                                </div>
-                                <div className="flex flex-wrap items-center md:gap-2 xl:gap-0 lg:mb-10 sm:mb-5 mb-3.6 max-sm:justify-between">
-                                    <div className="mr-11 max-lg:mr-3.6 light xl:block hidden input-group">
-                                        <label className="font-bold mb-2.5 block font-Lufga">Quantity</label>
-                                    </div>
-                                    <div className="mr-11 max-lg:mr-3.6">
-                                        <label className="font-bold mb-2.5 block font-Lufga">Size</label>
+                                <Separator className="mt-4 mb-2"/>
+                                <div className="flex flex-col flex-wrap gap-3">
+                                    <div>
+                                        <label className="font-bold mb-2.5 font-Lufga">Temperature</label>
+                                        <p>Optimal growing temperature: <strong>18°C to 30°C</strong></p>
                                     </div>
                                     <div>
-                                        <label className="font-bold mb-2.5 block font-Lufga">Color</label>
+                                        <label className="font-bold mb-2.5 font-Lufga">Soil Conditions</label>
+                                        <p>Soil type: Well-drained loamy or sandy soil, pH range 6.0 to 6.8</p>
+                                        <p>Soil must be rich in organic matter, with good aeration and drainage to avoid water logging.</p>
                                     </div>
                                 </div>
-                                <div className="flex items-center lg:mb-10 sm:mb-5 mb-3.6 -mx-1.1">
-                                    <a href="shop-cart.html" className="btn py-3 px-5 text-base font-Lufga inline-block font-medium leading-[1.2] border border-secondary bg-secondary text-white rounded-xl duration-700 uppercase relative overflow-hidden m-1.1">Add To Cart</a>
-                                    <a href="shop-wishlist.html" className="btn py-3 px-5 text-base inline-flex gap-2.5 items-center justify-center font-medium font-Lufga leading-[1.2] border border-secondary rounded-xl duration-700 hover:bg-secondary hover:text-white relative overflow-hidden m-1.1">
-                                        <i className="icon feather icon-heart"></i>
-                                        Add To Wishlist
-                                    </a>
-                                </div>
-                                <div className="mb-10 pt-5 border-t border-border relative">
-                                    <ul className="flex flex-wrap items-center mb-2.5">
-                                        <li className="text-sm mr-2.5"><strong className="text-2sm font-Lufga">SKU:</strong></li>
-                                        <li className="text-sm mr-2.5">PRT584E63A</li>
-                                    </ul>
-                                    <ul className="flex flex-wrap items-center mb-2.5">
-                                        <li className="text-sm mr-2.5"><strong className="text-2sm font-Lufga">Category:</strong></li>
-                                        <li className="text-sm mr-2.5"><a href="shop-standard.html">Dresses,</a></li>
-                                        <li className="text-sm mr-2.5"><a href="shop-standard.html">Jeans,</a></li>
-                                        <li className="text-sm mr-2.5"><a href="shop-standard.html">Swimwear,</a></li>
-                                        <li className="text-sm mr-2.5"><a href="shop-standard.html">Summer,</a></li>
-                                        <li className="text-sm mr-2.5"><a href="shop-standard.html">Clothing,</a></li>
-                                    </ul>
-                                    <ul className="flex flex-wrap items-center mb-2.5">
-                                        <li className="text-sm mr-2.5"><strong className="text-2sm font-Lufga">Tags:</strong></li>
-                                        <li className="text-sm mr-2.5"><a href="shop-standard.html">Casual,</a></li>
-                                        <li className="text-sm mr-2.5"><a href="shop-standard.html">Athletic,</a></li>
-                                        <li className="text-sm mr-2.5"><a href="shop-standard.html">Workwear,</a></li>
-                                        <li className="text-sm mr-2.5"><a href="shop-standard.html">Accessories,</a></li>
-                                    </ul>
-                                    <ul className="flex flex-wrap items-center mb-2.5">
-                                        <li className="text-base mr-5"><strong className="text-2sm font-Lufga">Share:</strong></li>
-                                        <li className="text-base mr-5">
-                                            <a className="hover:text-primary" href="https://www.facebook.com/dexignzone" target="_blank">
-                                                <i className="fa-brands fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li className="text-base mr-5">
-                                            <a className="hover:text-primary" href="https://www.linkedin.com/showcase/3686700/admin/" target="_blank">
-                                                <i className="fa-brands fa-linkedin-in"></i>
-                                            </a>
-                                        </li>
-                                        <li className="text-base mr-5">
-                                            <a className="hover:text-primary" href="https://www.instagram.com/dexignzone/" target="_blank">
-                                                <i className="fa-brands fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li className="text-base mr-5">
-                                            <a className="hover:text-primary" href="https://twitter.com/dexignzones" target="_blank">
-                                                <i className="fa-brands fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <ul className="md:flex hidden items-center">
-                                    <li className="flex items-center xl:mr-6 mr-2">
-                                        <div className="h-13.5 min-w-13.5 flex items-center justify-center">
-                                            <i className="flaticon flaticon-ship text-body text-[46px]"></i>
-                                        </div>
-                                        <div className="xl:ml-5 ml-2.5">
-                                            <span className="text-body text-sm">FREE</span>
-                                            <h6>Shipping</h6>
-                                        </div>
-                                    </li>
-                                    <li className="flex items-center">
-                                        <div className="h-13.5 min-w-13.5 flex items-center justify-center">
-                                            <i className="flaticon-fast-delivery-1 text-body text-[46px]"></i>
-                                        </div>
-                                        <div className="xl:ml-5 ml-2.5">
-                                            <span className="text-body text-sm">Easy Returns</span>
-                                            <h6>30 Days</h6>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <Separator className="mt-2 mb-6"/>
+
+                                social share
+
+                                <Separator className="mt-2 mb-6"/>
                             </div>
                             <div className="absolute z-1 right-6.1 top-[250px] xl:block hidden">
                                 <ul className="flex items-center flex-col">
