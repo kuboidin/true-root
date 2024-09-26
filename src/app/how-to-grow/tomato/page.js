@@ -1,19 +1,17 @@
-import Link from "next/link";
 import SwiperComp from "@/components/comp/swiper";
 import InformationTab from "@/components/pages/vegitable/information-tab";
+import Breadcrumbs from "@/components/comp/breadcrumbs";
+import EcoBadge from "@/components/comp/eco-badge";
 
 export default function Page() {
 
     return <>
         {/* breadcrumbs */}
-        <div className="sm:flex justify-between container-fluid py-4">
-            <nav>
-                <ul>
-                    <li className="mr-[3px] inline-block text-base font-medium"><Link href="/"> Home</Link></li>
-                    <li className="mr-[3px] pl-2 inline-block text-base font-medium before:content-['\f105'] before:font-['Font_Awesome_5_Free'] before:font-bold before:pr-3">Product Thumbnail</li>
-                </ul>
-            </nav>
-        </div>
+        <Breadcrumbs crumbs={[
+            { name: "Home", link: "/" },
+            { name: "How to grow", link: "/how-to-grow" },
+            { name: "Tomato" },
+        ]} />
 
         <section>
             <div className="container-fluid">
@@ -22,9 +20,10 @@ export default function Page() {
                         <div className="mb-7.5 sticky top-0 z-1">
                             <div className="relative">
                                 <SwiperComp images={[
-                                    {src: "https://pixio.dexignzone.com/tailwind/demo/assets/images/products/lady-1.png", alt: "image"},
-                                    {src: "https://pixio.dexignzone.com/tailwind/demo/assets/images/products/lady-2.png", alt: "image"},
-                                    {src: "https://pixio.dexignzone.com/tailwind/demo/assets/images/products/lady-3.png", alt: "image"},
+                                    {src: "/assets/plants/vegetable/tomato/t1.webp", alt: "How to grow tomatoes"},
+                                    {src: "/assets/plants/vegetable/tomato/t2.jpg", alt: "How to grow tomatoes"},
+                                    {src: "/assets/plants/vegetable/tomato/t3.jpeg", alt: "How to grow tomatoes"},
+                                    {src: "/assets/plants/vegetable/tomato/t4.webp", alt: "How to grow tomatoes"},
                                 ]}/>
                             </div>
                         </div>
@@ -34,32 +33,21 @@ export default function Page() {
                             <div className="dz-content">
                                 <div className="flex mb-3.6">
                                     <div className="flex-1">
-                                        <span className="py-[3px] px-2.5 inline-block rounded-md text-xs bg-[#5E5CC6] font-semibold text-white leading-[1.3] uppercase mb-2">SALE 20% Off</span>
-                                        <h5 className="lg:text-4xl sm:text-3xl text-2xl mb-1">Women Red & White Striped Crepe Top</h5>
-                                        <div className="flex">
-                                            <ul className="flex gap-0.5 items-center mr-2">
-                                                <li className="text-sm text-[#ff8a00] star-fill">
-                                                    <i className="flaticon-star-1"></i>
-                                                </li>
-                                                <li className="text-sm text-[#ff8a00] star-fill">
-                                                    <i className="flaticon-star-1"></i>
-                                                </li>
-                                                <li className="text-sm text-[#ff8a00] star-fill">
-                                                    <i className="flaticon-star-1"></i>
-                                                </li>
-                                                <li className="text-sm text-[#e4e5e8]">
-                                                    <i className="flaticon-star-1"></i>
-                                                </li>
-                                                <li className="text-sm text-[#e4e5e8]">
-                                                    <i className="flaticon-star-1"></i>
-                                                </li>
-                                            </ul>
-                                            <span className="text-2xs mr-2">4.7 Rating</span>
-                                            <a className="text-2xs">(5 customer reviews)</a>
+                                        <span className="py-[3px] px-2.5 inline-block rounded-md text-xs bg-[#5E5CC6] font-semibold text-white leading-[1.3] uppercase mb-2">
+                                            Solanum lycopersicum, Vegetable (Fruit)
+                                        </span>
+                                        <h5 className="lg:text-4xl sm:text-3xl text-2xl mb-1">Tomato (टमाटर)</h5>
+                                        <div className="flex flex-row justify-between items-center text-center content-center">
+                                            <EcoBadge score={4} />
+                                            <div className="flex flex-col justify-start text-left text-sm">
+                                                <span>one of the easiest vegetables to grow</span>
+                                                <span>Fruiting withing 60-100 days</span>
+                                                <span>Can be grown hydroponically</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <p className="mb-4 text-2sm">
+                                <p className="mt-2 mb-4 text-2sm">
                                     This comfortable cotton crop-top features the Divi Engine logo on the front expressing how easy “data Divi Engine life” is. It is the perfect tee for any occasion.
                                 </p>
                                 <div className="meta-content mb-5">

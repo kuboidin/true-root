@@ -28,3 +28,7 @@
 .animate__delay-0-9s {
     animation-delay: 0.9s;
 }
+
+.data-\[state\=active\]\:text-foreground[data-state="active"] {
+    color: var(--primary);
+}
