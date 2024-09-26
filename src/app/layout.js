@@ -63,6 +63,7 @@ export default function RootLayout({ children }) {
         outerScale={2}
         outerAlpha={0}
         hasBlendMode={true}
+        showSystemCursor={true}
         innerStyle={{
             backgroundColor: 'var(--cursor-black-color)',
             zIndex: 999999
