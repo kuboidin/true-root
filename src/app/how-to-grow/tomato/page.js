@@ -1,18 +1,19 @@
 import SwiperComp from "@/components/comp/swiper";
 import Breadcrumbs from "@/components/comp/breadcrumbs";
 import EcoBadge from "@/components/comp/eco-badge";
-import { Separator } from "@/components/ui/separator";
+import {Separator} from "@/components/ui/separator";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
+import {MoveRight} from "lucide-react";
 
 export default function Page() {
 
     return <>
         {/* breadcrumbs */}
         <Breadcrumbs crumbs={[
-            { name: "Home", link: "/" },
-            { name: "How to grow", link: "/how-to-grow" },
-            { name: "Tomato" },
-        ]} />
+            {name: "Home", link: "/"},
+            {name: "How to grow", link: "/how-to-grow"},
+            {name: "Tomato"},
+        ]}/>
 
         <section>
             <div className="container-fluid">
@@ -39,7 +40,7 @@ export default function Page() {
                                         </span>
                                         <h5 className="lg:text-4xl sm:text-3xl text-2xl mb-1">Tomato (टमाटर)</h5>
                                         <div className="flex flex-row justify-between items-center text-center content-center">
-                                            <EcoBadge score={4} />
+                                            <EcoBadge score={4}/>
                                             <div className="flex flex-col justify-start text-left text-sm">
                                                 <span>One of the easiest vegetables to grow</span>
                                                 <span>Fruiting withing 60 to 85 days (depending on variety)</span>
@@ -49,10 +50,11 @@ export default function Page() {
                                     </div>
                                 </div>
                                 <p className="mt-2 mb-4 text-sm">
-                                    Tomatoes are not only nutrient-dense but also easy to grow, making them an ideal choice for home gardeners, whether in backyards, community gardens, or even balconies. <br/>
+                                    Tomatoes are nutrient-packed and easy to grow, making them perfect for gardens, balconies, or even indoors. <br/>
                                     Rich in vitamins A and C, and loaded with lycopene, tomatoes offer numerous health benefits, including antioxidant properties that support heart health and may reduce cancer risks. <br/>
-                                    Additionally, they have applications in Ayurvedic medicine, promoting digestion and skin health. <br/>
-                                    Their versatility in culinary uses—from fresh salads to savory sauces—combined with their relatively low maintenance requirements, encourages anyone to cultivate their own supply of this vibrant fruit.
+                                    Versatile in the kitchen, tomatoes enhance everything from fresh salads to hearty sauces. <br/>
+                                    In Ayurveda, they balance digestion and improve skin vitality. <br/>
+                                    Whether you're a beginner or an experienced gardener, tomatoes are rewarding to cultivate at home with minimal effort.
                                 </p>
                                 <Separator className="mt-4 mb-2"/>
                                 <div className="flex flex-col flex-wrap gap-3">
@@ -93,116 +95,386 @@ export default function Page() {
 
 
         <section className="pt-17 max-lg:pt-13.5">
-            <div className="container">
+            <div className="w-full">
                 <div className="product-description">
                     <div>
                         <Tabs defaultValue="grow" className="w-full">
                             <TabsList className="flex justify-center flex-wrap border-b border-border bg-transparent p-12">
-                                <TabsTrigger value="scientific" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Scientific Guide</TabsTrigger>
+                                <TabsTrigger value="scientific" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Good to know (Scientific Information)</TabsTrigger>
                                 <TabsTrigger value="grow" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">How to grow Tomatoes (No Bullsh*t Guide)</TabsTrigger>
                                 <TabsTrigger value="community" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Community</TabsTrigger>
                             </TabsList>
                             <TabsContent value="scientific" className="lg:pt-13.5 sm:pt-7.5 pt-5">
                                 <div className="row">
+                                    <div className="w-full m-lg-b0 m-md-b30">
+                                        <div className="mb-10 max-md:mb-5 px-20">
+                                            <h2 className="mb-2">Good to know</h2>
+                                            <p className="mb-4">
+                                                Tomatoes grow well in pots, raised beds, or directly in the ground.
+                                                Choose a sunny spot with at least 6-8 hours of sunlight daily.
+                                                Ensure proper spacing between plants (45-60 cm apart) to allow for air circulation and prevent fungal infections.
+                                            </p>
+                                        </div>
+
+                                        <div className="flex flex-col gap-0">
+                                            <div className="w-full h-14" style={{ backgroundImage: 'url("/assets/other/image/bg-slide5.webp")' }}></div>
+                                            <div className="w-full bg-darkGreen bg-no-repeat bg-auto h-[600px] -mt-1" style={{backgroundImage: 'url("/assets/other/image/bg-bn5-1.webp")', backgroundPosition: "center left"}}>
+                                                <div className="absolute top-52 left-0 w-full h-full background-overlay bg-no-repeat" style={{backgroundImage: 'url("/assets/other/image/bg-bn5-2.webp")', backgroundPosition: "center right"}}></div>
+                                                <div className="grid grid-cols-6 gap-2 my-20">
+                                                    <div></div>
+                                                    <div>
+                                                        <div className="text-left inline-block">
+                                                            <div className="title_block">
+                                                                <p className="sub_title text-base pb-[22px] mb-0">Health benefits of Tomatoes</p>
+                                                                <h4 className="text-white font-bold lg:text-[32px] text-3xl xl:leading-[48px] leading-9">Health benefits</h4>
+                                                            </div>
+                                                            <div className="desc mt-[23px] text-white">
+                                                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada pellentesque turpis eget facilisis. Sed sit amet efficitur ex. Fusce dapibus nulla vel ligula porttitor interdum.</div>
+                                                                <div className="pt-6">Cras at vulputate felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse molestie est neque, vitae eleifend magna imperdiet sit amet</div>
+                                                                <div className="how-to-order">
+                                                                    <div className="icon-phone">
+                                                                        <i className="rbb-icon-phone-4"></i>
+                                                                    </div>
+                                                                    <div className="title_block">
+                                                                        <p>How to Order?</p>
+                                                                        <span>Call Us: <span>0123-456-7890</span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="pt-[43px]">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-span-2"></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </TabsContent>
+                            <TabsContent value="grow" className="lg:pt-13.5 sm:pt-7.5 pt-5">
+                                <div className="row px-20">
                                     <div className="lg:w-1/2 m-lg-b0 m-md-b30">
                                         <div className="mb-10 max-md:mb-5">
-                                            <h2 className="mb-2">Fits women</h2>
-                                            <p className="mb-4">Designed for superior child comfort, OneFit™ provides extra rear-facing legroom and multiple recline options in every mode of use. With the widest range of height adjustments, the easy-adjust headrest system adjusts with the harness to grow with your child. OneFit™ accommodates tiny passengers from the very start with a removable head and body support insert for newborns weighing 5-11 lbs. </p>
+                                            <h2 className="mb-2">Growing Tomatoes at Home (In Pots or Grow Bags)</h2>
+                                            <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                                                <div className="grid gap-6 row-gap-10 grid-cols-2">
+                                                    <div className="lg:py-6 lg:pr-16 col-span-full">
+                                                    <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">1.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 1: Choose the Right Variety</p>
+                                                                <p className="text-gray-700">
+                                                                    <ul className="flex flex-col gap-2">
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Tomatoes’ if growing in pots or grow bags.</li>
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting.</li>
+                                                                    </ul>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">2.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 2: Prepare the Pot or Grow Bag</p>
+                                                                <p className="text-gray-700">
+                                                                    <ul className="flex flex-col gap-2">
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Use at least a 12-18 inch deep pot or grow bag.</li>
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the pot has drainage holes.</li>
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Add a layer of small stones or broken pots at the bottom to improve drainage.</li>
+                                                                    </ul>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">3.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 3</p>
+                                                                <p className="text-gray-700">
+                                                                    Tell them I hate them. Is the Space Pope reptilian!? Tell her
+                                                                    she looks thin. Hello, little man. I will destroy you!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">4.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 4</p>
+                                                                <p className="text-gray-700">
+                                                                    If one examines precultural libertarianism, one is faced with a
+                                                                    choice: either accept rationalism or conclude that context is a
+                                                                    product.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">5.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="pt-1">
+                                                                <p className="mb-2 text-lg font-bold">Success</p>
+                                                                <p className="text-gray-700"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="xl:mb-6 md:mb-3.5 mb-2.5">
-                                            <h4 className="font-bold text-xl max-md:text-lg">Specifications</h4>
-                                            <ul>
-                                                <li className="py-1.1 text-body max-md:text-sm">Assembled Dimensions (L x W x H): <span>71.1 x 45.7 x 7.6 cm; 700 Grams</span></li>
-                                                <li className="py-1.1 text-body max-md:text-sm">Assembled Product Weight: <span>25 lbs.</span></li>
-                                            </ul>
+
+                                        <div className="mb-10 max-md:mb-5">
+                                            <h2 className="mb-2">Growing Tomatoes in the Garden (Directly in the Ground)</h2>
+                                            <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                                                <div className="grid gap-6 row-gap-10 grid-cols-2">
+                                                    <div className="lg:py-6 lg:pr-16 col-span-full">
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">1.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 1: Choose the Right Variety</p>
+                                                                <p className="text-gray-700">
+                                                                    <ul className="flex flex-col gap-2">
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Tomatoes’ if growing in pots or grow bags.</li>
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting.</li>
+                                                                    </ul>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">2.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 2: Prepare the Pot or Grow Bag</p>
+                                                                <p className="text-gray-700">
+                                                                    <ul className="flex flex-col gap-2">
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Use at least a 12-18 inch deep pot or grow bag.</li>
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the pot has drainage holes.</li>
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Add a layer of small stones or broken pots at the bottom to improve drainage.</li>
+                                                                    </ul>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">3.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 3</p>
+                                                                <p className="text-gray-700">
+                                                                    Tell them I hate them. Is the Space Pope reptilian!? Tell her
+                                                                    she looks thin. Hello, little man. I will destroy you!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">4.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 4</p>
+                                                                <p className="text-gray-700">
+                                                                    If one examines precultural libertarianism, one is faced with a
+                                                                    choice: either accept rationalism or conclude that context is a
+                                                                    product.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">5.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="pt-1">
+                                                                <p className="mb-2 text-lg font-bold">Success</p>
+                                                                <p className="text-gray-700"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <ul className="specification-list mb-10">
-                                            <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Manufacturer <span>Indra Hosiery Mills</span></li>
-                                            <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">ASIN<span>B07WK128569</span></li>
-                                            <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Country of Origin<span>India</span></li>
-                                            <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Department<span>Women</span></li>
-                                            <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Included Components<span>Women's Jacket</span></li>
-                                            <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Item Dimensions LxWxH<span> 71.1 x 45.7 x 7.6 Centimeters</span></li>
-                                            <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Manufacture<span> Indra Hosiery Mills</span></li>
-                                        </ul>
-                                        <div className="product-media row g-xl-4 g-2 mb-10">
-                                            <div className="w-1/4">
-                                                <a href="shop-list.html">
-                                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress1.png" alt="/" className="rounded-xl w-full"/>
-                                                </a>
-                                            </div>
-                                            <div className="w-1/4">
-                                                <a href="shop-list.html">
-                                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress2.png" alt="/" className="rounded-xl w-full"/>
-                                                </a>
-                                            </div>
-                                            <div className="w-1/4">
-                                                <a href="shop-list.html">
-                                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress3.png" alt="/" className="rounded-xl w-full"/>
-                                                </a>
-                                            </div>
-                                            <div className="w-1/4">
-                                                <a href="shop-list.html">
-                                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress4.png" alt="/" className="rounded-xl w-full"/>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="product-info">
-                                            <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                                <h4 className="font-bold text-xl max-md:text-lg">Fabric Content</h4>
-                                                <ul className="lg:flex block items-center">
-                                                    <li className="mr-14"><h6>Seatpad: <span className="font-normal">100% Cotton</span></h6></li>
-                                                    <li><h6>Insert: <span className="font-normal">100% Cotton</span></h6></li>
-                                                </ul>
-                                            </div>
-                                            <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                                <h4 className="font-bold text-xl max-md:text-lg">Chemical Statement</h4>
-                                                <p className="mb-4 text-body">The OneFit ClearTex All-In-One Car Seat is produced without the use of intentionally added fire retardant chemical treatments, PFAS, BPA and phthalates. </p>
+
+                                        <div className="mb-10 max-md:mb-5">
+                                            <h2 className="mb-2">Growing Tomatoes at a Large Scale (Commercial Farming)</h2>
+                                            <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                                                <div className="grid gap-6 row-gap-10 grid-cols-2">
+                                                    <div className="lg:py-6 lg:pr-16 col-span-full">
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">1.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 1: Choose the Right Variety</p>
+                                                                <p className="text-gray-700">
+                                                                    <ul className="flex flex-col gap-2">
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Tomatoes’ if growing in pots or grow bags.</li>
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting.</li>
+                                                                    </ul>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">2.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 2: Prepare the Pot or Grow Bag</p>
+                                                                <p className="text-gray-700">
+                                                                    <ul className="flex flex-col gap-2">
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Use at least a 12-18 inch deep pot or grow bag.</li>
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the pot has drainage holes.</li>
+                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Add a layer of small stones or broken pots at the bottom to improve drainage.</li>
+                                                                    </ul>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">3.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 3</p>
+                                                                <p className="text-gray-700">
+                                                                    Tell them I hate them. Is the Space Pope reptilian!? Tell her
+                                                                    she looks thin. Hello, little man. I will destroy you!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">4.</div>
+                                                                </div>
+                                                                <div className="w-px h-full bg-lightGreen"/>
+                                                            </div>
+                                                            <div className="pt-1 pb-8">
+                                                                <p className="mb-2 text-lg font-bold">Step 4</p>
+                                                                <p className="text-gray-700">
+                                                                    If one examines precultural libertarianism, one is faced with a
+                                                                    choice: either accept rationalism or conclude that context is a
+                                                                    product.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex">
+                                                            <div className="flex flex-col items-center mr-4">
+                                                                <div>
+                                                                    <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">5.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="pt-1">
+                                                                <p className="mb-2 text-lg font-bold">Success</p>
+                                                                <p className="text-gray-700"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="lg:w-1/2">
-                                        <div className="row">
-                                            <div className="md:w-1/2 max-md:mb-5 mb-7.5">
-                                                <a href="shop-standard.html" className="about-product-wrapper">
-                                                    <div className="text-center px-4 py-[38px] h-full flex flex-col justify-center items-center border border-secondary rounded-3xl bg-light">
-                                                        <h4 className="font-bold text-xl max-md:text-lg">All-in-One Dress</h4>
-                                                        <p className="text-body text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div className="md:w-1/2 max-md:mb-5 mb-7.5">
-                                                <a href="shop-standard.html" className="about-product-wrapper">
-                                                    <div className="text-center px-4 py-[38px] h-full flex flex-col justify-center items-center border border-secondary rounded-3xl bg-light">
-                                                        <h4 className="font-bold text-xl max-md:text-lg">Looking wise good</h4>
-                                                        <p className="text-body text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div className="md:w-1/2 max-md:mb-5 mb-7.5">
-                                                <a href="shop-standard.html" className="about-product-wrapper">
-                                                    <div className="text-center px-4 py-[38px] h-full flex flex-col justify-center items-center border border-secondary rounded-3xl bg-light">
-                                                        <h4 className="font-bold text-xl max-md:text-lg">100% Made In India</h4>
-                                                        <p className="text-body text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div className="md:w-1/2 max-md:mb-5 mb-7.5">
-                                                <a href="shop-standard.html" className="about-product-wrapper">
-                                                    <div className="text-center px-4 py-[38px] h-full flex flex-col justify-center items-center border border-secondary rounded-3xl bg-light">
-                                                        <h4 className="font-bold text-xl max-md:text-lg">100% Cotton</h4>
-                                                        <p className="text-body text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                    </div>
-                                                </a>
+                                        <div className="mb-10 max-md:mb-5">
+                                            <h2 className="mb-2">Growing Process & Schedule</h2>
+                                            <p className="mb-4">
+                                                Tomatoes grow well in pots, raised beds, or directly in the ground.
+                                                Choose a sunny spot with at least 6-8 hours of sunlight daily.
+                                                Ensure proper spacing between plants (45-60 cm apart) to allow for air circulation and prevent fungal infections.
+                                            </p>
+                                        </div>
+                                        <div className="xl:mb-6 md:mb-3.5 mb-2.5">
+                                            <h4 className="font-bold text-xl max-md:text-lg">Seeding Process</h4>
+                                            <ul className="specification-list mb-10">
+                                                <li className="flex border-b border-border py-[7px] text-body gap-2"><strong>Seed Selection:</strong> {" "} <span>Choose high-quality heirloom or hybrid seeds for your climate.</span></li>
+                                                <li className="flex border-b border-border py-[7px] text-body gap-2"><strong>Sowing:</strong> {" "} <span>Sow seeds 1/4 inch deep in seed trays or pots indoors, 6-8 weeks before the last frost date.</span></li>
+                                                <li className="flex border-b border-border py-[7px] text-body gap-2"><strong>Temperature:</strong> {" "} <span>Seeds germinate best at 20-25°C.</span></li>
+                                                <li className="flex border-b border-border py-[7px] text-body gap-2"><strong>Environment:</strong> {" "} <span>Keep in a warm, sunny spot or use grow lights. Maintain high humidity.</span></li>
+                                                <li className="flex border-b border-border py-[7px] text-body gap-2"><strong>Tips:</strong> {" "} <span>Avoid overwriting as it can lead to damping-off disease. Seedlings should be hardened off before transplanting outdoors.</span></li>
+                                                <li className="flex border-b border-border py-[7px] text-body gap-2"><strong>Time to Seed:</strong> {" "} <span> Germination takes 5-10 days. Once seedlings develop 2-3 true leaves, they are ready for transplanting.</span></li>
+                                            </ul>
+                                        </div>
+                                        <div className="product-info">
+                                            <div className="md:mb-10 sm:mb-3.6 mb-2.5">
+                                                <h4 className="font-bold text-xl max-md:text-lg mb-2">Germination Stages and Conditions</h4>
+                                                <ul className="flex flex-col gap-4">
+                                                    <li><h6>Radicle Emergence: <span className="font-normal">Within 3-4 days, the first root appears</span></h6></li>
+                                                    <li><h6>Shoot Development: <span className="font-normal">Leaves begin to sprout after a week</span></h6></li>
+                                                    <li><h6>True Leaves: <span className="font-normal">Typically appear by day 10. This is a critical phase for ensuring good light exposure and proper moisture</span></h6></li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div><img className="rounded-3xl w-full" src="https://pixio.dexignzone.com/tailwind/demo/assets/images/shop/product-details/product-style-1/product-details-1.png" alt="/"/></div>
+                                        <div className="mb-10 max-md:mb-5">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">When to Know it’s Good for Cultivation</h4>
+                                            <p className="mb-4">
+                                                Tomatoes are ready for harvest when they have a uniform color and are firm yet yield slightly to pressure.
+                                                Depending on the variety, fruit can be harvested when fully red (or the designated ripe color for the cultivar).
+                                            </p>
+                                        </div>
+
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">Watering and Fertilizer Schedule</h4>
+                                            <ul className="flex flex-col gap-4">
+                                                <li><h6>Watering: <span className="font-normal">Water deeply but infrequently, ensuring the soil remains moist but not waterlogged. Regular watering is key during flowering and fruiting stages to prevent blossom end rot.</span></h6></li>
+                                                <li><h6>Fertilizing: <span className="font-normal">Apply a balanced fertilizer every 3 weeks during the growing season.</span></h6></li>
+                                            </ul>
+                                        </div>
+
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">Important Reminders at Each Stage</h4>
+                                            <ul className="flex flex-col gap-4">
+                                                <li><h6>Watering: <span className="font-normal">Water deeply but infrequently, ensuring the soil remains moist but not waterlogged. Regular watering is key during flowering and fruiting stages to prevent blossom end rot.</span></h6></li>
+                                                <li><h6>Fertilizing: <span className="font-normal">Apply a balanced fertilizer every 3 weeks during the growing season.</span></h6></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </TabsContent>
-                            <TabsContent value="grow" className="lg:pt-13.5 sm:pt-7.5 pt-5">To the point (No Bullsh*t Guide)</TabsContent>
                             <TabsContent value="community" className="lg:pt-13.5 sm:pt-7.5 pt-5">
-                                <div id="comment-list">
+                                <div id="comment-list" className="px-20">
                                     <div>
                                         <h4 className="mb-2">Comments (02)</h4>
                                         <p className="text-sm mb-7.5 text-body">There are many variations of passages of Lorem Ipsum available.</p>

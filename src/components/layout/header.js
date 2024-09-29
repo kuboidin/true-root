@@ -49,7 +49,7 @@ export default function Header({}) {
                                     <Link href="/"><span>Home</span><i className="fas fa-chevron-down tabindex"></i></Link>
                                 </li>
                                 <li className="has-mega-menu sub-menu-down">
-                                    <a href="#"><span>Category</span><i className="fas fa-chevron-down tabindex"></i></a>
+                                    <a href="#"><span>How to Grow</span><i className="fas fa-chevron-down tabindex"></i></a>
                                     <div className="mega-menu shop-menu">
                                         <div className="row">
                                             <div className="lg:w-2/3 w-full">
@@ -136,7 +136,7 @@ export default function Header({}) {
                                     </div>
                                 </li>
                                 <li className="has-mega-menu sub-menu-down"><a
-                                    href="#"><span>Blog</span><i
+                                    href="#"><span>DIY Natural Products</span><i
                                     className="fas fa-chevron-down tabindex"></i></a>
                                     <div className="mega-menu">
                                         <div className="row">
@@ -241,6 +241,15 @@ export default function Header({}) {
                                             </div>
                                         </div>
                                     </div>
+                                </li>
+                                <li className="has-mega-menu sub-menu-down">
+                                    <Link href="/"><span>Do you know?</span><i className="fas fa-chevron-down tabindex"></i></Link>
+                                </li>
+                                <li className="has-mega-menu sub-menu-down">
+                                    <Link href="/"><span>Wiki</span><i className="fas fa-chevron-down tabindex"></i></Link>
+                                </li>
+                                <li className="has-mega-menu sub-menu-down">
+                                    <Link href="/"><span>Blog</span><i className="fas fa-chevron-down tabindex"></i></Link>
                                 </li>
                             </ul>
                         </div>

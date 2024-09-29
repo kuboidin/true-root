@@ -32,3 +32,9 @@
 .data-\[state\=active\]\:text-foreground[data-state="active"] {
     color: var(--primary);
 }
+
+.sub_title {
+    color: var(--lemon-green);
+    font-size: 16px;
+    font-weight: 700;
+}

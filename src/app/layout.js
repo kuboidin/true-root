@@ -56,23 +56,24 @@ export default function RootLayout({ children }) {
         </div>
         <Footer />
     </div>
-    <AnimatedCursor
-        innerSize={10}
-        outerSize={34}
-        innerScale={1}
-        outerScale={2}
-        outerAlpha={0}
-        hasBlendMode={true}
-        showSystemCursor={true}
-        innerStyle={{
-            backgroundColor: 'var(--cursor-black-color)',
-            zIndex: 999999
-        }}
-        outerStyle={{
-            border: '2px solid var(--cursor-color)',
-            zIndex: 999999
-        }}
-    />
+    {/* TODO */}
+    {/*<AnimatedCursor*/}
+    {/*    innerSize={10}*/}
+    {/*    outerSize={34}*/}
+    {/*    innerScale={1}*/}
+    {/*    outerScale={2}*/}
+    {/*    outerAlpha={0}*/}
+    {/*    hasBlendMode={true}*/}
+    {/*    showSystemCursor={true}*/}
+    {/*    innerStyle={{*/}
+    {/*        backgroundColor: 'var(--cursor-black-color)',*/}
+    {/*        zIndex: 999999*/}
+    {/*    }}*/}
+    {/*    outerStyle={{*/}
+    {/*        border: '2px solid var(--cursor-color)',*/}
+    {/*        zIndex: 999999*/}
+    {/*    }}*/}
+    {/*/>*/}
     </body>
     </html>
 );
