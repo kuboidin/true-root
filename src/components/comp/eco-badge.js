@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/tooltip";
 import Image from "next/image";
 
-export default function EcoBadge({ score = 3 }) {
+export default function EcoBadge({ score = 3, information = null }) {
     let info = {
         heading: "Fully Eco-Friendly",
         description: "This crop is cultivated using 100% organic and sustainable methods, ensuring minimal environmental impact and promoting long-term ecological balance."
@@ -34,13 +34,17 @@ export default function EcoBadge({ score = 3 }) {
         }
     }
 
+    if (information) {
+        info.description = information;
+    }
+
     return <>
         <TooltipProvider>
             <Tooltip>
                 <TooltipTrigger>
                     <Image src={`/assets/eco/eco-${score}.png`} alt={info.description} width={64} height={64} className="w-14 h-14 mr-2" />
                 </TooltipTrigger>
-                <TooltipContent>
+                <TooltipContent className="w-1/2">
                     <p><strong>{info.heading}:</strong> {info.description}</p>
                 </TooltipContent>
             </Tooltip>

@@ -3,9 +3,10 @@ import Breadcrumbs from "@/components/comp/breadcrumbs";
 import EcoBadge from "@/components/comp/eco-badge";
 import {Separator} from "@/components/ui/separator";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
-import {MoveRight} from "lucide-react";
+import {MoveRight, Sprout, Tractor} from "lucide-react";
 import Image from "next/image";
 import CustomSwiper from "@/components/comp/custom-swiper";
+import Nutrition from "@/components/pages/vegitable/nutrition";
 
 export default function Page() {
 
@@ -24,9 +25,9 @@ export default function Page() {
                         <div className="mb-7.5 sticky top-0 z-1">
                             <div className="relative">
                                 <SwiperComp images={[
+                                    {src: "/assets/plants/vegetable/tomato/t3.jpeg", alt: "How to grow tomatoes"},
                                     {src: "/assets/plants/vegetable/tomato/t1.webp", alt: "How to grow tomatoes"},
                                     {src: "/assets/plants/vegetable/tomato/t2.jpg", alt: "How to grow tomatoes"},
-                                    {src: "/assets/plants/vegetable/tomato/t3.jpeg", alt: "How to grow tomatoes"},
                                     {src: "/assets/plants/vegetable/tomato/t4.webp", alt: "How to grow tomatoes"},
                                 ]}/>
                             </div>
@@ -42,7 +43,7 @@ export default function Page() {
                                         </span>
                                         <h5 className="lg:text-4xl sm:text-3xl text-2xl mb-1">Tomato (टमाटर)</h5>
                                         <div className="flex flex-row justify-between items-center text-center content-center">
-                                            <EcoBadge score={4}/>
+                                            <EcoBadge score={4} information="Tomatoes are relatively eco-friendly when grown in appropriate conditions. They have moderate water needs and, with proper mulching, irrigation, and organic practices, they can thrive with less water. Growing tomatoes locally and organically reduces the carbon footprint."/>
                                             <div className="flex flex-col justify-start text-left text-sm">
                                                 <span>One of the easiest vegetables to grow</span>
                                                 <span>Fruiting withing 60 to 85 days (depending on variety)</span>
@@ -59,14 +60,16 @@ export default function Page() {
                                     Whether you're a beginner or an experienced gardener, tomatoes are rewarding to cultivate at home with minimal effort.
                                 </p>
                                 <Separator className="mt-4 mb-2"/>
+                                <Nutrition heading="Growing Conditions" items={[
+                                    { name: 'Temperature', value: "18°C - 30°C" },
+                                    { name: 'pH', value: '6.0 - 6.8' },
+                                    { name: 'Fruiting', value: '60 to 85 days' }
+                                ]}/>
+                                <Separator className="my-4"/>
                                 <div className="flex flex-col flex-wrap gap-3">
                                     <div>
-                                        <label className="font-bold mb-2.5 font-Lufga">Temperature</label>
-                                        <p>Optimal growing temperature: <strong>18°C to 30°C</strong></p>
-                                    </div>
-                                    <div>
                                         <label className="font-bold mb-2.5 font-Lufga">Soil Conditions</label>
-                                        <p>Soil type: Well-drained loamy or sandy soil, pH range 6.0 to 6.8</p>
+                                        <p>Soil type: Well-drained loamy or sandy soil</p>
                                         <p>Soil must be rich in organic matter, with good aeration and drainage to avoid water logging.</p>
                                     </div>
                                 </div>
@@ -96,7 +99,7 @@ export default function Page() {
         </section>
 
 
-        <section className="pt-17 max-lg:pt-13.5">
+        <section className="max-lg:pt-13.5">
             <div className="w-full">
                 <div className="product-description">
                     <div>
@@ -533,6 +536,32 @@ export default function Page() {
                                                 Ensure proper spacing between plants (45-60 cm apart) to allow for air circulation and prevent fungal infections.
                                             </p>
                                         </div>
+
+                                        <Separator className="mt-4 mb-2"/>
+                                        <Nutrition heading="Nutritional Requirements" items={[
+                                            {name: "Promotes leafy growth", value: "N (Nitrogen)"},
+                                            {name: "Aids in root development and fruiting", value: "P (Phosphorus)"},
+                                            {name: "Improving fruit & flower quality.", value: "K (Potassium)"},
+                                            {name: "Prevents blossom-end rot", value: "Ca (Calcium)"},
+                                            {name: "Photosynthesis and fruit ripening", value: "Mg (Magnesium)"},
+                                        ]}/>
+                                        <Separator className="my-4"/>
+
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"> <Sprout size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Fertilizer Requirements</h4>
+                                            <ul className="flex flex-col gap-4">
+                                                <li><h6>Organic Fertilizer: <p className="font-normal">
+                                                    Use compost, aged manure, bone meal, or worm castings. <br/>
+                                                    Learn how to make compost,
+                                                    use potato leaves etc. which makes good compost.
+                                                    use home waste, tell which waste contains what
+                                                </p></h6></li>
+                                                <li><h6>Chemical Fertilizer: <span className="font-normal">A balanced NPK fertilizer such as 10:10:10 at planting, followed by a 5:10:10 fertilizer during flowering and fruiting stages.</span></h6></li>
+                                            </ul>
+                                        </div>
+
+                                        <Separator className="my-4"/>
+
                                         <div className="xl:mb-6 md:mb-3.5 mb-2.5">
                                             <h4 className="font-bold text-xl max-md:text-lg">Seeding Process</h4>
                                             <ul className="specification-list mb-10">
@@ -588,7 +617,7 @@ export default function Page() {
                                         <div id="comment">
                                             <ol className="mb-14.5 max-lg:mb-10">
                                                 <li className="comment even thread-even depth-1 comment" id="comment-2">
-                                                    <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10">
+                                                <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10">
                                                         <div className="comment-author vcard">
                                                             <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile4.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
                                                             <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Michel Poe</cite>
