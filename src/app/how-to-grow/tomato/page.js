@@ -4,6 +4,8 @@ import EcoBadge from "@/components/comp/eco-badge";
 import {Separator} from "@/components/ui/separator";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 import {MoveRight} from "lucide-react";
+import Image from "next/image";
+import CustomSwiper from "@/components/comp/custom-swiper";
 
 export default function Page() {
 
@@ -117,10 +119,9 @@ export default function Page() {
                                         </div>
 
                                         <div className="flex flex-col gap-0">
-                                            <div className="w-full h-14" style={{ backgroundImage: 'url("/assets/other/image/bg-slide5.webp")' }}></div>
+                                            <div className="w-full h-14" style={{backgroundImage: 'url("/assets/other/image/bg-slide5.webp")'}}></div>
                                             <div className="w-full bg-darkGreen bg-no-repeat bg-auto h-[600px] -mt-1" style={{backgroundImage: 'url("/assets/other/image/bg-bn5-1.webp")', backgroundPosition: "center left"}}>
-                                                <div className="absolute top-52 left-0 w-full h-full background-overlay bg-no-repeat" style={{backgroundImage: 'url("/assets/other/image/bg-bn5-2.webp")', backgroundPosition: "center right"}}></div>
-                                                <div className="grid grid-cols-6 gap-2 my-20">
+                                                <div className="grid grid-cols-6 gap-2 my-20 background-overlay bg-no-repeat" style={{backgroundImage: 'url("/assets/other/image/bg-bn5-2.webp")', backgroundPosition: "center right"}}>
                                                     <div></div>
                                                     <div>
                                                         <div className="text-left inline-block">
@@ -128,28 +129,146 @@ export default function Page() {
                                                                 <p className="sub_title text-base pb-[22px] mb-0">Health benefits of Tomatoes</p>
                                                                 <h4 className="text-white font-bold lg:text-[32px] text-3xl xl:leading-[48px] leading-9">Health benefits</h4>
                                                             </div>
-                                                            <div className="desc mt-[23px] text-white">
+                                                            <div className="text-sm mt-[23px] text-white">
                                                                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada pellentesque turpis eget facilisis. Sed sit amet efficitur ex. Fusce dapibus nulla vel ligula porttitor interdum.</div>
                                                                 <div className="pt-6">Cras at vulputate felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse molestie est neque, vitae eleifend magna imperdiet sit amet</div>
-                                                                <div className="how-to-order">
-                                                                    <div className="icon-phone">
-                                                                        <i className="rbb-icon-phone-4"></i>
-                                                                    </div>
-                                                                    <div className="title_block">
-                                                                        <p>How to Order?</p>
-                                                                        <span>Call Us: <span>0123-456-7890</span></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="pt-[43px]">
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="col-span-2"></div>
-                                                    <div></div>
+                                                    <div className="flex col-span-2 items-center justify-center content-center">
+                                                        <Image className="rounded-full w-[500px] h-[500px] object-cover border-8 border-lightGreen" src="/assets/plants/vegetable/tomato/t3.jpeg" alt="How to grow tomatoes" width={700} height={700}/>
+                                                    </div>
+                                                    <div>
+                                                        <div className="flex flex-col pb-7 gap-4">
+                                                            <div className="flex flex-row items-center gap-4">
+                                                                <Image className="h-[40px] w-[40px]" decoding="async" width={50} height={50} alt="icon" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/icon5-1.png"/>
+                                                                <h4 className="text-lightGreen">100% Fresh food</h4>
+                                                            </div>
+                                                            <p className="text-white text-sm">Botanica Shop is always committed to 100% fresh, organic food has a certificate of food safety certification</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div className="flex flex-col gap-1 bg-darkGreen -mt-1">
+                                            <div className="container mx-auto px-[15px] overflow-hidden my-40">
+                                                <div className="block_title text-center flex justify-center items-center mb-3">
+                                                    <div className="title_block inline-block">
+                                                        <p className="sub-title font-bold text-lg pb-2 mb-0 text-lightGreen">Day-to-day uses</p>
+                                                        <h2 className="text-white">Uses</h2>
+                                                    </div>
+                                                </div>
+
+                                                <CustomSwiper swipes={[
+                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]">
+                                                        <div className="xl:min-h-[341px] min-h-[250px] mb-5">
+                                                            <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
+                                                        </div>
+                                                        <div className="flex flex-col gap-2 pb-2.5">
+                                                            <h4 className="text-base font-bold text-white hover:text-[color:var(--dark-green)]">Fresh Fruits</h4>
+                                                            <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
+                                                        </div>
+                                                    </div>),
+                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]">
+                                                        <div className="xl:min-h-[341px] min-h-[250px] mb-5">
+                                                            <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
+                                                        </div>
+                                                        <div className="flex flex-col gap-2 pb-2.5">
+                                                            <h4 className="text-base font-bold text-white hover:text-[color:var(--dark-green)]">Fresh Fruits</h4>
+                                                            <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
+                                                        </div>
+                                                    </div>),
+                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]">
+                                                        <div className="xl:min-h-[341px] min-h-[250px] mb-5">
+                                                            <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
+                                                        </div>
+                                                        <div className="flex flex-col gap-2 pb-2.5">
+                                                            <h4 className="text-base font-bold text-white hover:text-[color:var(--dark-green)]">Fresh Fruits</h4>
+                                                            <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
+                                                        </div>
+                                                    </div>),
+                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]">
+                                                        <div className="xl:min-h-[341px] min-h-[250px] mb-5">
+                                                            <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
+                                                        </div>
+                                                        <div className="flex flex-col gap-2 pb-2.5">
+                                                            <h4 className="text-base font-bold text-white hover:text-[color:var(--dark-green)]">Fresh Fruits</h4>
+                                                            <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
+                                                        </div>
+                                                    </div>),
+                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]">
+                                                        <div className="xl:min-h-[341px] min-h-[250px] mb-5">
+                                                            <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
+                                                        </div>
+                                                        <div className="flex flex-col gap-2 pb-2.5">
+                                                            <h4 className="text-base font-bold text-white hover:text-[color:var(--dark-green)]">Fresh Fruits</h4>
+                                                            <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
+                                                        </div>
+                                                    </div>)
+                                                ]}/>
+                                            </div>
+                                        </div>
+
+                                        <div className="bg-transparent" style={{ backgroundImage: "linear-gradient(0deg, #002B17 90%, #002112 100%)" }}>
+                                            <div className="w-full bg-no-repeat bg-auto" style={{backgroundImage: "url(https://botanica.risingbamboo.com/wp-content/uploads/2023/05/bg-product2.jpg)", backgroundPosition: "bottom center"}}>
+
+                                                <div className="container mx-auto py-40 text-white">
+                                                    <div className="grid grid-cols-12 gap-4 py-8">
+                                                        <div className="banner-left col-span-12 lg:col-span-6 lg:mt-0 mt-8 wow fadeInLeft">
+                                                            <div className=" relative text-center">
+                                                                <img decoding="async" alt="Image" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/01/healthy-food.png" className=" inline-block  relative elementor-repeater-item-c225823"/>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-span-12 lg:col-span-6 relative lg:order-1 -order-1 wow fadeInRight">
+                                                            <div className="lg:text-left text-center">
+                                                                <div className="title_block">
+                                                                    <p className="sub_title xl:text-4xl text-xl pb-4 mb-0">Why Choose us</p>
+                                                                    <h2 className="title xl:leading-[55px] leading-9">Healthy Food is The Key to Your <br/>Good Mood</h2>
+                                                                </div>
+                                                                <div className="desc mt-4 text-base"></div>
+                                                            </div>
+                                                            <div className="pt-4">
+                                                                <div className="custom-html flex items-center justify-items-center xl:pb-10 lg:pb-5 pb-[30px] last:pb-0 elementor-repeater-item-f6aeb7a relative">
+                                                                    <div className="image-box">
+                                                                        <img decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/01/icon-2.png" title="icon-2" alt="icon-2"/>
+                                                                    </div>
+                                                                    <div className="box-content">
+                                                                        <h3 className="box-title">100% Fresh food</h3>
+                                                                        <p className="box-description">
+                                                                            Botanica Shop is always committed to 100% fresh, organic
+                                                                            <br/>food has a certificate of food safety certification</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="custom-html flex items-center justify-items-center xl:pb-10 lg:pb-5 pb-[30px] last:pb-0 elementor-repeater-item-3ab01fa relative">
+                                                                    <div className="image-box">
+                                                                        <img decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/04/icon-3.png" title="icon-2" alt="icon-2"/>
+                                                                    </div>
+                                                                    <div className="box-content">
+                                                                        <h3 className="box-title">Premium quality food products</h3>
+                                                                        <p className="box-description">The quality and safety of our products is our top priority.<br/>
+                                                                            We continue to quest for even greater product quality</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="custom-html flex items-center justify-items-center xl:pb-10 lg:pb-5 pb-[30px] last:pb-0 elementor-repeater-item-2ffe273 relative">
+                                                                    <div className="image-box">
+                                                                        <img decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/04/icon-4.png" title="icon-2" alt="icon-2"/>
+                                                                    </div>
+                                                                    <div className="box-content">
+                                                                        <h3 className="box-title">Organic farming</h3>
+                                                                        <p className="box-description">Organic farming, agricultural system that uses ecologically<br/>
+                                                                            based pest controls and biological fertilizers derived<br/>
+                                                                            largely from animal</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </TabsContent>
@@ -161,7 +280,7 @@ export default function Page() {
                                             <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                                                 <div className="grid gap-6 row-gap-10 grid-cols-2">
                                                     <div className="lg:py-6 lg:pr-16 col-span-full">
-                                                    <div className="flex">
+                                                        <div className="flex">
                                                             <div className="flex flex-col items-center mr-4">
                                                                 <div>
                                                                     <div className="flex items-center justify-center w-12 h-12 border rounded-full bg-lightGreen">1.</div>
@@ -170,12 +289,10 @@ export default function Page() {
                                                             </div>
                                                             <div className="pt-1 pb-8">
                                                                 <p className="mb-2 text-lg font-bold">Step 1: Choose the Right Variety</p>
-                                                                <p className="text-gray-700">
-                                                                    <ul className="flex flex-col gap-2">
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Tomatoes’ if growing in pots or grow bags.</li>
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting.</li>
-                                                                    </ul>
-                                                                </p>
+                                                                <ul className="flex flex-col gap-2 text-gray-700">
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Tomatoes’ if growing in pots or grow bags.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting.</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                         <div className="flex">
@@ -187,13 +304,11 @@ export default function Page() {
                                                             </div>
                                                             <div className="pt-1 pb-8">
                                                                 <p className="mb-2 text-lg font-bold">Step 2: Prepare the Pot or Grow Bag</p>
-                                                                <p className="text-gray-700">
-                                                                    <ul className="flex flex-col gap-2">
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Use at least a 12-18 inch deep pot or grow bag.</li>
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the pot has drainage holes.</li>
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Add a layer of small stones or broken pots at the bottom to improve drainage.</li>
-                                                                    </ul>
-                                                                </p>
+                                                                <ul className="flex flex-col gap-2 text-gray-700">
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Use at least a 12-18 inch deep pot or grow bag.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the pot has drainage holes.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Add a layer of small stones or broken pots at the bottom to improve drainage.</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                         <div className="flex">
@@ -257,12 +372,10 @@ export default function Page() {
                                                             </div>
                                                             <div className="pt-1 pb-8">
                                                                 <p className="mb-2 text-lg font-bold">Step 1: Choose the Right Variety</p>
-                                                                <p className="text-gray-700">
-                                                                    <ul className="flex flex-col gap-2">
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Tomatoes’ if growing in pots or grow bags.</li>
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting.</li>
-                                                                    </ul>
-                                                                </p>
+                                                                <ul className="flex flex-col gap-2 text-gray-700">
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Tomatoes’ if growing in pots or grow bags.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting.</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                         <div className="flex">
@@ -274,13 +387,11 @@ export default function Page() {
                                                             </div>
                                                             <div className="pt-1 pb-8">
                                                                 <p className="mb-2 text-lg font-bold">Step 2: Prepare the Pot or Grow Bag</p>
-                                                                <p className="text-gray-700">
-                                                                    <ul className="flex flex-col gap-2">
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Use at least a 12-18 inch deep pot or grow bag.</li>
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the pot has drainage holes.</li>
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Add a layer of small stones or broken pots at the bottom to improve drainage.</li>
-                                                                    </ul>
-                                                                </p>
+                                                                <ul className="flex flex-col gap-2 text-gray-700">
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Use at least a 12-18 inch deep pot or grow bag.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the pot has drainage holes.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Add a layer of small stones or broken pots at the bottom to improve drainage.</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                         <div className="flex">
@@ -344,12 +455,10 @@ export default function Page() {
                                                             </div>
                                                             <div className="pt-1 pb-8">
                                                                 <p className="mb-2 text-lg font-bold">Step 1: Choose the Right Variety</p>
-                                                                <p className="text-gray-700">
-                                                                    <ul className="flex flex-col gap-2">
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Tomatoes’ if growing in pots or grow bags.</li>
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting.</li>
-                                                                    </ul>
-                                                                </p>
+                                                                <ul className="flex flex-col gap-2 text-gray-700">
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Tomatoes’ if growing in pots or grow bags.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting.</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                         <div className="flex">
@@ -361,13 +470,11 @@ export default function Page() {
                                                             </div>
                                                             <div className="pt-1 pb-8">
                                                                 <p className="mb-2 text-lg font-bold">Step 2: Prepare the Pot or Grow Bag</p>
-                                                                <p className="text-gray-700">
-                                                                    <ul className="flex flex-col gap-2">
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> Use at least a 12-18 inch deep pot or grow bag.</li>
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the pot has drainage holes.</li>
-                                                                        <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Add a layer of small stones or broken pots at the bottom to improve drainage.</li>
-                                                                    </ul>
-                                                                </p>
+                                                                <ul className="flex flex-col gap-2 text-gray-700">
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Use at least a 12-18 inch deep pot or grow bag.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the pot has drainage holes.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Add a layer of small stones or broken pots at the bottom to improve drainage.</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                         <div className="flex">
