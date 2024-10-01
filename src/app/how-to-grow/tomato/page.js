@@ -391,7 +391,7 @@ export default function Page() {
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/>Add Neem powder (Neem Khali) to soil to protect the roots from fungus and other germs</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> When you shift the plants from seedling to ground, grow bags or pots, make sure the the roots should not be exposed to air. try not to disturb roots.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/>Be slow and gentle when removing from seeding tray and planting in the pot or grow bags</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/>If roots are exposed to air or you see no soil with root or if plant is weathered (when you borrow from your friend), then <strong>sock the plant's root in water for 5-7 minutes</strong>. It will revive the plants and stablize them.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/>If roots are exposed to air or you see no soil with root or if plant is weathered (when you borrow from your friend), then <strong>sock the plant's root in water for 5-7 minutes</strong>. If plants are in very bad condition add 1 spoon of sugar in water and dip plants for 15 minutes. It will revive the plants and stablize them.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/>Perform shifting in the evening only and add plenty of water</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/>Plants will/might show some stress like leaves withering after shifting, but they will recover soon if you have shifted correctly.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/>To shift them in larger pots, put at least 40-50% of plant stem under the soil, this will help in grow stronger roots.</li>
@@ -637,6 +637,7 @@ export default function Page() {
                                                 <li className="flex border-b border-border py-[7px] text-body gap-2"><strong>Environment:</strong> {" "} <span>Keep in a warm, sunny spot or use grow lights. Maintain high humidity.</span></li>
                                                 <li className="flex border-b border-border py-[7px] text-body gap-2"><strong>Tips:</strong> {" "} <span>Avoid overwriting as it can lead to damping-off disease. Seedlings should be hardened off before transplanting outdoors.</span></li>
                                                 <li className="flex border-b border-border py-[7px] text-body gap-2"><strong>Time to Seed:</strong> {" "} <span> Germination takes 5-10 days. Once seedlings develop 2-3 true leaves, they are ready for transplanting.</span></li>
+                                                <li className="flex border-b border-border py-[7px] text-body gap-2"><strong>Note:</strong> {" "} <span> The initial soil mix plays very important role in seed germination. The soil needs to be light and rich in nutrients. Use soil + compost at the bottom and coco peat at the top. Coco peat alone is not good as it lack vital nutrients for growth.</span></li>
                                             </ul>
                                         </div>
                                         <div className="product-info">
@@ -657,16 +658,120 @@ export default function Page() {
                                                 <li>
                                                     <h6>Organic Fertilizer: <p className="font-normal">
                                                         Use compost, aged manure, bone meal, or worm castings. <br/>
-                                                        Learn how to make compost,
-                                                        use potato leaves etc. which makes good compost.
-                                                        use home waste, tell which waste contains what
+                                                        Use sea weed which contains all the necessary nutrients, good for early stage of plantation. <br/>
+                                                        Use onion peel fertilizer - Onion peel fertilizer is rich in Potassium, Phosphorus, Nitrogen, Calcium, Iron, Magnesium.<br/>
+                                                        Use banana peel fertilizer - Banana peels contain calcium, which promotes root growth, helps add oxygen to your soil. magnesium, which assists with photosynthesis. sulphur, which helps plants develop strong roots and repel pests.<br/>
+                                                        {/*Learn how to make compost,*/}
+                                                        {/*use potato leaves etc. which makes good compost.*/}
+                                                        {/*use home waste, tell which waste contains what*/}
                                                     </p></h6>
                                                 </li>
                                                 <li><h6>Chemical Fertilizer: <span className="font-normal">A balanced NPK fertilizer such as 10:10:10 at planting, followed by a 5:10:10 fertilizer during flowering and fruiting stages.</span></h6></li>
+                                                <li>
+                                                    <h6>How to fertilize: <p className="font-normal">
+                                                        - Until you don't see the small tomatoes, you will have to provide liquid fertilizer every 20 days. <br/>
+                                                        - After bigger flowers and small fruits add other fertilizers containing micro nutrients every 15 days. <br/>
+                                                        - keep on changing the type of fertilizers, try not to repeat same
+                                                    </p></h6>
+                                                </li>
+                                                <li><h6>Tip: <span className="font-normal">Please dig and loosen the 6-10 inches soil around the plant when/before you add fertilizer. Plants thrive in loose soil because air and water can circulate better, and soil life remains healthy. Take care of root try not to damage them.</span></h6></li>
+                                                <li><h6>Tip: <span className="font-normal">Add fertilizer in the evening only.</span></h6></li>
                                             </ul>
                                         </div>
 
                                         <Separator className="my-4"/>
+
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">Watering Schedule</h4>
+                                            <ul className="flex flex-col gap-4">
+                                                <li><h6>Early Stage: <span className="font-normal">Until you see the flowers on the plant, you will water them normally. i.e. only water them if the top soil is dry</span></h6></li>
+                                                <li><h6>Flowering & Fruiting: <span className="font-normal">When you see fruiting, then you must not let the soil dry, tomatoes may turn black if faces water scarcity at this stage.</span></h6></li>
+                                                <li><h6>Flowering & Fruiting: <span className="font-normal">Water deeply but infrequently, ensuring the soil remains moist but not waterlogged. Regular watering is key during flowering and fruiting stages to prevent blossom end rot.</span></h6></li>
+                                                <li><h6><span className="font-normal">If you water excessively, plant might get fungus, attract more diseases, flowers will wither before time and fruiting will be delayed.</span></h6></li>
+                                            </ul>
+                                        </div>
+
+                                        <Separator className="my-4"/>
+
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">Diseases - Know & Treat</h4>
+
+
+                                            <h6 className="font-bold text-base">Leaf miner</h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Sign: <span className="font-normal">White linings on leaves, germs & bugs</span></h6></li>
+                                                <li><h6>When: <span className="font-normal">They often attack during flowering process, treat them then and there and they will not attack again.</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Neem oil + garlic water - treat/spray for 2-3 days regularly.</span></h6></li>
+                                                <li><h6>Note: <span className="font-normal">It is important to remove/treat them completely at the very beginning to stop the spread, you can pluck/cut the leaves & stem if infection is high.</span></h6></li>
+                                            </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Black Flies</h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Sign: <span className="font-normal">Small black insects size flies</span></h6></li>
+                                                <li><h6>When: <span className="font-normal">Throughout but mostly at the time of fruiting</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Neem oil - treat/spray for 2-3 days regularly.</span></h6></li>
+                                                <li><h6>Note: <span className="font-normal">You can use Neem oil to treat most germs and pests</span></h6></li>
+                                            </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Leaf Curl</h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Sign: <span className="font-normal">You might see that some leaves curled-up.</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Remove the whole stem of curled leaves</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Buttermilk (25%) + Water (75%) - spray on leaves and whole plant</span></h6></li>
+                                                <li><h6>Note: <span className="font-normal">Try to treat them at the very beginnings of when you see the curled leaves to avoid spread</span></h6></li>
+                                            </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Bursting tomatoes </h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Treatment: <span className="font-normal">Remove the affected tomatoes</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Raw Milk (25%) + Water (75%) - spray on leaves and whole plant</span></h6></li>
+                                            </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Black tomatoes </h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Why: <span className="font-normal">This happen because of nutrients scarcity, lack of calcium.</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Add proper nutrients and micro internet rich fertilizer specifically calcium.</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Use fertilizer as egg shell powder, bone meal, wood ash etc.</span></h6></li>
+                                            </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Tomatoes not ripening </h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Why: <span className="font-normal">Tomatoes need heat to ripen</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Mustard cake fertilizer liquid - will provide the required heat</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Or maintain proper temperature</span></h6></li>
+                                            </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Flowers withering (No Pollination) </h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Why: <span className="font-normal">Flowers may wither and fall down without turing into fruits, this happen when the environment is isolated and no birds or insects are available for pollination</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Manual pollination - When flower appear you can gently shake the plant for 1-2 minutes for manual pollination</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Open the garden or environment for birds, bees and insects, try to live in harmoney with nature and nuture will take care of rest.</span></h6></li>
+                                            </ul>
+                                        </div>
+
+                                        <Separator className="my-4"/>
+
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">Weeding & Caring</h4>
+
+                                            <h6 className="font-bold text-base">Remove weeds</h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Sign: <span className="font-normal">White linings on leaves, germs & bugs</span></h6></li>
+                                                </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Remove Suckers</h6>
+                                            <ul className="flex flex-col gap-1">
+
+                                            </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Pinching</h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Sign: <span className="font-normal">You might see that some leaves curled-up.</span></h6></li>
+                                            </ul>
+                                        </div>
+
+                                        <Separator className="my-4"/>
+
                                         <div className="mb-10 max-md:mb-5">
                                             <h4 className="font-bold text-xl max-md:text-lg mb-2">When to Know it’s Good for Cultivation</h4>
                                             <p className="mb-4">
@@ -675,13 +780,7 @@ export default function Page() {
                                             </p>
                                         </div>
 
-                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">Watering and Fertilizer Schedule</h4>
-                                            <ul className="flex flex-col gap-4">
-                                                <li><h6>Watering: <span className="font-normal">Water deeply but infrequently, ensuring the soil remains moist but not waterlogged. Regular watering is key during flowering and fruiting stages to prevent blossom end rot.</span></h6></li>
-                                                <li><h6>Fertilizing: <span className="font-normal">Apply a balanced fertilizer every 3 weeks during the growing season.</span></h6></li>
-                                            </ul>
-                                        </div>
+                                        <Separator className="my-4"/>
 
                                         <div className="md:mb-10 sm:mb-3.6 mb-2.5">
                                             <h4 className="font-bold text-xl max-md:text-lg mb-2">Important Reminders at Each Stage</h4>
@@ -717,7 +816,7 @@ export default function Page() {
                                                         <li className="comment byuser comment-author-w3itexpertsuser bypostauthor odd alt depth-2 comment" id="comment-3">
                                                             <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10" id="div-comment-3">
                                                                 <div className="comment-author vcard">
-                                                                <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile3.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
+                                                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile3.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
                                                                     <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Celesto Anderson</cite>
                                                                 </div>
                                                                 <div>
