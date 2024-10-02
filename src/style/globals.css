@@ -10513,7 +10513,7 @@ blockquote:after {
     background-color: var(--primary);
 }
 
-.selection\:bg-primary *::selection {
+*::selection {
     background-color: var(--primary);
 }
 
@@ -10522,28 +10522,28 @@ blockquote:after {
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.selection\:text-white *::selection {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-}
+/*.selection\:text-white *::selection {*/
+/*    --tw-text-opacity: 1;*/
+/*    color: rgb(255 255 255 / var(--tw-text-opacity));*/
+/*}*/
 
 .selection\:bg-primary::-moz-selection {
     background-color: var(--primary);
 }
 
-.selection\:bg-primary::selection {
-    background-color: var(--primary);
-}
+/*.selection\:bg-primary::selection {*/
+/*    background-color: var(--primary);*/
+/*}*/
 
 .selection\:text-white::-moz-selection {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.selection\:text-white::selection {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-}
+/*.selection\:text-white::selection {*/
+/*    --tw-text-opacity: 1;*/
+/*    color: rgb(255 255 255 / var(--tw-text-opacity));*/
+/*}*/
 
 .placeholder\:text-black::-moz-placeholder {
     --tw-text-opacity: 1;

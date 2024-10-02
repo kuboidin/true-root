@@ -3,10 +3,14 @@ import Breadcrumbs from "@/components/comp/breadcrumbs";
 import EcoBadge from "@/components/comp/eco-badge";
 import {Separator} from "@/components/ui/separator";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
-import {MoveRight, Sprout, Tractor} from "lucide-react";
+import {Asterisk, Bean, Droplets, MoveRight, Shrub, Sprout, Tractor} from "lucide-react";
 import Image from "next/image";
 import CustomSwiper from "@/components/comp/custom-swiper";
 import Nutrition from "@/components/pages/vegitable/nutrition";
+import Link from "next/link";
+import {GiFertilizerBag} from "react-icons/gi";
+import {FaBacteria} from "react-icons/fa";
+import {PiPlantFill} from "react-icons/pi";
 
 export default function Page() {
 
@@ -123,18 +127,25 @@ export default function Page() {
 
                                         <div className="flex flex-col gap-0">
                                             <div className="w-full h-14" style={{backgroundImage: 'url("/assets/other/image/bg-slide5.webp")'}}></div>
-                                            <div className="w-full bg-darkGreen bg-no-repeat bg-auto h-[600px] -mt-1" style={{backgroundImage: 'url("/assets/other/image/bg-bn5-1.webp")', backgroundPosition: "center left"}}>
+                                            <div className="w-full bg-darkGreen bg-no-repeat bg-auto -mt-1" style={{backgroundImage: 'url("/assets/other/image/bg-bn5-1.webp")', backgroundPosition: "center left"}}>
                                                 <div className="grid grid-cols-6 gap-2 my-20 background-overlay bg-no-repeat" style={{backgroundImage: 'url("/assets/other/image/bg-bn5-2.webp")', backgroundPosition: "center right"}}>
                                                     <div></div>
                                                     <div>
                                                         <div className="text-left inline-block">
                                                             <div className="title_block">
-                                                                <p className="sub_title text-base pb-[22px] mb-0">Health benefits of Tomatoes</p>
+                                                                <p className="sub_title text-base pb-[22px] mb-0">Many Health benefits of Tomatoes</p>
                                                                 <h4 className="text-white font-bold lg:text-[32px] text-3xl xl:leading-[48px] leading-9">Health benefits</h4>
                                                             </div>
-                                                            <div className="text-sm mt-[23px] text-white">
-                                                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada pellentesque turpis eget facilisis. Sed sit amet efficitur ex. Fusce dapibus nulla vel ligula porttitor interdum.</div>
-                                                                <div className="pt-6">Cras at vulputate felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse molestie est neque, vitae eleifend magna imperdiet sit amet</div>
+                                                            <div className="flex flex-col gap-2 text-sm mt-[23px] text-white">
+                                                                <div><span className="font-bold text-lemonGreen">Heart Health: </span> Tomatoes are rich in potassium and lycopene, which are known to reduce blood pressure and lower the risk of heart disease by improving circulation and reducing inflammation.
+                                                                    <span className="text-2xs">Source: <Link href="https://academic.oup.com/eurjpc/article/31/8/922/7450162" target="_blank" className="green-link">Oxford Academic</Link></span></div>
+                                                                <div><span className="font-bold text-lemonGreen">Cancer Prevention: </span> The antioxidant properties of lycopene may help reduce the risk of several cancers, including prostate, lung, and stomach cancers. </div>
+                                                                <div><span className="font-bold text-lemonGreen">Skin Protection: </span> Vitamin C and lycopene in tomatoes help protect the skin against UV damage, reduce wrinkles, and improve skin elasticity. </div>
+                                                                <div><span className="font-bold text-lemonGreen">Eye Health: </span> Rich in vitamin A, tomatoes support vision, prevent night blindness, and protect against macular degeneration. </div>
+                                                                <div><span className="font-bold text-lemonGreen">Improved Digestion: </span> The fiber in tomatoes aids digestion, prevents constipation, and maintains a healthy gut flora. </div>
+                                                                <div><span className="font-bold text-lemonGreen">Improved Digestion: </span> Tomatoes contain vitamin K and calcium, both crucial for maintaining bone density and preventing osteoporosis. </div>
+                                                                <div><span className="font-bold text-lemonGreen">hypertension: </span> Some studies have found that eating tomatoes may help prevent and manage hypertension. One study found that people who ate more than 110 grams of tomatoes per day had a lower risk of hypertension.
+                                                                    <span className="text-2xs">Source: <Link href="https://academic.oup.com/eurjpc/article/31/8/922/7450162" target="_blank" className="green-link">Oxford Academic</Link></span> </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -313,7 +324,7 @@ export default function Page() {
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Seeding soil is different, it should be light, airy, free of debris, natural pH, holds moisture.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the seeding tray has drainage holes.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Soil + Compost + Coco peat (Coco peat helps retain moisture for longer, if you do not have Coco peat it's Okay, just maintain the proper moisture).</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> See the Seeding process on this page for tips and thing to care.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> See the <Link href="#seeding" className="lnk">Seeding process</Link> on this page for tips and thing to care.</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -331,7 +342,7 @@ export default function Page() {
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Sow seeds at 0.5 - 2.5 cm depth, just cover with thin layer of coco peat, compost or soil and water them</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> If you are beginner then use seedling tray, seedling tray helps for easy movement, you can place them under sunlight during moving but move them inside during noon to protect from harsh heat and so on.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Keep in low sunlight or inside (not dark) if possible</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> See the Seeding process on this page for tips and temperature and environment conditions.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> See the <Link href="#seeding" className="lnk">Seeding process</Link> on this page for tips and temperature and environment conditions.</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -351,7 +362,7 @@ export default function Page() {
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Shift them to 1-2 hour of sun light when you see 2 leaves, at this stage plants start looking for sun light, if you do not put them in sun light they will grow week but longer and in multi-direction in search of sun light (We don't want that).</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Seed provide all the required nutrients to support life of plant for 2 weeks</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Do not add any fertilizer of any kind.</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the watering guide for more information</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <Link href="#watering" className="lnk">watering guide</Link> for more information</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -367,10 +378,10 @@ export default function Page() {
                                                                 <p className="mb-2 text-lg font-bold">Day 15: First organic fertilizer</p>
                                                                 <ul className="flex flex-col gap-2 text-gray-700">
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Provide liquid onion peel fertilizer in small dosage</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Onion peel fertilizer is rich in Potassium, Phosphorus, Nitrogen, Calcium, Iron, Magnesium, see nutritional requirement section for more information.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Onion peel fertilizer is rich in Potassium, Phosphorus, Nitrogen, Calcium, Iron, Magnesium, see <Link href="#nurtients" className="lnk">nutritional requirement</Link> section for more information.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Add bone meal and vermi-compost for nutrients</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Do not use NPK, DAP or chemical fertilizer at this stage, plant will not be able to handle and die</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the watering guide for more information</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <Link href="#watering" className="lnk">watering guide</Link> for more information</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -439,7 +450,7 @@ export default function Page() {
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> This will help plant to stop increasing height and focus on increasing width and number of stems</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Try to use water soluble fertilizer at the beginning.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Perform this pinching after every 10 days until you see flowers.</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the watering guide for more information</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <Link href="#nurtients" className="lnk">watering guide</Link> for more information</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -556,7 +567,7 @@ export default function Page() {
                                                                     Until you see the flowers on the plant, you will water them normally i.e. Only water them if the top soil is dry.<br/>
                                                                     If you water excessively, plant might get fungus, attract more diseases, flowers will wither before time and fruiting will be delayed. <br/>
                                                                     When you see fruiting, then you must not let the soil dry, tomatoes may turn black if faces water scarcity at this stage <br/>
-                                                                    Check watering section for more information.
+                                                                    Check <Link href="#watering" className="lnk">watering section</Link> for more information.
                                                                 </p>
 
                                                                 <p className="my-2">
@@ -564,21 +575,21 @@ export default function Page() {
                                                                     Remove weeds regularly. <br/>
                                                                     Perform Pinching <br/>
                                                                     Remove Suckers <br/>
-                                                                    Check weeding & caring section for more information.
+                                                                    Check <Link href="#weeding" className="lnk">weeding & caring</Link> section for more information.
                                                                 </p>
 
                                                                 <p className="my-2">
                                                                     <MoveRight size={18} className="-mt-2 mr-2"/> <strong>Fertilizer: </strong> <br/>
                                                                     Until when you don't see the small tomatoes, you will have to provide liquid fertilizer every 20 days.<br/>
                                                                     After you see bigger flowers and small fruits, add fertilizers containing micro nutrients, such as, sea weed (spray), onion peel liquid , banana peel liquid, provide liquid fertilizer every 15 days, keep on changing, try not to repeat same fertilizer.<br/>
-                                                                    Check fertilizer section for more information.
+                                                                    Check <Link href="#fertilizer" className="lnk">fertilizer section</Link> for more information.
                                                                 </p>
 
                                                                 <p className="my-2">
                                                                     <MoveRight size={18} className="-mt-2 mr-2"/> <strong>Diseases: </strong> <br/>
                                                                     Plants are prone to diseases, you need to look for signs and take care before they spread of ruin your hard work. <br/>
                                                                     There are very less chance of diseases in a controlled environment <br/>
-                                                                    Check diseases section for more information.
+                                                                    Check <Link href="#diseases" className="lnk">diseases section</Link> for more information.
                                                                 </p>
 
                                                                 <p className="my-2">
@@ -586,7 +597,7 @@ export default function Page() {
                                                                     We believe in harmony, plants grow better with other plants and insects, try not to restrict your garden to birds, insects, bugs and other organism. <br/>
                                                                     Birds, Insects not only help in pollination but also improve the positivity of the environment, help in nutrition circulation. <br/>
                                                                     Birds can east small bugs and protect plant from diseases for free. <br/>
-                                                                    Check pollination section for more information.
+                                                                    Check <Link href="#pollination" className="lnk">pollination section</Link> for more information.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -595,6 +606,7 @@ export default function Page() {
                                             </div>
                                         </div>
                                     </div>
+                                    <Separator className="my-4"/>
                                     <div>
                                         <div className="mb-10 max-md:mb-5">
                                             <h2 className="mb-2">Growing Process & Schedule</h2>
@@ -606,7 +618,7 @@ export default function Page() {
                                         </div>
 
                                         <Separator className="mt-4 mb-2"/>
-                                        <p className="my-4">
+                                        <p className="my-4" id="nurtients">
                                             <MoveRight size={18} className="-mt-2 mr-2"/>Life of a tomato is 5-6 months <br/>
                                             <MoveRight size={18} className="-mt-2 mr-2"/>Tomatoes can be grown in spring (February), monsoon (July Mid) & Autumn (September end) <br/>
                                             <MoveRight size={18} className="-mt-2 mr-2"/>Summers are tough on tomatoes, when temperature increases, tomatoes ripen prematurely, and tomatoes cannot grow fully and ripen before time.
@@ -621,8 +633,8 @@ export default function Page() {
                                         ]}/>
                                         <Separator className="my-4"/>
 
-                                        <div className="xl:mb-6 md:mb-3.5 mb-2.5">
-                                            <h4 className="font-bold text-xl max-md:text-lg">Seeding Process</h4>
+                                        <div className="xl:mb-6 md:mb-3.5 mb-2.5" id="seeding">
+                                            <h4 className="font-bold text-xl max-md:text-lg"><Bean size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Seeding Process</h4>
                                             <p>Tomato seeds need water to sprout, infect it's all they need. <br/>
                                                 The seed coats absorbs the water, swell & crack, allowing the tiny plant inside to emerge and begin it's life. <br/>
                                                 Not enough moisture and the best, the seeds won't sprout until it's enough and worst, they manage to sprout but quickly perish. <br/>
@@ -642,7 +654,7 @@ export default function Page() {
                                         </div>
                                         <div className="product-info">
                                             <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                                <h4 className="font-bold text-xl max-md:text-lg mb-2">Germination Stages and Conditions</h4>
+                                                <h4 className="font-bold text-xl max-md:text-lg mb-2"><Sprout size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Germination Stages and Conditions</h4>
                                                 <ul className="flex flex-col gap-4">
                                                     <li><h6>Radicle Emergence: <span className="font-normal">Within 3-4 days, the first root appears</span></h6></li>
                                                     <li><h6>Shoot Development: <span className="font-normal">Leaves begin to sprout after a week</span></h6></li>
@@ -652,8 +664,19 @@ export default function Page() {
                                         </div>
 
                                         <Separator className="my-4"/>
-                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"><Sprout size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Fertilizer Requirements</h4>
+
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5" id="watering">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"><Droplets size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> What Affects Taste and Quality of Fruit</h4>
+                                            <ul className="flex flex-col gap-4">
+                                                <li><h6>Sunlight: <span className="font-normal">More sunlight leads to sweeter tomatoes.</span></h6></li>
+                                                <li><h6>Watering: <span className="font-normal">Consistent watering prevents flavor dilution.</span></h6></li>
+                                                <li><h6>Soil Nutrients: <span className="font-normal">Adequate potassium improves flavor. Onion peel fertilizer is rich in potassium.</span></h6></li>
+                                            </ul>
+                                        </div>
+
+                                        <Separator className="my-4"/>
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5" id="fertilizer">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"> <GiFertilizerBag size={20} strokeWidth={2.5} className="-mt-2 mr-2"/>  Fertilizer Requirements</h4>
                                             <ul className="flex flex-col gap-4">
                                                 <li>
                                                     <h6>Organic Fertilizer: <p className="font-normal">
@@ -681,8 +704,8 @@ export default function Page() {
 
                                         <Separator className="my-4"/>
 
-                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">Watering Schedule</h4>
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5" id="watering">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"><Droplets size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Watering Schedule</h4>
                                             <ul className="flex flex-col gap-4">
                                                 <li><h6>Early Stage: <span className="font-normal">Until you see the flowers on the plant, you will water them normally. i.e. only water them if the top soil is dry</span></h6></li>
                                                 <li><h6>Flowering & Fruiting: <span className="font-normal">When you see fruiting, then you must not let the soil dry, tomatoes may turn black if faces water scarcity at this stage.</span></h6></li>
@@ -693,8 +716,8 @@ export default function Page() {
 
                                         <Separator className="my-4"/>
 
-                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">Diseases - Know & Treat</h4>
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5" id="diseases">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"><FaBacteria size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Diseases - Know & Treat</h4>
 
 
                                             <h6 className="font-bold text-base">Leaf miner</h6>
@@ -741,7 +764,7 @@ export default function Page() {
                                                 <li><h6>Treatment: <span className="font-normal">Or maintain proper temperature</span></h6></li>
                                             </ul>
 
-                                            <h6 className="font-bold text-base mt-3">Flowers withering (No Pollination) </h6>
+                                            <h6 className="font-bold text-base mt-3" id="pollination">Flowers withering (No Pollination) </h6>
                                             <ul className="flex flex-col gap-1">
                                                 <li><h6>Why: <span className="font-normal">Flowers may wither and fall down without turing into fruits, this happen when the environment is isolated and no birds or insects are available for pollination</span></h6></li>
                                                 <li><h6>Treatment: <span className="font-normal">Manual pollination - When flower appear you can gently shake the plant for 1-2 minutes for manual pollination</span></h6></li>
@@ -751,29 +774,26 @@ export default function Page() {
 
                                         <Separator className="my-4"/>
 
-                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">Weeding & Caring</h4>
+                                        <div className="md:mb-10 sm:mb-3.6 mb-2.5" id="weeding">
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"><PiPlantFill size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Weeding & Caring</h4>
 
-                                            <h6 className="font-bold text-base">Remove weeds</h6>
-                                            <ul className="flex flex-col gap-1">
-                                                <li><h6>Sign: <span className="font-normal">White linings on leaves, germs & bugs</span></h6></li>
-                                                </ul>
+                                            <h6 className="font-bold text-base">Remove weeds regularly.</h6>
 
                                             <h6 className="font-bold text-base mt-3">Remove Suckers</h6>
                                             <ul className="flex flex-col gap-1">
-
+                                                <li><h6>Remove Suckers: <span className="font-normal">Suckers are leaves that are growing between two branches they take plant's nutrients and we don't want them</span></h6></li>
                                             </ul>
 
                                             <h6 className="font-bold text-base mt-3">Pinching</h6>
                                             <ul className="flex flex-col gap-1">
-                                                <li><h6>Sign: <span className="font-normal">You might see that some leaves curled-up.</span></h6></li>
+                                                <li><h6><span className="font-normal">The act of pinching involves the removal of the growing point of a shoot along with few leaves. About 1-2 cm of a growing shoot of a young plant is snapped off with fingers.</span></h6></li>
                                             </ul>
                                         </div>
 
                                         <Separator className="my-4"/>
 
                                         <div className="mb-10 max-md:mb-5">
-                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">When to Know it’s Good for Cultivation</h4>
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"><Shrub size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> When to Know it’s Good for Cultivation</h4>
                                             <p className="mb-4">
                                                 Tomatoes are ready for harvest when they have a uniform color and are firm yet yield slightly to pressure.
                                                 Depending on the variety, fruit can be harvested when fully red (or the designated ripe color for the cultivar).
@@ -783,10 +803,16 @@ export default function Page() {
                                         <Separator className="my-4"/>
 
                                         <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                            <h4 className="font-bold text-xl max-md:text-lg mb-2">Important Reminders at Each Stage</h4>
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"><Asterisk size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Important Reminders/Tips at Each Stage</h4>
                                             <ul className="flex flex-col gap-4">
                                                 <li><h6>Watering: <span className="font-normal">Water deeply but infrequently, ensuring the soil remains moist but not waterlogged. Regular watering is key during flowering and fruiting stages to prevent blossom end rot.</span></h6></li>
-                                                <li><h6>Fertilizing: <span className="font-normal">Apply a balanced fertilizer every 3 weeks during the growing season.</span></h6></li>
+                                                <li><h6>Fertilizing: <span className="font-normal">Apply a balanced fertilizer every 20 days during the growing season and every 15 days in fruiting season.</span></h6></li>
+                                                <li><h6><span className="font-normal">Regularly prune and stake plants to promote airflow and prevent fungal diseases.</span></h6></li>
+                                                <li><h6><span className="font-normal">Companion plants such as marigolds or basil can help repel common pests.</span></h6></li>
+                                                <li><h6><span className="font-normal">Row covers or insecticidal soaps are effective against aphids and whiteflies.</span></h6></li>
+                                                <li><h6><span className="font-normal">Tomatoes need at least 6-8 hours of sunlight a day for best growth.</span></h6></li>
+                                                <li><h6><span className="font-normal">Prune suckers and diseased leaves to ensure proper airflow and focus energy on fruit production.</span></h6></li>
+                                                <li><h6><span className="font-normal">Regularly inspect for pests and diseases, and use organic or biological controls to manage outbreaks early.</span></h6></li>
                                             </ul>
                                         </div>
                                     </div>
