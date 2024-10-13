@@ -5,15 +5,32 @@ import {Separator} from "@/components/ui/separator";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 import {Asterisk, Bean, Droplets, MoveRight, Shrub, Sprout} from "lucide-react";
 import Image from "next/image";
-import CustomSwiper from "@/components/comp/custom-swiper";
 import Nutrition from "@/components/pages/vegitable/nutrition";
 import Link from "next/link";
-import {GiFertilizerBag} from "react-icons/gi";
+import {GiBee, GiFarmTractor, GiFertilizerBag, GiFootprint, GiPlantRoots, GiWaterDrop} from "react-icons/gi";
 import {FaBacteria} from "react-icons/fa";
 import {PiPlantFill} from "react-icons/pi";
+import Share from "@/components/comp/share";
+import app from "@/config/app";
+
+export const metadata = {
+    title: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}`,
+    description: `Discover expert tips on growing tomatoes at home, in the garden, or commercially. Learn about tomato health benefits, Ayurvedic uses, nutritional value, ecological impact, myths, and more. ${app.name}`,
+    keywords: ["how to grow tomatoes", "tomato growing tips", "tomato nutrition", "health benefits of tomatoes", "organic tomato farming", "grow tomatoes at home", "tomato planting guide", "tomato uses", "tomato seeds guide",
+        "NPK for tomatoes", "eco-friendly tomato farming", "Ayurvedic benefits of tomatoes", "medicinal uses of tomatoes", "tomato diseases and cures", ...app.meta.keywords],
+    openGraph: {
+        title: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}`,
+        description: `Discover expert tips on growing tomatoes at home, in the garden, or commercially. Learn about tomato health benefits, Ayurvedic uses, nutritional value, ecological impact, myths, and more. ${app.name}`,
+        images: [`${app.url}/og/how-to-grow/tomato.png`],
+    },
+    twitter: {
+        title: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}`,
+        description: `Discover expert tips on growing tomatoes at home, in the garden, or commercially. Learn about tomato health benefits, Ayurvedic uses, nutritional value, ecological impact, myths, and more. ${app.name}`,
+        images: [`${app.url}/og/how-to-grow/tomato.png`],
+    }
+};
 
 export default function Page() {
-
     return <>
         {/* breadcrumbs */}
         <Breadcrumbs crumbs={[
@@ -65,9 +82,9 @@ export default function Page() {
                                 </p>
                                 <Separator className="mt-4 mb-2"/>
                                 <Nutrition heading="Growing Conditions" items={[
-                                    { name: 'Temperature', value: "18°C - 30°C" },
-                                    { name: 'pH', value: '6.0 - 6.8' },
-                                    { name: 'Fruiting', value: '60 to 85 days' }
+                                    {name: 'Temperature', value: "18°C - 30°C"},
+                                    {name: 'pH', value: '6.0 - 6.8'},
+                                    {name: 'Fruiting', value: '60 to 85 days'}
                                 ]}/>
                                 <Separator className="my-4"/>
                                 <div className="flex flex-col flex-wrap gap-3">
@@ -79,7 +96,10 @@ export default function Page() {
                                 </div>
                                 <Separator className="mt-2 mb-6"/>
 
-                                social share
+                                <div className="flex flex-col gap-2 mb-10">
+                                    <p className="text-sm"><strong>Share</strong> with your friends and gift them knowledge to plant tomatoes: </p>
+                                    <Share url={`${app.url}/how-to-grow/tomato`} text="Learn how to grow tomatoes at home" subject="Learn how to grow tomatoes at home" tags="#grow #tomatoes #garden #plant" img_url={`${app.url}/og/how-to-grow/tomato.png`}/>
+                                </div>
 
                                 <Separator className="mt-2 mb-6"/>
                             </div>
@@ -109,11 +129,12 @@ export default function Page() {
                     <div>
                         <Tabs defaultValue="grow" className="w-full">
                             <TabsList className="flex justify-center flex-wrap border-b border-border bg-transparent p-12">
-                                <TabsTrigger value="scientific" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Good to know (Scientific Information)</TabsTrigger>
-                                <TabsTrigger value="grow" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">How to grow Tomatoes (No Bullsh*t Guide)</TabsTrigger>
-                                <TabsTrigger value="community" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Community</TabsTrigger>
+                                <TabsTrigger value="info" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Good to know</TabsTrigger>
+                                <TabsTrigger value="grow" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">How to grow Tomatoes</TabsTrigger>
+                                <TabsTrigger value="process" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Growing Process & Schedule</TabsTrigger>
+                                {/*<TabsTrigger value="community" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Community</TabsTrigger>*/}
                             </TabsList>
-                            <TabsContent value="scientific" className="lg:pt-13.5 sm:pt-7.5 pt-5">
+                            <TabsContent value="info" className="lg:pt-13.5 sm:pt-7.5 pt-5">
                                 <div className="row">
                                     <div className="w-full m-lg-b0 m-md-b30">
                                         <div className="mb-10 max-md:mb-5 px-20">
@@ -133,19 +154,24 @@ export default function Page() {
                                                     <div>
                                                         <div className="text-left inline-block">
                                                             <div className="title_block">
-                                                                <p className="sub_title text-base pb-[22px] mb-0">Many Health benefits of Tomatoes</p>
+                                                                <p className="sub_title text-base pb-[22px] mb-0">Many benefits of Tomatoes</p>
                                                                 <h4 className="text-white font-bold lg:text-[32px] text-3xl xl:leading-[48px] leading-9">Health benefits</h4>
                                                             </div>
                                                             <div className="flex flex-col gap-2 text-sm mt-[23px] text-white">
                                                                 <div><span className="font-bold text-lemonGreen">Heart Health: </span> Tomatoes are rich in potassium and lycopene, which are known to reduce blood pressure and lower the risk of heart disease by improving circulation and reducing inflammation.
-                                                                    <span className="text-2xs">Source: <Link href="https://academic.oup.com/eurjpc/article/31/8/922/7450162" target="_blank" className="green-link">Oxford Academic</Link></span></div>
-                                                                <div><span className="font-bold text-lemonGreen">Cancer Prevention: </span> The antioxidant properties of lycopene may help reduce the risk of several cancers, including prostate, lung, and stomach cancers. </div>
-                                                                <div><span className="font-bold text-lemonGreen">Skin Protection: </span> Vitamin C and lycopene in tomatoes help protect the skin against UV damage, reduce wrinkles, and improve skin elasticity. </div>
-                                                                <div><span className="font-bold text-lemonGreen">Eye Health: </span> Rich in vitamin A, tomatoes support vision, prevent night blindness, and protect against macular degeneration. </div>
-                                                                <div><span className="font-bold text-lemonGreen">Improved Digestion: </span> The fiber in tomatoes aids digestion, prevents constipation, and maintains a healthy gut flora. </div>
-                                                                <div><span className="font-bold text-lemonGreen">Improved Digestion: </span> Tomatoes contain vitamin K and calcium, both crucial for maintaining bone density and preventing osteoporosis. </div>
+                                                                    <span className="text-2xs">Source: <Link href="https://pubmed.ncbi.nlm.nih.gov/12587984/" target="_blank" className="green-link">PubMed</Link></span></div>
+                                                                <div><span className="font-bold text-lemonGreen">Cancer Prevention: </span> The antioxidant properties of lycopene may help reduce the risk of several cancers, including prostate, lung, and stomach cancers.
+                                                                    <span className="text-2xs">Source: <Link href="https://newsroom.osfhealthcare.org/cancer-fighting-power-of-tomatoes/#:~:text=Tomatoes%20contain%20phytochemicals%2C%20like%20lycopene,on%20an%20overall%20healthy%20diet" target="_blank" className="green-link">OSF Healthcare</Link></span></div>
+                                                                <div><span className="font-bold text-lemonGreen">Skin Protection: </span> Vitamin C and lycopene in tomatoes help protect the skin against UV damage, reduce wrinkles, and improve skin elasticity.
+                                                                    <span className="text-2xs">Source: <Link href="https://www.healthline.com/health/tomato-benefits-for-skin#potential-benefits" target="_blank" className="green-link">Healthline</Link></span></div>
+                                                                <div><span className="font-bold text-lemonGreen">Eye Health: </span> Rich in vitamin A, tomatoes support vision, prevent night blindness, and protect against macular degeneration.
+                                                                    <span className="text-2xs">Source: <Link href="https://www.webmd.com/food-recipes/ss/slideshow-tomato-health-benefits" target="_blank" className="green-link">WebMD</Link></span></div>
+                                                                <div><span className="font-bold text-lemonGreen">Improved Digestion: </span> The fiber in tomatoes aids digestion, prevents constipation, and maintains a healthy gut flora.
+                                                                    <span className="text-2xs">Source: <Link href="https://www.medanta.org/patient-education-blog/researchers-have-discovered-that-tomatoes-are-healthy-for-gut-bacteria#:~:text=Additionally%2C%20tomatoes%20contain%20vitamins%2C%20minerals,promote%20a%20healthy%20digestive%20system." target="_blank" className="green-link">Medanta</Link></span></div>
+                                                                <div><span className="font-bold text-lemonGreen">Improved Digestion: </span> Tomatoes contain vitamin K and calcium, both crucial for maintaining bone density and preventing osteoporosis.
+                                                                    <span className="text-2xs">Source: <Link href="https://www.health.com/nutrition/health-benefits-tomatoes" target="_blank" className="green-link">Health.com</Link></span></div>
                                                                 <div><span className="font-bold text-lemonGreen">hypertension: </span> Some studies have found that eating tomatoes may help prevent and manage hypertension. One study found that people who ate more than 110 grams of tomatoes per day had a lower risk of hypertension.
-                                                                    <span className="text-2xs">Source: <Link href="https://academic.oup.com/eurjpc/article/31/8/922/7450162" target="_blank" className="green-link">Oxford Academic</Link></span> </div>
+                                                                    <span className="text-2xs">Source: <Link href="https://academic.oup.com/eurjpc/article/31/8/922/7450162" target="_blank" className="green-link">Oxford Academic</Link></span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -156,75 +182,51 @@ export default function Page() {
                                                         <div className="flex flex-col pb-7 gap-4">
                                                             <div className="flex flex-row items-center gap-4">
                                                                 <Image className="h-[40px] w-[40px]" decoding="async" width={50} height={50} alt="icon" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/icon5-1.png"/>
-                                                                <h4 className="text-lightGreen">100% Fresh food</h4>
+                                                                <h4 className="text-lightGreen">Risk and Things to consider</h4>
                                                             </div>
-                                                            <p className="text-white text-sm">Botanica Shop is always committed to 100% fresh, organic food has a certificate of food safety certification</p>
+                                                            <p className="text-white text-sm">
+                                                                Make sure that you thoroughly wash or cook raw tomatoes before consuming them. As with other fresh produce, raw tomatoes can have germs that cause foodborne illnesses like Listeria and Salmonella. Foodborne illness is a greater concern for those who:
+                                                                <span className="text-2xs">Source: <Link href="https://academic.oup.com/eurjpc/article/31/8/922/7450162" target="_blank" className="green-link">Oxford Academic</Link></span>
+                                                            </p>
+
+                                                            <ul className="list-disc text-sm mt-[23px] text-white">
+                                                                <li>Are aged 65 and older or 5 and younger</li>
+                                                                <li>Are pregnant</li>
+                                                                <li>Have underlying health concerns (e.g., cancer, diabetes, and liver and kidney disease)</li>
+                                                                <li>Take medications that lower the body&apos;s ability to fight germs and illness</li>
+                                                            </ul>
+
+                                                            <p className="text-white text-sm text-pretty"> Tomatoes may also worsen existing conditions like gastroesophageal reflux (GERD) and chronic migraine.
+                                                                Talk with a healthcare provider to determine if you need to avoid tomatoes. </p>
+
+                                                            <div className="flex flex-row items-center gap-4 mt-10">
+                                                                <Image className="h-[40px] w-[40px]" decoding="async" width={50} height={50} alt="icon" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/icon5-3.png"/>
+                                                                <h4 className="text-lightGreen">Disclaimer: </h4>
+                                                            </div>
+                                                            <h6 className="text-white text-sm">The health and medicinal benefits provided are for informational purposes only and are not a substitute for professional medical advice. Always consult a healthcare provider before making dietary changes, especially if you have any health conditions.</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
 
                                         <div className="flex flex-col gap-1 bg-darkGreen -mt-1">
-                                            <div className="container mx-auto px-[15px] overflow-hidden my-40">
-                                                <div className="block_title text-center flex justify-center items-center mb-3">
-                                                    <div className="title_block inline-block">
-                                                        <p className="sub-title font-bold text-lg pb-2 mb-0 text-lightGreen">Day-to-day uses</p>
-                                                        <h2 className="text-white">Uses</h2>
-                                                    </div>
-                                                </div>
-
-                                                <CustomSwiper swipes={[
-                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]" key="csw-1">
-                                                        <div className="xl:min-h-[341px] min-h-[250px] mb-5">
-                                                            <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
-                                                        </div>
-                                                        <div className="flex flex-col gap-2 pb-2.5">
-                                                            <h4 className="text-base font-bold text-white hover:text-[color:var(--dark-green)]">Fresh Fruits</h4>
-                                                            <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
-                                                        </div>
-                                                    </div>),
-                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]" key="csw-2">
-                                                        <div className="xl:min-h-[341px] min-h-[250px] mb-5">
-                                                            <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
-                                                        </div>
-                                                        <div className="flex flex-col gap-2 pb-2.5">
-                                                            <h4 className="text-base font-bold text-white hover:text-[color:var(--dark-green)]">Fresh Fruits</h4>
-                                                            <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
-                                                        </div>
-                                                    </div>),
-                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]" key="csw-2">
-                                                        <div className="xl:min-h-[341px] min-h-[250px] mb-5">
-                                                            <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
-                                                        </div>
-                                                        <div className="flex flex-col gap-2 pb-2.5">
-                                                            <h4 className="text-base font-bold text-white hover:text-[color:var(--dark-green)]">Fresh Fruits</h4>
-                                                            <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
-                                                        </div>
-                                                    </div>),
-                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]" key="csw-3">
-                                                        <div className="xl:min-h-[341px] min-h-[250px] mb-5">
-                                                            <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
-                                                        </div>
-                                                        <div className="flex flex-col gap-2 pb-2.5">
-                                                            <h4 className="text-base font-bold text-white hover:text-[color:var(--dark-green)]">Fresh Fruits</h4>
-                                                            <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
-                                                        </div>
-                                                    </div>),
-                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]" key="csw-4">
-                                                        <div className="xl:min-h-[341px] min-h-[250px] mb-5">
-                                                            <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
-                                                        </div>
-                                                        <div className="flex flex-col gap-2 pb-2.5">
-                                                            <h4 className="text-base font-bold text-white hover:text-[color:var(--dark-green)]">Fresh Fruits</h4>
-                                                            <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
-                                                        </div>
-                                                    </div>)
+                                            <div className="container mx-auto px-[15px] overflow-hidden my-10">
+                                                <p className="sub-title text-base pb-2 mb-0 text-lightGreen">One whole raw tomato provides the following nutrients: <span className="text-2xs">Source: <Link href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/1103276/nutrients" target="_blank" className="green-link">USDA</Link></span></p>
+                                                <Nutrition heading="Nutritional Value" items={[
+                                                    {name: "Calories", value: "22.5"},
+                                                    {name: "Fat", value: "0.25g"},
+                                                    {name: "Sodium", value: "6.25mg"},
+                                                    {name: "Carbohydrates", value: "4.86g"},
+                                                    {name: "Fiber", value: "1.5g"},
+                                                    {name: "Protein", value: "1.1g"},
                                                 ]}/>
+                                                <p className="sub-title text-sm py-2 text-white">Whole, fresh tomatoes are also a source of several micronutrients, including: Folate, Potassium, Vitamin C, Vitamin K</p>
                                             </div>
                                         </div>
 
-                                        <div className="bg-transparent" style={{ backgroundImage: "linear-gradient(0deg, #002B17 90%, #002112 100%)" }}>
+                                        <div className="bg-transparent" style={{backgroundImage: "linear-gradient(0deg, #002B17 90%, #002112 100%)"}}>
                                             <div className="w-full bg-no-repeat bg-auto" style={{backgroundImage: "url(https://botanica.risingbamboo.com/wp-content/uploads/2023/05/bg-product2.jpg)", backgroundPosition: "bottom center"}}>
 
                                                 <div className="container mx-auto py-40 text-white">
@@ -237,43 +239,33 @@ export default function Page() {
                                                         <div className="col-span-12 lg:col-span-6 relative lg:order-1 -order-1 wow fadeInRight">
                                                             <div className="lg:text-left text-center">
                                                                 <div className="title_block">
-                                                                    <p className="sub_title xl:text-4xl text-xl pb-4 mb-0">Why Choose us</p>
-                                                                    <h2 className="title xl:leading-[55px] leading-9">Healthy Food is The Key to Your <br/>Good Mood</h2>
+                                                                    <p className="sub_title xl:text-4xl text-xl pb-4 mb-0">Good to know</p>
+                                                                    <h2 className="title xl:leading-[55px] leading-9 text-white">Ecological Effects</h2>
                                                                 </div>
                                                                 <div className="desc mt-4 text-base"></div>
                                                             </div>
                                                             <div className="pt-4">
-                                                                <div className="custom-html flex items-center justify-items-center xl:pb-10 lg:pb-5 pb-[30px] last:pb-0 elementor-repeater-item-f6aeb7a relative">
-                                                                    <div className="image-box">
-                                                                        <Image width={68} height={68} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/01/icon-2.png" title="icon-2" alt="icon-2"/>
-                                                                    </div>
-                                                                    <div className="box-content">
-                                                                        <h3 className="box-title">100% Fresh food</h3>
-                                                                        <p className="box-description">
-                                                                            Botanica Shop is always committed to 100% fresh, organic
-                                                                            <br/>food has a certificate of food safety certification</p>
-                                                                    </div>
+                                                                <div className="flex flex-col gap-1">
+                                                                    <h4 className="text-lightGreen"><GiBee className="text-yellow-400 -mt-2 mr-2" size={30}/>Biodiversity Support: </h4>
+                                                                    <p className="box-description">Tomatoes attract pollinators such as bees, which enhance overall garden health.</p>
                                                                 </div>
-                                                                <div className="custom-html flex items-center justify-items-center xl:pb-10 lg:pb-5 pb-[30px] last:pb-0 elementor-repeater-item-3ab01fa relative">
-                                                                    <div className="image-box">
-                                                                        <Image width={68} height={68} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/04/icon-3.png" title="icon-2" alt="icon-2"/>
-                                                                    </div>
-                                                                    <div className="box-content">
-                                                                        <h3 className="box-title">Premium quality food products</h3>
-                                                                        <p className="box-description">The quality and safety of our products is our top priority.<br/>
-                                                                            We continue to quest for even greater product quality</p>
-                                                                    </div>
+
+                                                                <div className="flex flex-col gap-1 my-8">
+                                                                    <h4 className="text-lightGreen"><GiPlantRoots className="text-emerald-400 -mt-2 mr-2" size={30}/>Soil Health: </h4>
+                                                                    <p className="box-description">Tomatoes are ideal for crop rotation and companion planting, particularly with legumes, as they can improve soil nitrogen levels.</p>
                                                                 </div>
-                                                                <div className="custom-html flex items-center justify-items-center xl:pb-10 lg:pb-5 pb-[30px] last:pb-0 elementor-repeater-item-2ffe273 relative">
-                                                                    <div className="image-box">
-                                                                        <Image width={68} height={68} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/04/icon-4.png" title="icon-2" alt="icon-2"/>
-                                                                    </div>
-                                                                    <div className="box-content">
-                                                                        <h3 className="box-title">Organic farming</h3>
-                                                                        <p className="box-description">Organic farming, agricultural system that uses ecologically<br/>
-                                                                            based pest controls and biological fertilizers derived<br/>
-                                                                            largely from animal</p>
-                                                                    </div>
+
+                                                                <div className="flex flex-col gap-1 my-8">
+                                                                    <h4 className="text-lightGreen"><GiFarmTractor className="text-orange-400 -mt-2 mr-2" size={30}/>Sustainable Farming: </h4>
+                                                                    <p className="box-description">When grown organically, tomatoes reduce the need for harmful pesticides and synthetic fertilizers, contributing to healthier ecosystems.</p>
+                                                                </div>
+                                                                <div className="flex flex-col gap-1 my-8">
+                                                                    <h4 className="text-lightGreen"><GiWaterDrop className="text-teal-400 -mt-2 mr-2" size={30}/>Water Usage: </h4>
+                                                                    <p className="box-description">While tomatoes require regular watering, efficient irrigation practices such as drip irrigation significantly reduce water waste, making them sustainable in water-limited regions.</p>
+                                                                </div>
+                                                                <div className="flex flex-col gap-1 my-8">
+                                                                    <h4 className="text-lightGreen"><GiFootprint className="text-rose-400 -mt-2 mr-2" size={30}/>Carbon Sequestration: </h4>
+                                                                    <p className="box-description">Homegrown tomatoes reduce food miles, thus lowering the carbon footprint associated with transportation and storage.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -540,7 +532,7 @@ export default function Page() {
                                                                     Harvest the fruit of your hard work. This is not the end, Tomatoes will keep on provide with minimal watering and care at this time.
                                                                 </p>
                                                                 <ul className="flex flex-col gap-2 text-gray-700">
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Remove weeds and keep looking for diseases, check the diseases section of how to find and fix the plant diseases. </li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Remove weeds and keep looking for diseases, check the diseases section of how to find and fix the plant diseases.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Keep proving fertilizer every 15-20 days</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> You must not let the soil dry, Water is very important</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Fertilizer: </strong> See Fertilizer section for homemade and nutrient rich fertilizers.</li>
@@ -606,7 +598,10 @@ export default function Page() {
                                             </div>
                                         </div>
                                     </div>
-                                    <Separator className="my-4"/>
+                                </div>
+                            </TabsContent>
+                            <TabsContent value="process" className="lg:pt-13.5 sm:pt-7.5 pt-5">
+                                <div className="flex flex-col gap-2 px-20">
                                     <div>
                                         <div className="mb-10 max-md:mb-5">
                                             <h2 className="mb-2">Growing Process & Schedule</h2>
@@ -676,7 +671,7 @@ export default function Page() {
 
                                         <Separator className="my-4"/>
                                         <div className="md:mb-10 sm:mb-3.6 mb-2.5" id="fertilizer">
-                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"> <GiFertilizerBag size={20} strokeWidth={2.5} className="-mt-2 mr-2"/>  Fertilizer Requirements</h4>
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"><GiFertilizerBag size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Fertilizer Requirements</h4>
                                             <ul className="flex flex-col gap-4">
                                                 <li>
                                                     <h6>Organic Fertilizer: <p className="font-normal">
@@ -814,69 +809,6 @@ export default function Page() {
                                                 <li><h6><span className="font-normal">Prune suckers and diseased leaves to ensure proper airflow and focus energy on fruit production.</span></h6></li>
                                                 <li><h6><span className="font-normal">Regularly inspect for pests and diseases, and use organic or biological controls to manage outbreaks early.</span></h6></li>
                                             </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </TabsContent>
-                            <TabsContent value="community" className="lg:pt-13.5 sm:pt-7.5 pt-5">
-                                <div id="comment-list" className="px-20">
-                                    <div>
-                                        <h4 className="mb-2">Comments (02)</h4>
-                                        <p className="text-sm mb-7.5 text-body">There are many variations of passages of Lorem Ipsum available.</p>
-                                        <div id="comment">
-                                            <ol className="mb-14.5 max-lg:mb-10">
-                                                <li className="comment even thread-even depth-1 comment" id="comment-2">
-                                                    <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10">
-                                                        <div className="comment-author vcard">
-                                                            <Image width={250} height={250} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile4.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
-                                                            <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Michel Poe</cite>
-                                                        </div>
-                                                        <div>
-                                                            <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                        </div>
-                                                        <div className="reply">
-                                                            <a rel="nofollow" className="absolute top-0 right-0 py-[3px] px-2.5 inline-block rounded-md text-xs bg-title font-medium text-white leading-[1.3] uppercase mb-2" href="#;">Reply</a>
-                                                        </div>
-                                                    </div>
-                                                    <ol className="sm:pl-13.5">
-                                                        <li className="comment byuser comment-author-w3itexpertsuser bypostauthor odd alt depth-2 comment" id="comment-3">
-                                                            <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10" id="div-comment-3">
-                                                                <div className="comment-author vcard">
-                                                                    <Image width={250} height={250} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile3.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
-                                                                    <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Celesto Anderson</cite>
-                                                                </div>
-                                                                <div>
-                                                                    <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                                </div>
-                                                                <div className="reply">
-                                                                    <a className="absolute top-0 right-0 py-[3px] px-2.5 inline-block rounded-md text-xs bg-title font-medium text-white leading-[1.3] uppercase mb-2" href="#;"> Reply</a>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                    </ol>
-                                                </li>
-                                                <li className="comment even thread-odd thread-alt depth-1 comment" id="comment-4">
-                                                    <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10" id="div-comment-4">
-                                                        <div className="comment-author vcard">
-                                                            <Image width={250} height={250} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile2.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
-                                                            <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Monsur Rahman Lito</cite>
-                                                        </div>
-                                                        <div>
-                                                            <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                        </div>
-                                                        <div className="reply">
-                                                            <a className="absolute top-0 right-0 py-[3px] px-2.5 inline-block rounded-md text-xs bg-title font-medium text-white leading-[1.3] uppercase mb-2" href="#;"> Reply</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div id="respond">
-                                            <h4 className="comment-reply-title mb-2" id="reply-title">Good Comments</h4>
-                                            <p className="text-sm mb-7.5 text-body">There are many variations of passages of Lorem Ipsum available.</p>
-                                            <div className="clearfix">
-
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

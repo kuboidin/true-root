@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
         <Footer />
     </div>
     {/* TODO */}
-    <AnimatedCursor
+    {process.env.NEXT_PUBLIC_TM_ENV === 'production' && <AnimatedCursor
         innerSize={10}
         outerSize={34}
         innerScale={1}
@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
             border: '2px solid var(--cursor-color)',
             zIndex: 999999
         }}
-    />
+    /> }
 
     {process.env.NEXT_PUBLIC_TM_ENV === 'production' && <Analytics />}
     {process.env.NEXT_PUBLIC_TM_ENV === 'production' && <SpeedInsights />}

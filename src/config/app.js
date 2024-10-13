@@ -3,6 +3,7 @@ const app = {
     title: "Welcome to True Root",
     url: "https://trueroot.in",
     domain: "trueroot.in",
+    seo_title: "Learn how to grow plants at home.",
     meta: {
         description: "True root is a plant database and wiki",
         keywords: ["true root", "plants", "trees", "grow", "wiki"],

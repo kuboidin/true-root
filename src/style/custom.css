@@ -49,3 +49,26 @@
     text-decoration: underline;
     font-style: italic;
 }
+
+.error-404 .title {
+    font-size: 300px;
+    line-height: 0.8;
+    font-weight: 600;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.error-404 .title .main-title {
+    background: linear-gradient( 92deg, #5a0dff 0%, #ff29b8 38.6%, #ff581c 97.73% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.error-404 .title .hover-title {
+    color: #fff;
+    position: absolute;
+    left: -16px;
+    top: 0;
+}
