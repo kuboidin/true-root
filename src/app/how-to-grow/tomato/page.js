@@ -3,7 +3,7 @@ import Breadcrumbs from "@/components/comp/breadcrumbs";
 import EcoBadge from "@/components/comp/eco-badge";
 import {Separator} from "@/components/ui/separator";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
-import {Asterisk, Bean, Droplets, MoveRight, Shrub, Sprout, Tractor} from "lucide-react";
+import {Asterisk, Bean, Droplets, MoveRight, Shrub, Sprout} from "lucide-react";
 import Image from "next/image";
 import CustomSwiper from "@/components/comp/custom-swiper";
 import Nutrition from "@/components/pages/vegitable/nutrition";
@@ -61,7 +61,7 @@ export default function Page() {
                                     Rich in vitamins A and C, and loaded with lycopene, tomatoes offer numerous health benefits, including antioxidant properties that support heart health and may reduce cancer risks. <br/>
                                     Versatile in the kitchen, tomatoes enhance everything from fresh salads to hearty sauces. <br/>
                                     In Ayurveda, they balance digestion and improve skin vitality. <br/>
-                                    Whether you're a beginner or an experienced gardener, tomatoes are rewarding to cultivate at home with minimal effort.
+                                    Whether you&apos;re a beginner or an experienced gardener, tomatoes are rewarding to cultivate at home with minimal effort.
                                 </p>
                                 <Separator className="mt-4 mb-2"/>
                                 <Nutrition heading="Growing Conditions" items={[
@@ -175,7 +175,7 @@ export default function Page() {
                                                 </div>
 
                                                 <CustomSwiper swipes={[
-                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]">
+                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]" key="csw-1">
                                                         <div className="xl:min-h-[341px] min-h-[250px] mb-5">
                                                             <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
                                                         </div>
@@ -184,7 +184,7 @@ export default function Page() {
                                                             <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
                                                         </div>
                                                     </div>),
-                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]">
+                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]" key="csw-2">
                                                         <div className="xl:min-h-[341px] min-h-[250px] mb-5">
                                                             <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
                                                         </div>
@@ -193,7 +193,7 @@ export default function Page() {
                                                             <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
                                                         </div>
                                                     </div>),
-                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]">
+                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]" key="csw-2">
                                                         <div className="xl:min-h-[341px] min-h-[250px] mb-5">
                                                             <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
                                                         </div>
@@ -202,7 +202,7 @@ export default function Page() {
                                                             <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
                                                         </div>
                                                     </div>),
-                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]">
+                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]" key="csw-3">
                                                         <div className="xl:min-h-[341px] min-h-[250px] mb-5">
                                                             <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
                                                         </div>
@@ -211,7 +211,7 @@ export default function Page() {
                                                             <p className="text-center mb-0 inline-block text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non lorem diam volutpat consequat metus ac</p>
                                                         </div>
                                                     </div>),
-                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]">
+                                                    (<div className="flex flex-col gap-4 text-center rounded-[26px] px-3 lg:px-4 pt-4 pb-[66px]" key="csw-4">
                                                         <div className="xl:min-h-[341px] min-h-[250px] mb-5">
                                                             <Image width={306} height={341} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/Fruits-2.png" alt="Fresh Fruits" />
                                                         </div>
@@ -231,7 +231,7 @@ export default function Page() {
                                                     <div className="grid grid-cols-12 gap-4 py-8">
                                                         <div className="banner-left col-span-12 lg:col-span-6 lg:mt-0 mt-8 wow fadeInLeft">
                                                             <div className=" relative text-center">
-                                                                <img decoding="async" alt="Image" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/01/healthy-food.png" className=" inline-block  relative elementor-repeater-item-c225823"/>
+                                                                <Image width={600} height={710} decoding="async" alt="Image" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/01/healthy-food.png" className=" inline-block  relative elementor-repeater-item-c225823"/>
                                                             </div>
                                                         </div>
                                                         <div className="col-span-12 lg:col-span-6 relative lg:order-1 -order-1 wow fadeInRight">
@@ -245,7 +245,7 @@ export default function Page() {
                                                             <div className="pt-4">
                                                                 <div className="custom-html flex items-center justify-items-center xl:pb-10 lg:pb-5 pb-[30px] last:pb-0 elementor-repeater-item-f6aeb7a relative">
                                                                     <div className="image-box">
-                                                                        <img decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/01/icon-2.png" title="icon-2" alt="icon-2"/>
+                                                                        <Image width={68} height={68} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/01/icon-2.png" title="icon-2" alt="icon-2"/>
                                                                     </div>
                                                                     <div className="box-content">
                                                                         <h3 className="box-title">100% Fresh food</h3>
@@ -256,7 +256,7 @@ export default function Page() {
                                                                 </div>
                                                                 <div className="custom-html flex items-center justify-items-center xl:pb-10 lg:pb-5 pb-[30px] last:pb-0 elementor-repeater-item-3ab01fa relative">
                                                                     <div className="image-box">
-                                                                        <img decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/04/icon-3.png" title="icon-2" alt="icon-2"/>
+                                                                        <Image width={68} height={68} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/04/icon-3.png" title="icon-2" alt="icon-2"/>
                                                                     </div>
                                                                     <div className="box-content">
                                                                         <h3 className="box-title">Premium quality food products</h3>
@@ -266,7 +266,7 @@ export default function Page() {
                                                                 </div>
                                                                 <div className="custom-html flex items-center justify-items-center xl:pb-10 lg:pb-5 pb-[30px] last:pb-0 elementor-repeater-item-2ffe273 relative">
                                                                     <div className="image-box">
-                                                                        <img decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/04/icon-4.png" title="icon-2" alt="icon-2"/>
+                                                                        <Image width={68} height={68} decoding="async" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/04/icon-4.png" title="icon-2" alt="icon-2"/>
                                                                     </div>
                                                                     <div className="box-content">
                                                                         <h3 className="box-title">Organic farming</h3>
@@ -323,7 +323,7 @@ export default function Page() {
                                                                 <ul className="flex flex-col gap-2 text-gray-700">
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Seeding soil is different, it should be light, airy, free of debris, natural pH, holds moisture.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the seeding tray has drainage holes.</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Soil + Compost + Coco peat (Coco peat helps retain moisture for longer, if you do not have Coco peat it's Okay, just maintain the proper moisture).</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Soil + Compost + Coco peat (Coco peat helps retain moisture for longer, if you do not have Coco peat it&apos;s Okay, just maintain the proper moisture).</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> See the <Link href="#seeding" className="lnk">Seeding process</Link> on this page for tips and thing to care.</li>
                                                                 </ul>
                                                             </div>
@@ -359,7 +359,7 @@ export default function Page() {
                                                                 <ul className="flex flex-col gap-2 text-gray-700">
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Seed should sprout in a week.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> They need full light from day one of germination.</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Shift them to 1-2 hour of sun light when you see 2 leaves, at this stage plants start looking for sun light, if you do not put them in sun light they will grow week but longer and in multi-direction in search of sun light (We don't want that).</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Shift them to 1-2 hour of sun light when you see 2 leaves, at this stage plants start looking for sun light, if you do not put them in sun light they will grow week but longer and in multi-direction in search of sun light (We don&apos;t want that).</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Seed provide all the required nutrients to support life of plant for 2 weeks</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Do not add any fertilizer of any kind.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <Link href="#watering" className="lnk">watering guide</Link> for more information</li>
@@ -402,7 +402,7 @@ export default function Page() {
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/>Add Neem powder (Neem Khali) to soil to protect the roots from fungus and other germs</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> When you shift the plants from seedling to ground, grow bags or pots, make sure the the roots should not be exposed to air. try not to disturb roots.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/>Be slow and gentle when removing from seeding tray and planting in the pot or grow bags</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/>If roots are exposed to air or you see no soil with root or if plant is weathered (when you borrow from your friend), then <strong>sock the plant's root in water for 5-7 minutes</strong>. If plants are in very bad condition add 1 spoon of sugar in water and dip plants for 15 minutes. It will revive the plants and stablize them.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/>If roots are exposed to air or you see no soil with root or if plant is weathered (when you borrow from your friend), then <strong>sock the plant&apos;s root in water for 5-7 minutes</strong>. If plants are in very bad condition add 1 spoon of sugar in water and dip plants for 15 minutes. It will revive the plants and stablize them.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/>Perform shifting in the evening only and add plenty of water</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/>Plants will/might show some stress like leaves withering after shifting, but they will recover soon if you have shifted correctly.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/>To shift them in larger pots, put at least 40-50% of plant stem under the soil, this will help in grow stronger roots.</li>
@@ -443,7 +443,7 @@ export default function Page() {
                                                             <div className="pt-1 pb-8">
                                                                 <p className="mb-2 text-lg font-bold">Day 52: Grooming and care (Pinching)</p>
                                                                 <p className="text-gray-700">
-                                                                    10-12 days after 2nd dose of fertilizer, You will see the plants has growing rapidly. Let's perform Pinching. The act of <strong>pinching</strong> involves the <strong>removal of the growing point of a shoot along with few leaves</strong>. About 1-2 cm of a growing shoot of a young plant is snapped off with fingers.
+                                                                    10-12 days after 2nd dose of fertilizer, You will see the plants has growing rapidly. Let&apos;s perform Pinching. The act of <strong>pinching</strong> involves the <strong>removal of the growing point of a shoot along with few leaves</strong>. About 1-2 cm of a growing shoot of a young plant is snapped off with fingers.
                                                                 </p>
                                                                 <ul className="flex flex-col gap-2 text-gray-700">
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Make sure the main stem is thick enough and plant has grown to twice the height and you see clusters of small growing leaves at the end of stems.</li>
@@ -473,11 +473,11 @@ export default function Page() {
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Add support at this stage</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Important: </strong> If you see that plant is starting to grow flowers at this time, cut them.
                                                                         This will allow plants to grow further and yield more fruits at later stage.
-                                                                        If you don't cut them at this time, plant growth will stop and plant will focus completely on flowers and fruits, this will result in small plant and low tomatoes yield.
+                                                                        If you don&apos;t cut them at this time, plant growth will stop and plant will focus completely on flowers and fruits, this will result in small plant and low tomatoes yield.
                                                                     </li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Perform this pinching after every 10 days until you see flowers.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the watering guide for more information</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Fertilizer: </strong> Until you don't see the small tomatoes, you will have to provide liquid fertilizer every 20 days.</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Fertilizer: </strong> Until you don&apos;t see the small tomatoes, you will have to provide liquid fertilizer every 20 days.</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -493,11 +493,11 @@ export default function Page() {
                                                                 <p className="mb-2 text-lg font-bold">Day 87: Flowering & Remove Suckers</p>
                                                                 <p className="text-gray-700">
                                                                     You might start seeing the flowers at this stage <br/>
-                                                                    A <strong>"sucker"</strong> is <strong>an extra shoot or leaves growing between the main stalk of the tomato plant and an established branch, often growing at a 45° angle from the plant</strong>.
+                                                                    A <strong>&quot;sucker&quot;</strong> is <strong>an extra shoot or leaves growing between the main stalk of the tomato plant and an established branch, often growing at a 45° angle from the plant</strong>.
                                                                 </p>
                                                                 <ul className="flex flex-col gap-2 text-gray-700">
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> Clean the small leaves and thin stems up to 5-7 inches from soil, only keep the thick branches</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Remove suckers, (Suckers are leaves that are growing between two branches) they take plant's nutrients and we don't want them</li>
+                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> Remove suckers, (Suckers are leaves that are growing between two branches) they take plant&apos;s nutrients and we don&apos;t want them</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Important: </strong> If/When you see flowers/fruits, at this time plant need more nutrients then ever.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Remove suckers whenever you see them for a health plant.</li>
                                                                     <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Increase the dosage of fertilizer</li>
@@ -580,7 +580,7 @@ export default function Page() {
 
                                                                 <p className="my-2">
                                                                     <MoveRight size={18} className="-mt-2 mr-2"/> <strong>Fertilizer: </strong> <br/>
-                                                                    Until when you don't see the small tomatoes, you will have to provide liquid fertilizer every 20 days.<br/>
+                                                                    Until when you don&apos;t see the small tomatoes, you will have to provide liquid fertilizer every 20 days.<br/>
                                                                     After you see bigger flowers and small fruits, add fertilizers containing micro nutrients, such as, sea weed (spray), onion peel liquid , banana peel liquid, provide liquid fertilizer every 15 days, keep on changing, try not to repeat same fertilizer.<br/>
                                                                     Check <Link href="#fertilizer" className="lnk">fertilizer section</Link> for more information.
                                                                 </p>
@@ -635,11 +635,11 @@ export default function Page() {
 
                                         <div className="xl:mb-6 md:mb-3.5 mb-2.5" id="seeding">
                                             <h4 className="font-bold text-xl max-md:text-lg"><Bean size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Seeding Process</h4>
-                                            <p>Tomato seeds need water to sprout, infect it's all they need. <br/>
-                                                The seed coats absorbs the water, swell & crack, allowing the tiny plant inside to emerge and begin it's life. <br/>
-                                                Not enough moisture and the best, the seeds won't sprout until it's enough and worst, they manage to sprout but quickly perish. <br/>
+                                            <p>Tomato seeds need water to sprout, infect it&apos;s all they need. <br/>
+                                                The seed coats absorbs the water, swell & crack, allowing the tiny plant inside to emerge and begin it&apos;s life. <br/>
+                                                Not enough moisture and the best, the seeds won&apos;t sprout until it&apos;s enough and worst, they manage to sprout but quickly perish. <br/>
                                                 Too much water can drawn the seedlings.<br/>
-                                                <strong>Testing moisture -</strong> The seeding soil must retain it's shape when squeezed tightly, yet it should not drip much water, if any at all.
+                                                <strong>Testing moisture -</strong> The seeding soil must retain it&apos;s shape when squeezed tightly, yet it should not drip much water, if any at all.
                                             </p>
                                             <Separator className="my-4"/>
                                             <ul className="specification-list mb-10">
@@ -692,7 +692,7 @@ export default function Page() {
                                                 <li><h6>Chemical Fertilizer: <span className="font-normal">A balanced NPK fertilizer such as 10:10:10 at planting, followed by a 5:10:10 fertilizer during flowering and fruiting stages.</span></h6></li>
                                                 <li>
                                                     <h6>How to fertilize: <p className="font-normal">
-                                                        - Until you don't see the small tomatoes, you will have to provide liquid fertilizer every 20 days. <br/>
+                                                        - Until you don&apos;t see the small tomatoes, you will have to provide liquid fertilizer every 20 days. <br/>
                                                         - After bigger flowers and small fruits add other fertilizers containing micro nutrients every 15 days. <br/>
                                                         - keep on changing the type of fertilizers, try not to repeat same
                                                     </p></h6>
@@ -781,7 +781,7 @@ export default function Page() {
 
                                             <h6 className="font-bold text-base mt-3">Remove Suckers</h6>
                                             <ul className="flex flex-col gap-1">
-                                                <li><h6>Remove Suckers: <span className="font-normal">Suckers are leaves that are growing between two branches they take plant's nutrients and we don't want them</span></h6></li>
+                                                <li><h6>Remove Suckers: <span className="font-normal">Suckers are leaves that are growing between two branches they take plant&apos;s nutrients and we don&apos;t want them</span></h6></li>
                                             </ul>
 
                                             <h6 className="font-bold text-base mt-3">Pinching</h6>
@@ -828,11 +828,11 @@ export default function Page() {
                                                 <li className="comment even thread-even depth-1 comment" id="comment-2">
                                                     <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10">
                                                         <div className="comment-author vcard">
-                                                            <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile4.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
+                                                            <Image width={250} height={250} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile4.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
                                                             <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Michel Poe</cite>
                                                         </div>
                                                         <div>
-                                                            <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                            <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                                         </div>
                                                         <div className="reply">
                                                             <a rel="nofollow" className="absolute top-0 right-0 py-[3px] px-2.5 inline-block rounded-md text-xs bg-title font-medium text-white leading-[1.3] uppercase mb-2" href="#;">Reply</a>
@@ -842,11 +842,11 @@ export default function Page() {
                                                         <li className="comment byuser comment-author-w3itexpertsuser bypostauthor odd alt depth-2 comment" id="comment-3">
                                                             <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10" id="div-comment-3">
                                                                 <div className="comment-author vcard">
-                                                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile3.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
+                                                                    <Image width={250} height={250} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile3.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
                                                                     <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Celesto Anderson</cite>
                                                                 </div>
                                                                 <div>
-                                                                    <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                                    <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                                                 </div>
                                                                 <div className="reply">
                                                                     <a className="absolute top-0 right-0 py-[3px] px-2.5 inline-block rounded-md text-xs bg-title font-medium text-white leading-[1.3] uppercase mb-2" href="#;"> Reply</a>
@@ -858,11 +858,11 @@ export default function Page() {
                                                 <li className="comment even thread-odd thread-alt depth-1 comment" id="comment-4">
                                                     <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10" id="div-comment-4">
                                                         <div className="comment-author vcard">
-                                                            <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile2.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
+                                                            <Image width={250} height={250} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile2.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
                                                             <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Monsur Rahman Lito</cite>
                                                         </div>
                                                         <div>
-                                                            <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                            <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                                         </div>
                                                         <div className="reply">
                                                             <a className="absolute top-0 right-0 py-[3px] px-2.5 inline-block rounded-md text-xs bg-title font-medium text-white leading-[1.3] uppercase mb-2" href="#;"> Reply</a>

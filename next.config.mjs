@@ -20,6 +20,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'botanica.risingbamboo.com'
             },
+            {
+                protocol: 'https',
+                hostname: 'pixio.dexignzone.com'
+            },
         ],
     },
     sassOptions: {

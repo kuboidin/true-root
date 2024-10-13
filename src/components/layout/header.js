@@ -130,7 +130,7 @@ export default function Header({}) {
                                                 </div>
                                             </div>
                                             <div className="md:w-1/3 hidden lg:block">
-                                                <div className="adv-media"><img src="/assets/theme/images/adv-1.png" alt="/"/></div>
+                                                <div className="adv-media"><Image width={300} height={420} src="/assets/theme/images/adv-1.png" alt="/"/></div>
                                             </div>
                                         </div>
                                     </div>
@@ -197,7 +197,7 @@ export default function Header({}) {
                                                     <ul>
                                                         <li>
                                                             <div className="dz-media">
-                                                                <img src="/assets/theme/images/shop/product/small/1.png" alt=""/>
+                                                                <Image width={300} height={420} src="/assets/theme/images/shop/product/small/1.png" alt=""/>
                                                             </div>
                                                             <div className="dz-content">
                                                                 <h6 className="name"><a href="post-standard.html">Cozy Knit
@@ -207,7 +207,7 @@ export default function Header({}) {
                                                         </li>
                                                         <li>
                                                             <div className="dz-media">
-                                                                <img src="/assets/theme/images/shop/product/small/2.png" alt=""/>
+                                                                <Image width={300} height={420} src="/assets/theme/images/shop/product/small/2.png" alt=""/>
                                                             </div>
                                                             <div className="dz-content">
                                                                 <h6 className="name"><a href="post-standard.html">Sophisticated
@@ -217,7 +217,7 @@ export default function Header({}) {
                                                         </li>
                                                         <li>
                                                             <div className="dz-media">
-                                                                <img src="/assets/theme/images/shop/product/small/3.png" alt=""/>
+                                                                <Image width={300} height={420} src="/assets/theme/images/shop/product/small/3.png" alt=""/>
                                                             </div>
                                                             <div className="dz-content">
                                                                 <h6 className="name"><a href="post-standard.html">Athletic
@@ -228,7 +228,7 @@ export default function Header({}) {
                                                         </li>
                                                         <li>
                                                             <div className="dz-media">
-                                                                <img src="/assets/theme/images/shop/product/small/4.png" alt=""/>
+                                                                <Image width={300} height={420} src="/assets/theme/images/shop/product/small/4.png" alt=""/>
                                                             </div>
                                                             <div className="dz-content">
                                                                 <h6 className="name"><a href="post-standard.html">Satin Wrap

@@ -56,7 +56,7 @@ export default function Footer() {
                                 <ul>
                                     <li className="flex items-center mb-4">
                                         <div className="size-14.5 min-w-14.5 mr-3.6">
-                                            <img src="/assets/theme/images/shop/product/small/1.png" alt=""
+                                            <Image width={100} height={100} src="/assets/theme/images/shop/product/small/1.png" alt=""
                                                  className="rounded-xl w-full"/>
                                         </div>
                                         <div>
@@ -66,7 +66,7 @@ export default function Footer() {
                                     </li>
                                     <li className="flex items-center mb-4">
                                         <div className="size-14.5 min-w-14.5 mr-3.6">
-                                            <img src="/assets/theme/images/shop/product/small/2.png" alt=""
+                                            <Image width={100} height={100} src="/assets/theme/images/shop/product/small/2.png" alt=""
                                                  className="rounded-xl w-full"/>
                                         </div>
                                         <div>
@@ -76,7 +76,7 @@ export default function Footer() {
                                     </li>
                                     <li className="flex items-center mb-4">
                                         <div className="size-14.5 min-w-14.5 mr-3.6">
-                                            <img src="/assets/theme/images/shop/product/small/3.png" alt=""
+                                            <Image width={100} height={100} src="/assets/theme/images/shop/product/small/3.png" alt=""
                                                  className="rounded-xl w-full"/>
                                         </div>
                                         <div>
@@ -156,7 +156,7 @@ export default function Footer() {
                         <div className="lg:w-1/2 w-full text-end max-lg:text-center max-lg:mt-3.6">
                             <div className="flex items-center justify-center md:justify-center xl:justify-end">
                                 <span className="mr-4">Social media: </span>
-                                <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/footer-img.png" alt=""/>
+                                <Image width={223} height={20} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/footer-img.png" alt=""/>
                             </div>
                         </div>
                     </div>

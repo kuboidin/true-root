@@ -1,4 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Image from "next/image";
 
 export default function InformationTab() {
 
@@ -28,29 +29,29 @@ export default function InformationTab() {
                             <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">ASIN<span>B07WK128569</span></li>
                             <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Country of Origin<span>India</span></li>
                             <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Department<span>Women</span></li>
-                            <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Included Components<span>Women's Jacket</span></li>
+                            <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Included Components<span>Women&apos;s Jacket</span></li>
                             <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Item Dimensions LxWxH<span> 71.1 x 45.7 x 7.6 Centimeters</span></li>
                             <li className="flex justify-between items-center border-b border-border py-[7px] max-md:py-1.1 text-body">Manufacture<span> Indra Hosiery Mills</span></li>
                         </ul>
                         <div className="product-media row g-xl-4 g-2 mb-10">
                             <div className="w-1/4">
                                 <a href="shop-list.html">
-                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress1.png" alt="/" className="rounded-xl w-full"/>
+                                    <Image width={600} height={500} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress1.png" alt="/" className="rounded-xl w-full"/>
                                 </a>
                             </div>
                             <div className="w-1/4">
                                 <a href="shop-list.html">
-                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress2.png" alt="/" className="rounded-xl w-full"/>
+                                    <Image width={600} height={500} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress2.png" alt="/" className="rounded-xl w-full"/>
                                 </a>
                             </div>
                             <div className="w-1/4">
                                 <a href="shop-list.html">
-                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress3.png" alt="/" className="rounded-xl w-full"/>
+                                    <Image width={600} height={500} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress3.png" alt="/" className="rounded-xl w-full"/>
                                 </a>
                             </div>
                             <div className="w-1/4">
                                 <a href="shop-list.html">
-                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress4.png" alt="/" className="rounded-xl w-full"/>
+                                    <Image width={600} height={500} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/products/dress4.png" alt="/" className="rounded-xl w-full"/>
                                 </a>
                             </div>
                         </div>
@@ -103,7 +104,7 @@ export default function InformationTab() {
                                 </a>
                             </div>
                         </div>
-                        <div><img className="rounded-3xl w-full" src="https://pixio.dexignzone.com/tailwind/demo/assets/images/shop/product-details/product-style-1/product-details-1.png" alt="/"/></div>
+                        <div><Image width={1500} height={1500} className="rounded-3xl w-full" src="https://pixio.dexignzone.com/tailwind/demo/assets/images/shop/product-details/product-style-1/product-details-1.png" alt="/"/></div>
                     </div>
                 </div>
             </TabsContent>
@@ -118,11 +119,11 @@ export default function InformationTab() {
                                 <li className="comment even thread-even depth-1 comment" id="comment-2">
                                     <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10">
                                         <div className="comment-author vcard">
-                                            <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile4.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
+                                            <Image width={250} height={250} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile4.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
                                             <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Michel Poe</cite>
                                         </div>
                                         <div>
-                                            <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                            <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                         </div>
                                         <div className="reply">
                                             <a rel="nofollow" className="absolute top-0 right-0 py-[3px] px-2.5 inline-block rounded-md text-xs bg-title font-medium text-white leading-[1.3] uppercase mb-2" href="#;">Reply</a>
@@ -132,11 +133,11 @@ export default function InformationTab() {
                                         <li className="comment byuser comment-author-w3itexpertsuser bypostauthor odd alt depth-2 comment" id="comment-3">
                                             <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10" id="div-comment-3">
                                                 <div className="comment-author vcard">
-                                                    <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile3.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
+                                                    <Image width={250} height={250} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile3.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
                                                     <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Celesto Anderson</cite>
                                                 </div>
                                                 <div>
-                                                    <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                    <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                                 </div>
                                                 <div className="reply">
                                                     <a className="absolute top-0 right-0 py-[3px] px-2.5 inline-block rounded-md text-xs bg-title font-medium text-white leading-[1.3] uppercase mb-2" href="#;"> Reply</a>
@@ -148,11 +149,11 @@ export default function InformationTab() {
                                 <li className="comment even thread-odd thread-alt depth-1 comment" id="comment-4">
                                     <div className="relative pt-0.5 pb-7.5 pl-25 mb-7.5 min-h-[115px] border-b border-black/10" id="div-comment-4">
                                         <div className="comment-author vcard">
-                                            <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile2.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
+                                            <Image width={250} height={250} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/profile2.jpg" alt="/" className="rounded-full absolute left-0 size-[85px] top-0"/>
                                             <cite className="font-Lufga not-italic text-base leading-[21px] font-semibold mb-2.5 block">Monsur Rahman Lito</cite>
                                         </div>
                                         <div>
-                                            <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                            <p className="text-sm text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                         </div>
                                         <div className="reply">
                                             <a className="absolute top-0 right-0 py-[3px] px-2.5 inline-block rounded-md text-xs bg-title font-medium text-white leading-[1.3] uppercase mb-2" href="#;"> Reply</a>
