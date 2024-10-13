@@ -1,4 +1,7 @@
 import AnimatedCursor from "react-animated-cursor";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import "@/style/globals.css";
 import 'animate.css';
 import "@/style/custom.css";
@@ -57,23 +60,27 @@ export default function RootLayout({ children }) {
         <Footer />
     </div>
     {/* TODO */}
-    {/*<AnimatedCursor*/}
-    {/*    innerSize={10}*/}
-    {/*    outerSize={34}*/}
-    {/*    innerScale={1}*/}
-    {/*    outerScale={2}*/}
-    {/*    outerAlpha={0}*/}
-    {/*    hasBlendMode={true}*/}
-    {/*    showSystemCursor={true}*/}
-    {/*    innerStyle={{*/}
-    {/*        backgroundColor: 'var(--cursor-black-color)',*/}
-    {/*        zIndex: 999999*/}
-    {/*    }}*/}
-    {/*    outerStyle={{*/}
-    {/*        border: '2px solid var(--cursor-color)',*/}
-    {/*        zIndex: 999999*/}
-    {/*    }}*/}
-    {/*/>*/}
+    <AnimatedCursor
+        innerSize={10}
+        outerSize={34}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        showSystemCursor={true}
+        innerStyle={{
+            backgroundColor: 'var(--cursor-black-color)',
+            zIndex: 999999
+        }}
+        outerStyle={{
+            border: '2px solid var(--cursor-color)',
+            zIndex: 999999
+        }}
+    />
+
+    {process.env.NEXT_PUBLIC_TM_ENV === 'production' && <Analytics />}
+    {process.env.NEXT_PUBLIC_TM_ENV === 'production' && <SpeedInsights />}
+
     </body>
     </html>
 );
