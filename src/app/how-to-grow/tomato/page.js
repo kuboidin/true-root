@@ -137,7 +137,7 @@ export default function Page() {
                 <div className="product-description">
                     <div>
                         <Tabs defaultValue="grow" className="w-full">
-                            <TabsList className="flex flex-row justify-start md:justify-center flex-wrap px-0 md:px-12 mb-20 gap-2">
+                            <TabsList className="flex flex-row justify-start md:justify-center flex-wrap px-0 md:px-12 mb-28 gap-2">
                                 <TabsTrigger value="info" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">Good to know</TabsTrigger>
                                 <TabsTrigger value="grow" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">How to grow Tomatoes</TabsTrigger>
                                 <TabsTrigger value="process" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">Growing Process & Schedule</TabsTrigger>
