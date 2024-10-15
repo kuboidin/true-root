@@ -41,10 +41,6 @@ export default function Home() {
     "publisher": {
       "@type": "Organization",
       "name": app.name
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": app.url,
     }
   };
 

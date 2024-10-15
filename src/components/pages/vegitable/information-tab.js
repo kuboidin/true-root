@@ -36,7 +36,7 @@ export default function InformationTab({ plant }) {
                             <div>
                                 <div className="flex flex-col pb-7 gap-4 text-white">
                                     <div className="flex flex-row items-center gap-4">
-                                        <Image className="h-[40px] w-[40px]" decoding="async" width={50} height={50} alt="icon" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/icon5-1.png"/>
+                                        <Image className="h-[40px] w-[40px]" decoding="async" width={50} height={50} alt="icon" src="/assets/theme/icons/icon5-1.webp"/>
                                         <h4 className="text-lightGreen">{plant.tabs.good_to_know.right_section.heading}</h4>
                                     </div>
                                     <p className="text-white text-sm">{plant.tabs.good_to_know.right_section.information}</p>
@@ -48,7 +48,7 @@ export default function InformationTab({ plant }) {
                                     </p>
 
                                     <div className="flex flex-row items-center gap-4 mt-10">
-                                        <Image className="h-[40px] w-[40px]" decoding="async" width={50} height={50} alt="icon" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/05/icon5-3.png"/>
+                                        <Image className="h-[40px] w-[40px]" decoding="async" width={50} height={50} alt="icon" src="/assets/theme/icons/icon5-3.webp"/>
                                         <h4 className="text-lightGreen">Disclaimer: </h4>
                                     </div>
                                     <h6 className="text-white text-sm">The health and medicinal benefits provided are for informational purposes only and are not a substitute for professional medical advice. Always consult a healthcare provider before making dietary changes, especially if you have any health conditions.</h6>
@@ -68,13 +68,13 @@ export default function InformationTab({ plant }) {
                 </div>
 
                 <div className="bg-transparent" style={{backgroundImage: "linear-gradient(0deg, #002B17 90%, #002112 100%)"}}>
-                    <div className="w-full bg-no-repeat bg-auto" style={{backgroundImage: "url(https://botanica.risingbamboo.com/wp-content/uploads/2023/05/bg-product2.jpg)", backgroundPosition: "bottom center"}}>
+                    <div className="w-full bg-no-repeat bg-auto" style={{backgroundImage: "url(/assets/theme/images/background/bg-product2.webp)", backgroundPosition: "bottom center"}}>
 
                         <div className="container mx-auto py-40 text-white">
                             <div className="grid grid-cols-12 gap-4 py-8">
                                 <div className="banner-left col-span-12 lg:col-span-6 lg:mt-0 mt-8 wow fadeInLeft">
                                     <div className=" relative text-center">
-                                        <Image width={600} height={710} decoding="async" alt="Image" src="https://botanica.risingbamboo.com/wp-content/uploads/2023/01/healthy-food.png" className=" inline-block  relative elementor-repeater-item-c225823"/>
+                                        <Image width={600} height={710} decoding="async" alt="Image" src="/assets/theme/images/background/healthy-food.webp" className=" inline-block  relative elementor-repeater-item-c225823"/>
                                     </div>
                                 </div>
                                 <div className="col-span-12 lg:col-span-6 relative lg:order-1 -order-1 wow fadeInRight">

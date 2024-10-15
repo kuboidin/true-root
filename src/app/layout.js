@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
         <Footer />
     </div>
     {/* TODO */}
-    {process.env.NEXT_PUBLIC_TM_ENV === 'production' && <AnimatedCursor
+    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <AnimatedCursor
         innerSize={10}
         outerSize={34}
         innerScale={1}
@@ -87,8 +87,8 @@ export default function RootLayout({ children }) {
         }}
     /> }
 
-    {process.env.NEXT_PUBLIC_TM_ENV === 'production' && <Analytics />}
-    {process.env.NEXT_PUBLIC_TM_ENV === 'production' && <SpeedInsights />}
+    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <Analytics />}
+    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <SpeedInsights />}
     {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION ? <GoogleAnalytics gaId="G-T9LXE33ZEW"/> : null}
 
     </body>

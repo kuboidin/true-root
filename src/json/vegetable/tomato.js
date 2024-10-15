@@ -6,18 +6,26 @@ const plant = {
     name: "Tomato",
     plural: "Tomatoes",
     path: "/how-to-grow/tomato",
+    datePublished: "2024-10-10 09:00:00 AM",
+    dateModified: "2024-10-10 09:00:00 AM",
     images: [
-        {src: "/assets/plants/vegetable/tomato/t3.jpeg", alt: "How to grow tomatoes"},
-        {src: "/assets/plants/vegetable/tomato/t1.webp", alt: "How to grow tomatoes"},
-        {src: "/assets/plants/vegetable/tomato/t2.jpg", alt: "How to grow tomatoes"},
-        {src: "/assets/plants/vegetable/tomato/t4.webp", alt: "How to grow tomatoes"},
+        {src: "/assets/plants/vegetable/tomato/t3.jpeg", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },
+        {src: "/assets/plants/vegetable/tomato/t1.webp", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },
+        {src: "/assets/plants/vegetable/tomato/t2.jpg", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },
+        {src: "/assets/plants/vegetable/tomato/t4.webp", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },
     ],
     seo: {
+        images: [ // for structured markup - article
+            "/assets/plants/vegetable/tomato/t3.jpeg",
+            "/assets/plants/vegetable/tomato/t1.webp",
+            "/assets/plants/vegetable/tomato/t2.jpg",
+            "/assets/plants/vegetable/tomato/t4.webp"
+        ],
         title: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}`,
         description: `Discover expert tips on growing tomatoes at home, in the garden, or commercially. Learn about tomato health benefits, Ayurvedic uses, nutritional value, ecological impact, myths, and more. ${app.name}`,
         keywords: ["how to grow tomatoes", "tomato growing tips", "tomato nutrition", "health benefits of tomatoes", "organic tomato farming", "grow tomatoes at home", "tomato planting guide", "tomato uses", "tomato seeds guide",
             "NPK for tomatoes", "eco-friendly tomato farming", "Ayurvedic benefits of tomatoes", "medicinal uses of tomatoes", "tomato diseases and cures", ...app.meta.keywords],
-        thumbnail: `${app.url}/og/how-to-grow/tomato.png`
+        thumbnail: `${app.url}/og/how-to-grow/tomato.png`,
     },
     hero: {
         heading: "Tomato (टमाटर)",

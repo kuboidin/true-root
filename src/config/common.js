@@ -9,6 +9,7 @@ const common = {
         shortDate: "LL/dd/kkkk",
         longDayDateTime: "dddd, LLLL dd, kkkk, h:mm:ss a",
         shortDayDateTime: "ddd, LL/dd/kkkk, hh:mm a",
+        seoDate: "LLLL-dd, kkkk",
     },
 
 };

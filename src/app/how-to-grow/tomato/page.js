@@ -14,6 +14,7 @@ import InformationTab from "@/components/pages/vegitable/information-tab";
 import Social from "@/components/pages/social";
 import Step from "@/components/pages/vegitable/step";
 import TabLink from "@/components/pages/tab-link";
+import newDate from "@/lib/date";
 
 // plant JSON
 import plant from "@/json/vegetable/tomato";
@@ -54,14 +55,12 @@ export default function Page() {
         "@type": "Article",
         "headline": plant.seo.title,
         "description": plant.seo.description,
-        "image": plant.seo.thumbnail,
+        "image": plant.seo.images,
+        "datePublished": newDate(plant.datePublished).toString(),
+        "dateModified": newDate(plant.dateModified).toString(),
         "author": {
             "@type": "Person",
             "name": app.og.author
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": `${app.url}${plant.path}`
         }
     };
 
