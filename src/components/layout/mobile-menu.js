@@ -10,7 +10,7 @@ import {cn} from "@/lib/utils";
 import {Button} from "@/components/ui/button";
 import {ScrollArea} from "@/components/ui/scroll-area";
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
-import menuList from "@/components/layout/MenuList";
+import menuList from "@/components/layout/menuList";
 import {Separator} from "@/components/ui/separator";
 
 

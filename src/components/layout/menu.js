@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import menuList from "@/components/layout/MenuList";
+import menuList from "@/components/layout/menuList";
 import {cn} from "@/lib/utils";
 
 export default function Menu() {
