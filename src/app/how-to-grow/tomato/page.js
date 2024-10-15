@@ -59,7 +59,7 @@ export default function Page() {
         "datePublished": newDate(plant.datePublished).toString(),
         "dateModified": newDate(plant.dateModified).toString(),
         "author": {
-            "@type": "Person",
+            "@type": "Organization",
             "name": app.og.author
         }
     };
@@ -95,7 +95,7 @@ export default function Page() {
                                             {plant.hero.sub_heading}
                                         </span>
                                         <h5 className="lg:text-4xl sm:text-3xl text-2xl mb-1">{plant.hero.heading}</h5>
-                                        <div className="flex flex-row justify-between items-center text-center content-center">
+                                        <div className="flex flex-col md:flex-row justify-start md:justify-between gap-4">
                                             <EcoBadge score={plant.hero.eco_badge.score} information={plant.hero.eco_badge.information}/>
                                             <div className="flex flex-col justify-start text-left text-sm">
                                                 {plant.hero.about_quick_list.map((about, i) => <span key={i}>{about}</span>)}
@@ -137,17 +137,16 @@ export default function Page() {
                 <div className="product-description">
                     <div>
                         <Tabs defaultValue="grow" className="w-full">
-                            <TabsList className="flex justify-center flex-wrap border-b border-border bg-transparent p-12">
-                                <TabsTrigger value="info" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Good to know</TabsTrigger>
-                                <TabsTrigger value="grow" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">How to grow Tomatoes</TabsTrigger>
-                                <TabsTrigger value="process" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Growing Process & Schedule</TabsTrigger>
-                                {/*<TabsTrigger value="community" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Community</TabsTrigger>*/}
+                            <TabsList className="flex flex-row justify-start md:justify-center flex-wrap px-0 md:px-12 mb-20 gap-2">
+                                <TabsTrigger value="info" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">Good to know</TabsTrigger>
+                                <TabsTrigger value="grow" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">How to grow Tomatoes</TabsTrigger>
+                                <TabsTrigger value="process" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">Growing Process & Schedule</TabsTrigger>
                             </TabsList>
                             <TabsContent value="info" className="lg:pt-13.5 sm:pt-7.5 pt-5">
                                 <InformationTab plant={plant}/>
                             </TabsContent>
                             <TabsContent value="grow" className="lg:pt-13.5 sm:pt-7.5 pt-5">
-                                <div className="flex flex-col gap-2 px-20">
+                                <div className="container flex flex-col gap-2">
                                     <div className="m-lg-b0 m-md-b30">
                                         <div className="mb-10 max-md:mb-5">
                                             <h2 className="mb-2">Growing Tomatoes at Home (In Pots or Grow Bags)</h2>
@@ -368,7 +367,7 @@ export default function Page() {
                                 </div>
                             </TabsContent>
                             <TabsContent value="process" className="lg:pt-13.5 sm:pt-7.5 pt-5">
-                                <div className="flex flex-col gap-2 px-20">
+                                <div className="container flex flex-col gap-2">
                                     <div>
                                         <div className="mb-10 max-md:mb-5">
                                             <h2 className="mb-2">Growing Process & Schedule</h2>

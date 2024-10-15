@@ -125,10 +125,6 @@ const plant = {
                     }
                 }
             ],
-            hero_image: {
-                url: "/assets/plants/vegetable/tomato/t3.jpeg",
-                title: "How to grow tomatoes"
-            },
             right_section: {
                 heading: "Risks and Things to Consider",
                 information: <>Make sure that you thoroughly wash or cook raw tomatoes before consuming them. As with other fresh produce, raw tomatoes can have germs that cause foodborne illnesses like Listeria and Salmonella. Foodborne illness is a greater concern for those who:
