@@ -28,7 +28,7 @@ const plant = {
         },
         about_quick_list: [ // keep it to max 3
             "One of the easiest vegetables to grow",
-            "Fruiting withing 60 to 85 days (depending on variety)",
+            "Fruiting within 60 to 85 days (depending on variety)",
             "Highly suitable for hydroponic cultivation"
         ],
         snippet: <>
@@ -58,7 +58,7 @@ const plant = {
     },
     tabs: {
         good_to_know: {
-            heading: `Tomatoes grow well in pots, raised beds, or directly in the ground. Choose a sunny spot with at least 6-8 hours of sunlight daily. Ensure proper spacing between plants (45-60 cm apart) to allow for air circulation and prevent fungal infections.`,
+            heading: `Tomatoes grow well in pots, raised beds, or directly in the ground. Choose a sunny spot with at least 6-8 hours of sunlight daily. Ensure proper spacing between plants (45-60 cm apart) to allow air circulation and prevent fungal infections.`,
             health_benefits: [
                 {
                     heading: "Heart Health",
@@ -94,7 +94,7 @@ const plant = {
                 },
                 {
                     heading: "Improved Digestion",
-                    detail: `The fiber in tomatoes aids digestion, prevents constipation, and maintains a healthy gut flora.`,
+                    detail: `The fiber in tomatoes aids digestion, prevents constipation and maintains a healthy gut flora.`,
                     source: {
                         link: "https://www.medanta.org/patient-education-blog/researchers-have-discovered-that-tomatoes-are-healthy-for-gut-bacteria#:~:text=Additionally%2C%20tomatoes%20contain%20vitamins%2C%20minerals,promote%20a%20healthy%20digestive%20system.",
                         title: "Medanta"
@@ -122,7 +122,7 @@ const plant = {
                 title: "How to grow tomatoes"
             },
             right_section: {
-                heading: "Risk and Things to consider",
+                heading: "Risks and Things to Consider",
                 information: <>Make sure that you thoroughly wash or cook raw tomatoes before consuming them. As with other fresh produce, raw tomatoes can have germs that cause foodborne illnesses like Listeria and Salmonella. Foodborne illness is a greater concern for those who:
                     <span className="text-2xs">Source: <Link href="https://academic.oup.com/eurjpc/article/31/8/922/7450162" target="_blank" className="green-link">Oxford Academic</Link></span>
                 </>,
@@ -149,7 +149,7 @@ const plant = {
                     {name: "Fiber", value: "1.5g"},
                     {name: "Protein", value: "1.1g"},
                 ],
-                bottom: <>Whole, fresh tomatoes are also a source of several micronutrients, including: Folate, Potassium, Vitamin C, Vitamin K</>
+                bottom: <>Whole, fresh tomatoes are also a source of several micronutrients, including Folate, Potassium, Vitamin C, and Vitamin K.</>
             },
             ecological_effects: [
                 {

@@ -13,7 +13,7 @@ export default function TabLink({ section = "", tab = "Growing Process & Schedul
                 <span className={cn("lnk", className)}>{children}</span>
             </TooltipTrigger>
             <TooltipContent>
-                <p>Switch to <strong>{tab}</strong> tab at the top and visit <strong>{section}</strong> section.</p>
+                <p>Switch to the <strong>{tab}</strong> tab at the top and visit the <strong>{section}</strong> section.</p>
             </TooltipContent>
         </Tooltip>
     </TooltipProvider>;

@@ -26,7 +26,7 @@ export default function InformationTab({ plant }) {
                                     </div>
                                     <div className="flex flex-col gap-2 text-sm mt-[23px] text-white">
                                         {plant.tabs.good_to_know.health_benefits.map((benefit, i) => <div key={i}><span className="font-bold text-lemonGreen">{benefit.heading}: </span> {benefit.detail}
-                                            <span className="text-2xs">Source: <Link href={benefit.source.link} target="_blank" className="green-link">{benefit.source.title}</Link></span></div>)}
+                                            {" "}  <span className="text-2xs">Source: <Link href={benefit.source.link} target="_blank" className="green-link">{benefit.source.title}</Link></span></div>)}
                                     </div>
                                 </div>
                             </div>
