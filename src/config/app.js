@@ -1,19 +1,21 @@
 const app = {
     name: "True Root",
-    title: "Welcome to True Root",
+    title: "True Root | Growing, Home Gardening & Sustainable Farming | Plant Database & Wiki",
     url: "https://trueroot.in",
     domain: "trueroot.in",
-    seo_title: "Learn how to grow plants at home.",
+    seo_title: "Learn how to grow any plants at home | True Root | Growing, Home Gardening & Sustainable Farming | Plant Database & Wiki",
     meta: {
-        description: "True root is a plant database and wiki",
-        keywords: ["true root", "plants", "trees", "grow", "wiki"],
+        description: "True Root offers organic crop growing guides, home gardening tips, and sustainable farming practices. Discover how to grow vegetables, fruits, and more with our expert advice.",
+        keywords: ["organic crop growing", "home gardening", "sustainable farming", "grow vegetables", "organic farming tips", "grow fruits at home", "garden care", "eco-friendly gardening", "NPK for plants", "organic fertilizers", "pest protection", "seed germination", "crop planting guides"],
     },
     og: {
-        title: "True Root",
-        description: "True root is a plant database and wiki",
+        title: "True Root | Growing, Home Gardening & Sustainable Farming | Plant Database & Wiki",
+        description: "True Root offers organic crop growing guides, home gardening tips, and sustainable farming practices. Discover how to grow vegetables, fruits, and more with our expert advice.",
         type: "website",
         url: "https://trueroot.in",
-        image: "https://trueroot.in/assets/logo/logo.png",
+        author: "True Root",
+        image: "https://trueroot.in/assets/og/home.png",
+        twitter_card: "summary_large_image",
     },
     footer: {
         links: {
@@ -22,7 +24,7 @@ const app = {
     },
     support: {
         email: "support@kuboid.in",
-        url: 'https://www.meraskool.com/support'
+        url: 'https://trueroot.in/support'
     },
     logo: {
         dark: 'https://wbppindsgvprdldvrrti.supabase.co/storage/v1/object/public/mera-skool/brand/logo/mera_skool_logo_dark_transparent.png',

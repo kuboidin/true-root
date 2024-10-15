@@ -25,17 +25,51 @@ export const metadata = {
     openGraph: {
         title: plant.seo.title,
         description: plant.seo.description,
-        images: [plant.seo.thumbnail],
+        images: [
+            {
+                url: plant.seo.thumbnail,
+                width: 1582,
+                height: 718,
+                alt: plant.seo.title,
+            },
+        ],
     },
     twitter: {
         title: plant.seo.title,
         description: plant.seo.description,
-        images: [plant.seo.thumbnail],
+        images: [
+            {
+                url: plant.seo.thumbnail,
+                width: 1582,
+                height: 718,
+                alt: plant.seo.title,
+            },
+        ],
     }
 };
 
 export default function Page() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": plant.seo.title,
+        "description": plant.seo.description,
+        "image": plant.seo.thumbnail,
+        "author": {
+            "@type": "Person",
+            "name": app.og.author
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `${app.url}${plant.path}`
+        }
+    };
+
     return <>
+        {/* Add JSON-LD to your page */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}/>
+        {/* ... */}
+
         {/* breadcrumbs */}
         <Breadcrumbs crumbs={[
             {name: "Home", link: "/"},
@@ -91,7 +125,7 @@ export default function Page() {
 
                                 <Separator className="mt-2 mb-6"/>
                             </div>
-                            <Social />
+                            <Social/>
                         </div>
                     </div>
                 </div>
@@ -111,7 +145,7 @@ export default function Page() {
                                 {/*<TabsTrigger value="community" className="py-2.5 px-5 font-medium font-Lufga -mb-0.5 border-b-2 border-transparent text-secondary text-xl">Community</TabsTrigger>*/}
                             </TabsList>
                             <TabsContent value="info" className="lg:pt-13.5 sm:pt-7.5 pt-5">
-                                <InformationTab plant={plant} />
+                                <InformationTab plant={plant}/>
                             </TabsContent>
                             <TabsContent value="grow" className="lg:pt-13.5 sm:pt-7.5 pt-5">
                                 <div className="flex flex-col gap-2 px-20">

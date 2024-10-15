@@ -1,7 +1,59 @@
 import Image from "next/image";
+import app from "@/config/app";
+
+export const metadata = {
+  title: app.title,
+  description: app.meta.description,
+  keywords:  app.meta.keywords,
+  openGraph: {
+    title: app.title,
+    description: app.meta.description,
+    images: [
+      {
+        url: app.og.image,
+        width: 1582,
+        height: 718,
+        alt: app.name,
+      },
+    ],
+  },
+  twitter: {
+    title: app.title,
+    description: app.meta.description,
+    images: [
+      {
+        url: app.og.image,
+        width: 1582,
+        height: 718,
+        alt: app.name,
+      },
+    ],
+  }
+};
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "name": app.name,
+    "url": app.url,
+    "description": app.meta.description,
+    "publisher": {
+      "@type": "Organization",
+      "name": app.name
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": app.url,
+    }
+  };
+
   return <>
+    {/* Add JSON-LD to your page */}
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}/>
+    {/* ... */}
+
+
     {/* hero section */}
     <div className="overflow-hidden relative main-slider style-2">
       <div className="main-swiper2">
@@ -43,7 +95,7 @@ export default function Home() {
 
                   <div className="overflow-hidden" data-swiper-parallax="-100">
                     <Image width={860} height={1044} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/main-slider/slider2/pic1.png"
-                         alt="banner-media" className="w-full object-cover"/>
+                           alt="banner-media" className="w-full object-cover"/>
                   </div>
                   <div className="w-[250px] p-5 absolute top-[38%] right-[-5vw] duration-700 rounded-2xl bg-[#ffffffb3] shadow-wrapper backdrop-blur-[7px] flex items-center max-3xl:w-[200px] max-3xl:p-3.6 max-3xl:right-[1vw] max-md:hidden hover:-translate-y-2.5">
                     <div className="relative overflow-hidden z-1 rounded-xl shadow-[0px_15px_40px_0px_rgba(0,0,0,0.1)] mr-2.5">
@@ -62,15 +114,15 @@ export default function Home() {
                     <ul className="flex px-2.5">
                       <li className="min-w-14.5 size-14.5 rounded-full -ml-2.5">
                         <Image width={200} height={200} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/testimonial/testimonial1.jpg"
-                             alt="" className="border-2 border-white rounded-full size-full"/>
+                               alt="" className="border-2 border-white rounded-full size-full"/>
                       </li>
                       <li className="min-w-14.5 size-14.5 rounded-full -ml-2.5">
                         <Image width={200} height={200} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/testimonial/testimonial2.jpg"
-                             alt="" className="border-2 border-white rounded-full size-full"/>
+                               alt="" className="border-2 border-white rounded-full size-full"/>
                       </li>
                       <li className="min-w-14.5 size-14.5 rounded-full -ml-2.5">
                         <Image width={200} height={200} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/testimonial/testimonial3.jpg"
-                             alt="" className="border-2 border-white rounded-full size-full"/>
+                               alt="" className="border-2 border-white rounded-full size-full"/>
                       </li>
                     </ul>
                   </div>
@@ -133,8 +185,8 @@ export default function Home() {
             <div className="relative z-1 mb-13.5 max-lg:mb-0 pl-10 max-lg:pl-0">
               <a href="shop-with-category.html">
                 <Image width={555} height={450} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/category/pic1.jpg"
-                     alt=""
-                     className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-ee-7xl max-md:rounded-ee-4xl"/>
+                       alt=""
+                       className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-ee-7xl max-md:rounded-ee-4xl"/>
                 <div className="absolute left-0 max-lg:left-[-15px] max-sm:!-left-2.5 bg-white border-4 border-white font-Lufga text-xxl max-lg:text-sm max-sm:!text-xs py-2 px-5 max-lg:py-1.1 max-lg:px-2.5 max-sm:!py-1 max-sm:!px-1.5 bottom-7.5 max-lg:bottom-3.6 max-sm:!bottom-2 capitalize rounded-3.5xl max-sm:rounded-lg shadow-[0px_15px_30px_0px_rgba(0,0,0,0.1)] duration-500 hover:bg-primary hover:text-white">
                   Jacket
                 </div>
@@ -145,8 +197,8 @@ export default function Home() {
             <div className="relative z-1 mb-13.5 max-lg:mb-0 pl-10 max-lg:pl-0">
               <a href="shop-with-category.html">
                 <Image width={555} height={450} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/category/pic2.jpg"
-                     alt=""
-                     className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-es-7xl max-md:rounded-es-4xl"/>
+                       alt=""
+                       className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-es-7xl max-md:rounded-es-4xl"/>
                 <div className="absolute left-0 max-lg:left-[-15px] max-sm:!-left-2.5 bg-white border-4 border-white font-Lufga text-xxl max-lg:text-sm max-sm:!text-xs py-2 px-5 max-lg:py-1.1 max-lg:px-2.5 max-sm:!py-1 max-sm:!px-1.5 bottom-7.5 max-lg:bottom-3.6 max-sm:!bottom-2 capitalize rounded-3.5xl max-sm:rounded-lg shadow-[0px_15px_30px_0px_rgba(0,0,0,0.1)] duration-500 hover:bg-primary hover:text-white">
                   Jeans
                 </div>
@@ -157,8 +209,8 @@ export default function Home() {
             <div className="relative z-1 mb-13.5 max-lg:mb-0 pl-10 max-lg:pl-0">
               <a href="shop-with-category.html">
                 <Image width={555} height={450} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/category/pic3.jpg"
-                     alt=""
-                     className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-ee-7xl max-md:rounded-ee-4xl"/>
+                       alt=""
+                       className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-ee-7xl max-md:rounded-ee-4xl"/>
                 <div className="absolute left-0 max-lg:left-[-15px] max-sm:!-left-2.5 bg-white border-4 border-white font-Lufga text-xxl max-lg:text-sm max-sm:!text-xs py-2 px-5 max-lg:py-1.1 max-lg:px-2.5 max-sm:!py-1 max-sm:!px-1.5 bottom-7.5 max-lg:bottom-3.6 max-sm:!bottom-2 capitalize rounded-3.5xl max-sm:rounded-lg shadow-[0px_15px_30px_0px_rgba(0,0,0,0.1)] duration-500 hover:bg-primary hover:text-white">
                   Shirts
                 </div>
@@ -169,8 +221,8 @@ export default function Home() {
             <div className="relative z-1 mb-13.5 max-lg:mb-0 pr-10 max-lg:pr-0">
               <a href="shop-with-category.html">
                 <Image width={555} height={450} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/category/pic4.jpg"
-                     alt=""
-                     className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-ss-7xl max-md:rounded-ss-4xl"/>
+                       alt=""
+                       className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-ss-7xl max-md:rounded-ss-4xl"/>
                 <div className="absolute right-0 max-lg:right-[-15px] max-sm:!right-auto max-sm:-left-2.5 bg-white border-4 border-white font-Lufga text-xxl max-lg:text-sm max-sm:!text-xs py-2 px-5 max-lg:py-1.1 max-lg:px-2.5 max-sm:!py-1 max-sm:!px-1.5 bottom-7.5 max-lg:bottom-3.6 max-sm:!bottom-2 capitalize rounded-3.5xl max-sm:rounded-lg shadow-[0px_15px_30px_0px_rgba(0,0,0,0.1)] duration-500 hover:bg-primary hover:text-white">
                   Shorts
                 </div>
@@ -181,8 +233,8 @@ export default function Home() {
             <div className="relative z-1 mb-13.5 max-lg:mb-0 pr-10 max-lg:pr-0">
               <a href="shop-with-category.html">
                 <Image width={555} height={450} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/category/pic5.jpg"
-                     alt=""
-                     className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-ss-7xl max-md:rounded-ss-4xl"/>
+                       alt=""
+                       className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-ss-7xl max-md:rounded-ss-4xl"/>
                 <div className="absolute right-0 max-lg:right-[-15px] max-sm:!right-auto max-sm:-left-2.5 bg-white border-4 border-white font-Lufga text-xxl max-lg:text-sm max-sm:!text-xs py-2 px-5 max-lg:py-1.1 max-lg:px-2.5 max-sm:!py-1 max-sm:!px-1.5 bottom-7.5 max-lg:bottom-3.6 max-sm:!bottom-2 capitalize rounded-3.5xl max-sm:rounded-lg shadow-[0px_15px_30px_0px_rgba(0,0,0,0.1)] duration-500 hover:bg-primary hover:text-white">
                   t-shirt
                 </div>
@@ -193,8 +245,8 @@ export default function Home() {
             <div className="relative z-1 mb-13.5 max-lg:mb-0 pr-10 max-lg:pr-0">
               <a href="shop-with-category.html">
                 <Image width={555} height={450} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/category/pic6.jpg"
-                     alt=""
-                     className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-ss-7xl max-md:rounded-ss-4xl"/>
+                       alt=""
+                       className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3.5xl rounded-ss-7xl max-md:rounded-ss-4xl"/>
                 <div className="absolute right-0 max-lg:right-[-15px] max-sm:!right-auto max-sm:-left-2.5 bg-white border-4 border-white font-Lufga text-xxl max-lg:text-sm max-sm:!text-xs py-2 px-5 max-lg:py-1.1 max-lg:px-2.5 max-sm:!py-1 max-sm:!px-1.5 bottom-7.5 max-lg:bottom-3.6 max-sm:!bottom-2 capitalize rounded-3.5xl max-sm:rounded-lg shadow-[0px_15px_30px_0px_rgba(0,0,0,0.1)] duration-500 hover:bg-primary hover:text-white">
                   Blazer
                 </div>

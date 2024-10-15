@@ -1,26 +1,4 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
-Disallow: /assets/
-Disallow: /avatars/
-Disallow: /examples/
-Disallow: /registry/
-Disallow: /auth-code-error
-Disallow: /error
-Disallow: /forgot-password
-Disallow: /logout
-Disallow: /password-reset
-Disallow: /password-reset-email
-Disallow: /success
-Disallow: /processing-payment
-Disallow: /verify-email
-Disallow: /delete-your-account
-Disallow: /pay-fees
-Disallow: /_next
 Allow: /
-Allow: /feature
-Allow: /blog
-Allow: /api/og/*
-
-Sitemap: https://meraskool.com/sitemap.xml
+Disallow: /private/
+Sitemap: https://trueroot.in/sitemap.xml
