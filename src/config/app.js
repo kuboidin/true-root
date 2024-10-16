@@ -37,24 +37,9 @@ const app = {
         name: 'Kuboid.in',
         link: 'https://kuboid.in',
     },
-    social: [
-        {
-            icon: "Facebook",
-            link: "https://www.facebook.com/",
-        },
-        {
-            icon: "Instagram",
-            link: "https://www.instagram.com/",
-        },
-        {
-            icon: "Linkedin",
-            link: "https://www.linkedin.com/",
-        },
-        {
-            icon: "Twitter",
-            link: "https://www.twitter.com/",
-        }
-    ]
+    social: {
+        insta: "true_root"
+    }
 };
 // 7/27/2023, 12:13:26 AM EST
 
