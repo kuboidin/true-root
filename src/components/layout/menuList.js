@@ -4,7 +4,7 @@ const menuList = [
         href: "/how-to-grow",
         featured: {
             image: "/assets/theme/images/adv-1.png",
-            href: "/how-to-grow/tomato",
+            href: "/how-to-grow/tomatoes",
             title: "Grow Tomatoes"
         },
         sub_headings: [
@@ -13,12 +13,12 @@ const menuList = [
                 href: "/how-to-grow/vegetable",
                 items: [
                     {
-                        name: 'Tomato',
-                        href: '/how-to-grow/tomato'
+                        name: 'Tomatoes',
+                        href: '/how-to-grow/tomatoes'
                     },
                     {
                         name: "Potato",
-                        href: '/how-to-grow/tomato'
+                        href: '/how-to-grow/tomatoes'
                     },
                     {
                         name: "Onion",
@@ -105,7 +105,7 @@ const menuList = [
         href: "/how-to-grow",
         featured: {
             image: "/assets/theme/images/adv-1.png",
-            href: "/how-to-grow/tomato",
+            href: "/how-to-grow/tomatoes",
             title: "Grow Tomatoes"
         },
         sub_headings: [
@@ -119,7 +119,7 @@ const menuList = [
                     },
                     {
                         name: "Potato",
-                        href: '/how-to-grow/tomato'
+                        href: '/how-to-grow/tomatoes'
                     },
                     {
                         name: "Onion",
@@ -255,7 +255,7 @@ const menuList = [
                     },
                     {
                         name: "Potato",
-                        href: '/how-to-grow/tomato'
+                        href: '/how-to-grow/tomatoes'
                     },
                     {
                         name: "Onion",

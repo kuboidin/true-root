@@ -21,6 +21,8 @@ export const metadata = {
                 alt: app.name,
             },
         ],
+        url: app.url,
+        type: 'website',
     },
     twitter: {
         title: app.title,

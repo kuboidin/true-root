@@ -3,9 +3,10 @@ import Link from "next/link";
 import {GiBee, GiFarmTractor, GiFootprint, GiPlantRoots, GiWaterDrop} from "react-icons/gi";
 
 const plant = {
-    name: "Tomato",
+    name: "Tomatoes",
     plural: "Tomatoes",
-    path: "/how-to-grow/tomato",
+    singular: "Tomato",
+    path: "/how-to-grow/tomatoes",
     datePublished: "2024-10-10 09:00:00 AM",
     dateModified: "2024-10-10 09:00:00 AM",
     cover: "/assets/plants/vegetable/tomato/t4.webp",
@@ -22,14 +23,14 @@ const plant = {
             "/assets/plants/vegetable/tomato/t2.jpg",
             "/assets/plants/vegetable/tomato/t4.webp"
         ],
-        title: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}`,
-        description: `Discover expert tips on growing tomatoes at home, in the garden, or commercially. Learn about tomato health benefits, Ayurvedic uses, nutritional value, ecological impact, myths, and more. ${app.name}`,
-        keywords: ["how to grow tomatoes", "tomato growing tips", "tomato nutrition", "health benefits of tomatoes", "organic tomato farming", "grow tomatoes at home", "tomato planting guide", "tomato uses", "tomato seeds guide",
+        title: `How to Grow Tomatoes: Complete Guide & Care - ${app.name}`,
+        description: `A full guide on growing tomatoes at home and garden. Learn about benefits, nutritional value, ecological impact, fertilisers and more only on ${app.name}.`,
+        keywords: ["grow tomato", "grow tomatoes", "how to grow tomatoes", "tomato growing tips", "tomato nutrition", "health benefits of tomatoes", "organic tomato farming", "grow tomatoes at home", "tomato planting guide", "tomato uses", "tomato seeds guide",
             "NPK for tomatoes", "eco-friendly tomato farming", "Ayurvedic benefits of tomatoes", "medicinal uses of tomatoes", "tomato diseases and cures", ...app.meta.keywords],
         thumbnail: `${app.url}/assets/og/how-to-grow/tomato.png`,
     },
     hero: {
-        heading: "Tomato (टमाटर)",
+        heading: "Tomatoes (टमाटर)",
         sub_heading: "Solanum lycopersicum, Vegetable (Fruit)",
         eco_badge: {
             score: 4,

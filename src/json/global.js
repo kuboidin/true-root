@@ -1,30 +1,30 @@
-import tomato from "@/json/vegetable/tomato";
+import tomato from "@/json/vegetable/tomatoes";
 import {category as c} from '@/config/plant';
 
 const gc = [
     {
-        name: 'Tomato',
+        name: 'Tomatoes',
         created_on: "2024-10-10 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE ],
         ref: tomato,
         trending: 10
     },
     {
-        name: 'Tomato2',
+        name: 'Tomatoes',
         created_on: "2024-10-10 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE ],
         ref: tomato,
         trending: 9
     },
     {
-        name: 'Tomato3',
+        name: 'Tomatoes',
         created_on: "2024-10-10 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE ],
         ref: tomato,
         trending: 8
     },
     {
-        name: 'Tomato4',
+        name: 'Tomatoes',
         created_on: "2024-10-10 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE ],
         ref: tomato,

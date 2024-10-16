@@ -1,6 +1,6 @@
 "use client";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import Image from "next/image";
 
@@ -28,6 +28,5 @@ export default function SwiperComp({images = []}) {
         <div className="md:hidden">
             {images.length > 0 && <Image width={500} height={500} src={images[0].src} alt={images[0].alt} title={images[0].alt} className="border-2 border-white rounded-xl"/>}
         </div>
-        </>
-        ;
-        }
+    </>;
+}

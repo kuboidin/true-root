@@ -6,7 +6,7 @@ import {Mail} from "lucide-react";
 
 export default function Footer() {
     return <>
-        <div className="relative z-1 image-wrapper h-[400px]">
+        <div className="relative z-1 image-wrapper h-[200px] sm:h-[300px]">
             <div className="container-fluid !px-0">
                 <div className="row gx-0">
                     <div className="xl:w-1/6 w-1/3">

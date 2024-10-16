@@ -17,7 +17,7 @@ import TabLink from "@/components/pages/tab-link";
 import newDate from "@/lib/date";
 
 // plant JSON
-import plant from "@/json/vegetable/tomato";
+import plant from "@/json/vegetable/tomatoes";
 
 export const metadata = {
     title: plant.seo.title,
@@ -35,6 +35,7 @@ export const metadata = {
             },
         ],
         url: `${app.url}${plant.path}`,
+        type: "article"
     },
     twitter: {
         title: plant.seo.title,
@@ -74,7 +75,7 @@ export default function Page() {
         <Breadcrumbs crumbs={[
             {name: "Home", link: "/"},
             {name: "How to grow", link: "/how-to-grow"},
-            {name: "Tomato"},
+            {name: plant.name},
         ]}/>
 
         <section>
@@ -95,7 +96,7 @@ export default function Page() {
                                         <span className="py-[3px] px-2.5 inline-block rounded-md text-xs bg-[#5E5CC6] font-semibold text-white leading-[1.3] uppercase mb-2">
                                             {plant.hero.sub_heading}
                                         </span>
-                                        <h5 className="lg:text-4xl sm:text-3xl text-2xl mb-1">{plant.hero.heading}</h5>
+                                        <h1 className="lg:text-4xl sm:text-3xl text-2xl mb-1">How to grow {plant.hero.heading}.</h1>
                                         <div className="flex flex-col md:flex-row justify-start md:justify-between gap-4">
                                             <EcoBadge score={plant.hero.eco_badge.score} information={plant.hero.eco_badge.information}/>
                                             <div className="flex flex-col justify-start text-left text-sm">
@@ -140,7 +141,7 @@ export default function Page() {
                         <Tabs defaultValue="grow" className="w-full">
                             <TabsList className="flex flex-row justify-start md:justify-center flex-wrap px-0 md:px-12 mb-28 gap-2">
                                 <TabsTrigger value="info" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">Good to know</TabsTrigger>
-                                <TabsTrigger value="grow" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">How to grow Tomatoes</TabsTrigger>
+                                <TabsTrigger value="grow" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">How to Grow Tomatoes</TabsTrigger>
                                 <TabsTrigger value="process" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">Growing Process & Schedule</TabsTrigger>
                             </TabsList>
                             <TabsContent value="info" className="lg:pt-13.5 sm:pt-7.5 pt-5">
@@ -154,7 +155,7 @@ export default function Page() {
                                             <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                                                 <div className="grid gap-6 row-gap-10 grid-cols-2">
                                                     <div className="lg:py-6 lg:pr-16 col-span-full">
-                                                        <Step step={1} heading="Step 1: Choose the Right Variety">
+                                                        <Step step={1} heading="Step 1: Choose the Right Variety to grow tomatoes">
                                                             <ul className="flex flex-col gap-2 text-gray-700">
                                                                 <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Determinate: </strong> Stay short, Dwarf, Good for pots and balcony</li>
                                                                 <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Indeterminate: </strong> Keep on growing until they die, Good for Gardens</li>
@@ -233,7 +234,7 @@ export default function Page() {
                                                             </>
                                                         </Step>
 
-                                                        <Step step={8} heading="Day 52: Grooming and care (Pinching)">
+                                                        <Step step={8} heading="Day 52: Grooming and caring (Pinching) of tomato plants">
                                                             <>
                                                                 <p className="text-gray-700">
                                                                     10-12 days after 2nd dose of fertilizer, You will see the plants have grown rapidly. Let&apos;s perform Pinching. The act of <strong>pinching</strong> involves the <strong>removal of the growing point of a shoot along with a few leaves</strong>. About 1-2 cm of a growing shoot of a young plant is snapped off with fingers.
@@ -316,7 +317,7 @@ export default function Page() {
                                                         <Step step={13} is_last={true} heading="Continue">
                                                             <>
                                                                 <p className="text-gray-700">
-                                                                    Along with these steps and stages, there are a few things you need to perform throughout the process, each thing will take only 20-30 minutes a week of your time. <br/>
+                                                                    Along with these steps and stages, there are a few things you need to perform throughout the process to grow tomatoes, each thing will take only 20-30 minutes a week of your time. <br/>
                                                                     Please see the related section for more information on each step, tips, and homemade recipes for fertilizers and plant care. <br/>
                                                                 </p>
 
@@ -381,7 +382,7 @@ export default function Page() {
 
                                         <Separator className="mt-4 mb-2"/>
                                         <p className="my-4" id="nurtients">
-                                            <MoveRight size={18} className="-mt-2 mr-2"/>The Life of a tomato is 5-6 months.<br/>
+                                            <MoveRight size={18} className="-mt-2 mr-2"/>The Life of a tomato plant is 5-6 months.<br/>
                                             <MoveRight size={18} className="-mt-2 mr-2"/>Tomatoes can be grown in spring (February), monsoon (July Mid) & Autumn (September end).<br/>
                                             <MoveRight size={18} className="-mt-2 mr-2"/>Summers are tough on tomatoes, when temperature increases, tomatoes ripen prematurely, and tomatoes cannot grow fully and ripen before time.
                                         </p>
@@ -396,7 +397,7 @@ export default function Page() {
                                         <Separator className="my-4"/>
 
                                         <div className="xl:mb-6 md:mb-3.5 mb-2.5" id="seeding">
-                                            <h4 className="font-bold text-xl max-md:text-lg"><Bean size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Seeding Process</h4>
+                                            <h4 className="font-bold text-xl max-md:text-lg"><Bean size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Seeding Process of tomatoes</h4>
                                             <p>Tomato seeds need water to sprout, infect it&apos;s all they need. <br/>
                                                 The seed coat absorbs the water, swells & cracks, allowing the tiny plant inside to emerge and begin its life. <br/>
                                                 Not enough moisture and the best thing is that the seeds won&apos;t sprout until it&apos;s enough, and worst. The worst thing is that they manage to sprout but quickly perish. <br/>
@@ -565,7 +566,7 @@ export default function Page() {
                                         <Separator className="my-4"/>
 
                                         <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"><Asterisk size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Important Reminders/Tips at Each Stage</h4>
+                                            <h4 className="font-bold text-xl max-md:text-lg mb-2"><Asterisk size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Important Reminders/Tips at Each Stage to grow tomatoes</h4>
                                             <ul className="flex flex-col gap-4">
                                                 <li><h6>Watering: <span className="font-normal">Water deeply but infrequently, ensuring the soil remains moist but not waterlogged. Regular watering is key during flowering and fruiting stages to prevent blossom end rot.</span></h6></li>
                                                 <li><h6>Fertilizing: <span className="font-normal">Apply a balanced fertilizer every 20 days during the growing season and every 15 days in fruiting season.</span></h6></li>
