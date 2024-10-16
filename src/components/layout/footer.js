@@ -67,17 +67,11 @@ export default function Footer() {
                                         </div>
                                     </Link>
                                 </div>
-                                <ul className="mb-6">
-                                    <li className="py-1 text-2sm font-medium">
-                                        <p><span>Address</span> : 451 Wall Street, UK, London</p>
-                                    </li>
-                                    <li className="py-1 text-2sm font-medium">
-                                        <p><span>E-mail</span> : example@info.com</p>
-                                    </li>
-                                    <li className="py-1 text-2sm font-medium">
-                                        <p><span>Phone</span> : (064) 332-1233</p>
-                                    </li>
-                                </ul>
+                                <p>
+                                    Helping you grow a greener future! {app.name} provides expert guidance on organic gardening, sustainable farming, and home crop cultivation.
+                                    Whether you&apos;re a beginner or an experienced grower, explore eco-friendly practices to nurture your plants and harvest the healthiest produce.
+                                    Join us in cultivating a more sustainable world!
+                                </p>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/3 sm:w-1/2 w-full">
