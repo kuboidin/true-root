@@ -26,7 +26,7 @@ const plant = {
         description: `Discover expert tips on growing tomatoes at home, in the garden, or commercially. Learn about tomato health benefits, Ayurvedic uses, nutritional value, ecological impact, myths, and more. ${app.name}`,
         keywords: ["how to grow tomatoes", "tomato growing tips", "tomato nutrition", "health benefits of tomatoes", "organic tomato farming", "grow tomatoes at home", "tomato planting guide", "tomato uses", "tomato seeds guide",
             "NPK for tomatoes", "eco-friendly tomato farming", "Ayurvedic benefits of tomatoes", "medicinal uses of tomatoes", "tomato diseases and cures", ...app.meta.keywords],
-        thumbnail: `${app.url}/og/how-to-grow/tomato.png`,
+        thumbnail: `${app.url}/assets/og/how-to-grow/tomato.png`,
     },
     hero: {
         heading: "Tomato (टमाटर)",

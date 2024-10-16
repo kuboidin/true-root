@@ -36,6 +36,7 @@ export const metadata = {
                 alt: app.name,
             },
         ],
+        url: app.url,
         locale: 'en_IN',
         type: 'website',
     },

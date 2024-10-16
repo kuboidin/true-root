@@ -34,6 +34,7 @@ export const metadata = {
                 alt: plant.seo.title,
             },
         ],
+        url: `${app.url}${plant.path}`,
     },
     twitter: {
         title: plant.seo.title,

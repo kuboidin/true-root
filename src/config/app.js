@@ -1,7 +1,7 @@
 const app = {
     name: "True Root",
     title: "True Root | Growing, Home Gardening & Sustainable Farming | Plant Database & Wiki",
-    url: "https://trueroot.in",
+    url: "https://www.trueroot.in",
     domain: "trueroot.in",
     seo_title: "Learn how to grow any plants at home | True Root | Growing, Home Gardening & Sustainable Farming | Plant Database & Wiki",
     meta: {
@@ -12,9 +12,9 @@ const app = {
         title: "True Root | Growing, Home Gardening & Sustainable Farming | Plant Database & Wiki",
         description: "True Root offers organic crop growing guides, home gardening tips, and sustainable farming practices. Discover how to grow vegetables, fruits, and more with our expert advice.",
         type: "website",
-        url: "https://trueroot.in",
+        url: "https://www.trueroot.in",
         author: "True Root",
-        image: "https://trueroot.in/assets/og/home.png",
+        image: "https://www.trueroot.in/assets/og/home.png",
         twitter_card: "summary_large_image",
     },
     footer: {
@@ -24,7 +24,7 @@ const app = {
     },
     support: {
         email: "support@kuboid.in",
-        url: 'https://trueroot.in/support'
+        url: 'https://www.trueroot.in/support'
     },
     logo: {
         dark: 'https://wbppindsgvprdldvrrti.supabase.co/storage/v1/object/public/mera-skool/brand/logo/mera_skool_logo_dark_transparent.png',
