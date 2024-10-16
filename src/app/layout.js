@@ -2,6 +2,7 @@ import AnimatedCursor from "react-animated-cursor";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { Toaster } from "@/components/ui/toaster";
 
 import "@/style/globals.css";
 import 'animate.css';
@@ -67,6 +68,7 @@ export default function RootLayout({ children }) {
             {children}
         </div>
         <Footer />
+        <Toaster />
     </div>
     {/* TODO */}
     {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <AnimatedCursor

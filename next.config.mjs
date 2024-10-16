@@ -25,6 +25,9 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'style')],
     },
+    experimental: {
+        serverComponentsExternalPackages: ["crypto"],
+    }
 };
 
 export default nextConfig;

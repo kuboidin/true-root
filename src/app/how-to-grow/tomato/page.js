@@ -398,7 +398,7 @@ export default function Page() {
                                             <h4 className="font-bold text-xl max-md:text-lg"><Bean size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Seeding Process</h4>
                                             <p>Tomato seeds need water to sprout, infect it&apos;s all they need. <br/>
                                                 The seed coat absorbs the water, swells & cracks, allowing the tiny plant inside to emerge and begin its life. <br/>
-                                                Not enough moisture and the best, the seeds won&apos;t sprout until it&apos;s enough, and worst, they manage to sprout but quickly perish. <br/>
+                                                Not enough moisture and the best thing is that the seeds won&apos;t sprout until it&apos;s enough, and worst. The worst thing is that they manage to sprout but quickly perish. <br/>
                                                 Too much water can draw the seedlings.<br/>
                                                 <strong>Testing moisture -</strong> The seeding soil must retain its shape when squeezed tightly, yet it should not drip much water if any at all.
                                             </p>

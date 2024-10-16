@@ -27,7 +27,7 @@ export default function Header({}) {
                                     How to grow
                                 </div>
                                 <input type="text" className="py-2.5 px-5 text-2sm text-title outline-none flex-auto w-[1%] h-[45px]" aria-label="Search input" placeholder="Tamato (Search for any plants like vegitables, fruits, ornamental plants etc.)"/>
-                                <button className="absolute right-0 size-12 justify-center inline-flex items-center" type="button">
+                                <button className="absolute right-0 size-12 justify-center inline-flex items-center" type="button" aria-label="Search">
                                     <Search className="text-secondary"/>
                                 </button>
                             </div>

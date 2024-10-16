@@ -20,7 +20,7 @@ export default function MobileMenu() {
     return (
         <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-                <Button variant="ghost" className="w-12 h-12 border-0 rounded-none my-3 text-base bg-black text-white focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden float-right">
+                <Button variant="ghost" className="w-12 h-12 border-0 rounded-none my-3 text-base bg-black text-white focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden float-right" aria-label="Toggle Menu">
                     <Menu size={30} className="w-8 h-8"/>
                     <span className="sr-only">Toggle Menu</span>
                 </Button>

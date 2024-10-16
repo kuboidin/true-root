@@ -147,100 +147,100 @@ const menuList = [
             }
         ]
     },
-    {
-        heading: 'Do you know?',
-        href: "/how-to-grow",
-        featured: {
-            image: "/assets/theme/images/adv-1.png",
-            href: "/how-to-grow/tomato",
-            title: "Grow Tomatoes"
-        },
-        sub_headings: [
-            {
-                name: "Home made organic fertilizers",
-                href: "/how-to-make/fertilizers",
-                items: [
-                    {
-                        name: 'Onion Leaves',
-                        href: '/how-to-make/onion-leaves-fertilizer'
-                    },
-                    {
-                        name: "Potato",
-                        href: '/how-to-grow/tomato'
-                    },
-                    {
-                        name: "Onion",
-                        href: '/how-to-grow/onion'
-                    },
-                ]
-            },
-            {
-                name: "Self Sustainable",
-                href: "/how-to-make/self-sustainable",
-                items: [
-                    {
-                        name: 'Bio Enzyme',
-                        href: '/how-to-make/bio-enzyme'
-                    },
-                    {
-                        name: "Green Chilli",
-                        href: '/how-to-grow/green-chilli'
-                    },
-                    {
-                        name: "Turmeric",
-                        href: '/how-to-grow/turmeric'
-                    },
-                ]
-            }
-        ]
-    },
-    {
-        heading: 'Wiki',
-        href: "/how-to-grow",
-        featured: {
-            image: "/assets/theme/images/adv-1.png",
-            href: "/how-to-grow/tomato",
-            title: "Grow Tomatoes"
-        },
-        sub_headings: [
-            {
-                name: "Home made organic fertilizers",
-                href: "/how-to-make/fertilizers",
-                items: [
-                    {
-                        name: 'Onion Leaves',
-                        href: '/how-to-make/onion-leaves-fertilizer'
-                    },
-                    {
-                        name: "Potato",
-                        href: '/how-to-grow/tomato'
-                    },
-                    {
-                        name: "Onion",
-                        href: '/how-to-grow/onion'
-                    },
-                ]
-            },
-            {
-                name: "Self Sustainable",
-                href: "/how-to-make/self-sustainable",
-                items: [
-                    {
-                        name: 'Bio Enzyme',
-                        href: '/how-to-make/bio-enzyme'
-                    },
-                    {
-                        name: "Green Chilli",
-                        href: '/how-to-grow/green-chilli'
-                    },
-                    {
-                        name: "Turmeric",
-                        href: '/how-to-grow/turmeric'
-                    },
-                ]
-            }
-        ]
-    },
+    // {
+    //     heading: 'Do you know?',
+    //     href: "/how-to-grow",
+    //     featured: {
+    //         image: "/assets/theme/images/adv-1.png",
+    //         href: "/how-to-grow/tomato",
+    //         title: "Grow Tomatoes"
+    //     },
+    //     sub_headings: [
+    //         {
+    //             name: "Home made organic fertilizers",
+    //             href: "/how-to-make/fertilizers",
+    //             items: [
+    //                 {
+    //                     name: 'Onion Leaves',
+    //                     href: '/how-to-make/onion-leaves-fertilizer'
+    //                 },
+    //                 {
+    //                     name: "Potato",
+    //                     href: '/how-to-grow/tomato'
+    //                 },
+    //                 {
+    //                     name: "Onion",
+    //                     href: '/how-to-grow/onion'
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             name: "Self Sustainable",
+    //             href: "/how-to-make/self-sustainable",
+    //             items: [
+    //                 {
+    //                     name: 'Bio Enzyme',
+    //                     href: '/how-to-make/bio-enzyme'
+    //                 },
+    //                 {
+    //                     name: "Green Chilli",
+    //                     href: '/how-to-grow/green-chilli'
+    //                 },
+    //                 {
+    //                     name: "Turmeric",
+    //                     href: '/how-to-grow/turmeric'
+    //                 },
+    //             ]
+    //         }
+    //     ]
+    // },
+    // {
+    //     heading: 'Wiki',
+    //     href: "/how-to-grow",
+    //     featured: {
+    //         image: "/assets/theme/images/adv-1.png",
+    //         href: "/how-to-grow/tomato",
+    //         title: "Grow Tomatoes"
+    //     },
+    //     sub_headings: [
+    //         {
+    //             name: "Home made organic fertilizers",
+    //             href: "/how-to-make/fertilizers",
+    //             items: [
+    //                 {
+    //                     name: 'Onion Leaves',
+    //                     href: '/how-to-make/onion-leaves-fertilizer'
+    //                 },
+    //                 {
+    //                     name: "Potato",
+    //                     href: '/how-to-grow/tomato'
+    //                 },
+    //                 {
+    //                     name: "Onion",
+    //                     href: '/how-to-grow/onion'
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             name: "Self Sustainable",
+    //             href: "/how-to-make/self-sustainable",
+    //             items: [
+    //                 {
+    //                     name: 'Bio Enzyme',
+    //                     href: '/how-to-make/bio-enzyme'
+    //                 },
+    //                 {
+    //                     name: "Green Chilli",
+    //                     href: '/how-to-grow/green-chilli'
+    //                 },
+    //                 {
+    //                     name: "Turmeric",
+    //                     href: '/how-to-grow/turmeric'
+    //                 },
+    //             ]
+    //         }
+    //     ]
+    // },
     {
         heading: 'Blog',
         href: "/how-to-grow",

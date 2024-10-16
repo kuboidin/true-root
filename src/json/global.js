@@ -4,33 +4,31 @@ import {category as c} from '@/config/plant';
 const gc = [
     {
         name: 'Tomato',
+        created_on: "2024-10-10 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE ],
-        ref: tomato
+        ref: tomato,
+        trending: 10
     },
     {
-        name: 'Tomato',
+        name: 'Tomato2',
+        created_on: "2024-10-10 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE ],
-        ref: tomato
+        ref: tomato,
+        trending: 9
     },
     {
-        name: 'Tomato',
+        name: 'Tomato3',
+        created_on: "2024-10-10 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE ],
-        ref: tomato
+        ref: tomato,
+        trending: 8
     },
     {
-        name: 'Tomato',
+        name: 'Tomato4',
+        created_on: "2024-10-10 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE ],
-        ref: tomato
-    },
-    {
-        name: 'Tomato',
-        category: [ c.GROW, c.PLANT, c.GUIDE ],
-        ref: tomato
-    },
-    {
-        name: 'Tomato',
-        category: [ c.GROW, c.PLANT, c.GUIDE ],
-        ref: tomato
+        ref: tomato,
+        trending: 7
     }
 ];
 

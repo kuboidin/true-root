@@ -2713,6 +2713,49 @@ video {
     animation: rotate 20s infinite linear;
 }
 
+@keyframes custom-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-custom-rotate {
+    animation: custom-rotate 24s infinite;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1),
+                                cubic-bezier(0.2, 0.8, 0.4, 1),
+                                cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes pendulum {
+    0% {
+        transform: rotate(-30deg); /* Start from -30 degrees (left) */
+    }
+    50% {
+        transform: rotate(30deg);  /* Swing to 30 degrees (right) */
+    }
+    100% {
+        transform: rotate(-30deg); /* Back to -30 degrees */
+    }
+}
+
+.animate-pendulum {
+    animation: pendulum 4s infinite;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1); /* Smooth in-out pendulum swing */
+    transform-origin: top center; /* Pivot from the top center of the text */
+}
+
 @keyframes stroke {
     0% {
         fill: rgba(255, 255, 255, 0);

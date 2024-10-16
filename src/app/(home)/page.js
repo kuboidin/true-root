@@ -3,6 +3,8 @@ import app from "@/config/app";
 import gc from "@/json/global";
 import {category} from '@/config/plant';
 import PlantsTile from "@/components/pages/plants-tile";
+import newDate from "@/lib/date";
+import Link from "next/link";
 
 export const metadata = {
     title: app.title,
@@ -34,8 +36,6 @@ export const metadata = {
     }
 };
 
-const plants = gc.filter(g => g.category.includes(category.PLANT));
-
 export default function Home() {
     const jsonLd = {
         "@context": "https://schema.org",
@@ -49,6 +49,10 @@ export default function Home() {
         }
     };
 
+    gc.sort((a, b) => newDate(b.created_on).toMillis() - newDate(a.created_on).toMillis());
+    gc.sort((a, b) => (b.trending ?? 0) - (a.trending ?? 0));
+    const plants = gc.filter(g => g.category.includes(category.PLANT));
+
     return <>
         {/* Add JSON-LD to your page */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}/>
@@ -61,65 +65,56 @@ export default function Home() {
                 <div className="container">
                     <div className="h-[800px] pt-7.5 pb-20 max-3xl:h-[700px] max-3xl:pb-13.5 max-xl:!h-[550px] max-xl:!pb-[75px] max-lg:mb-7.5 max-sm:!my-3.6 banner-content">
                         <div className="row">
-                            <div className="xl:w-7/12 lg:w-7/12 w-full self-center">
+                            <div className="lg:w-9/12 w-full self-center">
                                 <div className="max-sm:mb-7.5">
                                     <div className="relative z-[2] pb-[45px] max-xl:pb-5">
-                                        <h1 data-swiper-parallax="-20">Your Ultimate <span className="text-primary flex items-center">
+                                        <h1 data-swiper-parallax="-20">Your Ultimate Guide to<span className="text-primary flex items-center">
                                           <svg className="mr-2.5" xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68" fill="none">
                                             <path d="M34 0L43.6167 24.3833L68 34L43.6167 43.6167L34 68L24.3833 43.6167L0 34L24.3833 24.3833L34 0Z" fill="var(--primary)"/>
-                                          </svg> Online Store
-                                        </span>for All Your Needs.</h1>
-                                        <p className="text-2xl max-xl:text-xl max-md:!text-lg" data-swiper-parallax="-40">No
-                                            code need. Plus free shippng on <span className="text-primary">$99+</span>
-                                            orders!</p>
+                                          </svg> Home Gardening
+                                        </span>and Growing Any Plant (Literally).</h1>
+                                        <p className="text-2xl max-xl:text-xl max-md:!text-lg" data-swiper-parallax="-40">
+                                            Even if you are new to <span className="text-primary">Gardening</span> or a seasoned gardener. I promise you will become better.
+                                        </p>
                                     </div>
                                     <div className="content-btn" data-swiper-parallax="-60">
-                                        <a href="shop-cart.html"
-                                           className="btn py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm font-Lufga inline-block font-medium leading-[1.2] border border-secondary bg-secondary text-white rounded-xl duration-700 relative overflow-hidden xl:mr-4 mr-2">ADD
-                                            TO CART</a>
-                                        <a href="shop-standard.html"
-                                           className="btn py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm inline-block font-medium font-Lufga leading-[1.2] border border-secondary rounded-xl duration-700 hover:bg-secondary hover:text-white relative overflow-hidden ">VIEW
-                                            DETAILS</a>
+                                        <span className="btn py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm font-Lufga inline-block font-medium leading-[1.2] border border-secondary bg-secondary text-white rounded-xl duration-700 relative overflow-hidden xl:mr-4 mr-2">
+                                        Subscribe to Newsletter</span>
+                                        <Link href="/how-to-grow" className="btn py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm inline-block font-medium font-Lufga leading-[1.2] border border-secondary rounded-xl duration-700 hover:bg-secondary hover:text-white relative overflow-hidden ">
+                                        View All Plants</Link>
                                     </div>
                                 </div>
                             </div>
-                            <div className="xl:w-5/12 lg:w-5/12 w-full">
+                            <div className="lg:w-3/12 w-full">
                                 <div className="-mr-25 ml-13.5 relative z-1 max-3xl:!mr-0 max-4xl:-mr-10 max-md:ml-7.5 max-sm:!ml-0 max-sm:float-left max-sm:w-full banner-media">
                                     <div className="shap"></div>
                                     <div className="border border-[#DFDFDF] absolute top-[18%] left-[-13%] w-[61%] h-[54%] rounded-ss-[150px] -z-1"></div>
                                     <div className="border border-[#DFDFDF] absolute bottom-[-7%] right-[-7%] w-[50%] h-[35%] rounded-ee-[150px] -z-1"></div>
 
                                     <div className="overflow-hidden" data-swiper-parallax="-100">
-                                        <Image width={860} height={1044} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/main-slider/slider2/pic1.png"
-                                               alt="banner-media" className="w-full object-cover"/>
+                                        <Image width={450} height={525} src="/assets/other/bg_2.jpg" alt="You ultimate guide to growing anything and everything" className="w-full object-cover rounded-2xl border-2 border-white"/>
                                     </div>
-                                    <div className="w-[250px] p-5 absolute top-[38%] right-[-5vw] duration-700 rounded-2xl bg-[#ffffffb3] shadow-wrapper backdrop-blur-[7px] flex items-center max-3xl:w-[200px] max-3xl:p-3.6 max-3xl:right-[1vw] max-md:hidden hover:-translate-y-2.5">
-                                        <div className="relative overflow-hidden z-1 rounded-xl shadow-[0px_15px_40px_0px_rgba(0,0,0,0.1)] mr-2.5">
-                                            <Image width={100} height={100} src="/assets/theme/images/shop/product/small/1.png" alt="" className="w-full"/>
-                                        </div>
-                                        <div className="relative z-1 max-3xl:pt-3 ">
-                                            <h5 className="text-base">Cozy Knit Cardigan</h5>
-                                            <h6 className="text-primary">$80</h6>
-                                            <div className="size-[45px] max-sm:size-7.5 max-sm:group-hover:-bottom-2.5 bg-primary flex items-center justify-center rounded-full mb-1.1 shadow-default absolute bottom-[-45px] right-0 overflow-hidden btn meta-icon dz-carticon">
-                                                <i className="flaticon flaticon-basket text-white"></i>
+                                    <Link href={plants[0].ref.path}>
+                                        <div className="w-[250px] p-5 absolute top-[38%] right-[-5vw] duration-700 rounded-2xl bg-[#ffffffb3] shadow-wrapper backdrop-blur-[7px] flex items-center max-3xl:w-[200px] max-3xl:p-3.6 max-3xl:right-[1vw] max-md:hidden hover:-translate-y-2.5">
+                                            <div className="relative overflow-hidden z-1 rounded-xl shadow-[0px_15px_40px_0px_rgba(0,0,0,0.1)] mr-2.5">
+                                                <Image width={80} height={80} src={plants[0].ref.cover} alt={plants[0].ref.seo.title} className="w-full"/>
+                                            </div>
+                                            <div className="relative z-1 max-3xl:pt-3 ">
+                                                <h5 className="text-base">How to grow {plants[0].name}?</h5>
+                                                <div className="size-[45px] max-sm:size-7.5 max-sm:group-hover:-bottom-2.5 bg-primary flex items-center justify-center rounded-full mb-1.1 shadow-default absolute bottom-[-45px] right-0 overflow-hidden btn meta-icon dz-carticon">
+                                                    <i className="flaticon flaticon-basket text-white"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                     <div className="p-6.1 absolute bottom-[12%] left-[-3vw] duration-700 rounded-2xl bg-[#ffffffb3] shadow-wrapper backdrop-blur-[7px] flex items-center w-[270px] justify-center max-md:hidden">
                                         <i className="icon feather icon-heart-on dz-heart text-primary text-3xl mr-3.6"></i>
                                         <ul className="flex px-2.5">
-                                            <li className="min-w-14.5 size-14.5 rounded-full -ml-2.5">
-                                                <Image width={200} height={200} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/testimonial/testimonial1.jpg"
-                                                       alt="" className="border-2 border-white rounded-full size-full"/>
-                                            </li>
-                                            <li className="min-w-14.5 size-14.5 rounded-full -ml-2.5">
-                                                <Image width={200} height={200} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/testimonial/testimonial2.jpg"
-                                                       alt="" className="border-2 border-white rounded-full size-full"/>
-                                            </li>
-                                            <li className="min-w-14.5 size-14.5 rounded-full -ml-2.5">
-                                                <Image width={200} height={200} src="https://pixio.dexignzone.com/tailwind/demo/assets/images/testimonial/testimonial3.jpg"
-                                                       alt="" className="border-2 border-white rounded-full size-full"/>
-                                            </li>
+                                            {plants.slice(1, 4).map((plant, i) => <li key={i} className="min-w-14.5 size-14.5 rounded-full -ml-2.5">
+                                                <Link href={plant.ref.path}>
+                                                    <Image width={200} height={200} src={plant.ref.cover} alt={plant.ref.seo.title} className="border-2 border-white rounded-full size-full"/>
+                                                </Link>
+                                            </li>)}
                                         </ul>
                                     </div>
                                     <ul className="star-list">
@@ -181,7 +176,7 @@ export default function Home() {
                 </div>
             </div>
           <div className="w-[140px] p-2.5 absolute rounded-full inline-block left-1/2 top-[-7%] [transform:translate(-50%,_-7%)] max-lg:hidden icon-button">
-            <div className="flex items-center justify-center size-[140px] rounded-full animate-rotate text-center text-row word-rotate-box c-black border-white">
+            <div className="flex items-center justify-center size-[140px] rounded-full animate-pendulum text-center text-row word-rotate-box c-black border-white text-2xl font-bold">
               How to grow
             </div>
           </div>
