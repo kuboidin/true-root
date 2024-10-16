@@ -56,9 +56,9 @@ export const metadata = {
     category: 'saas',
 };
 
-const AnalyticsLazy = dynamic(() => import("@vercel/analytics/react").then((lib) => lib.Analytics));
-const SpeedInsightsLazy = dynamic(() => import("@vercel/speed-insights/next").then((lib) => lib.SpeedInsights));
-const GoogleAnalyticsLazy = dynamic(() => import("@next/third-parties/google").then((lib) => lib.GoogleAnalytics));
+const AnalyticsLazy = dynamic(() => import("@vercel/analytics/react").then((mod) => mod.Analytics));
+const SpeedInsightsLazy = dynamic(() => import("@vercel/speed-insights/next").then((mod) => mod.SpeedInsights));
+const GoogleAnalyticsLazy = dynamic(() => import("@next/third-parties/google").then((mod) => mod.GoogleAnalytics ?? <></>));
 const AnimatedCursorLazy = dynamic(() => import("react-animated-cursor"));
 
 export default function RootLayout({ children }) {
