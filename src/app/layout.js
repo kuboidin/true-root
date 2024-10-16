@@ -1,9 +1,6 @@
-import AnimatedCursor from "react-animated-cursor";
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleAnalytics } from '@next/third-parties/google';
-import { Toaster } from "@/components/ui/toaster";
+import dynamic from 'next/dynamic';
 
+import { Toaster } from "@/components/ui/toaster";
 import "@/style/globals.css";
 import 'animate.css';
 import "@/style/custom.css";
@@ -59,6 +56,11 @@ export const metadata = {
     category: 'saas',
 };
 
+const AnalyticsLazy = dynamic(() => import("@vercel/analytics/react").then((lib) => lib.Analytics));
+const SpeedInsightsLazy = dynamic(() => import("@vercel/speed-insights/next").then((lib) => lib.SpeedInsights));
+const GoogleAnalyticsLazy = dynamic(() => import("@next/third-parties/google").then((lib) => lib.GoogleAnalytics));
+const AnimatedCursorLazy = dynamic(() => import("react-animated-cursor"));
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -72,7 +74,7 @@ export default function RootLayout({ children }) {
         <Toaster />
     </div>
     {/* TODO */}
-    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <AnimatedCursor
+    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <AnimatedCursorLazy
         innerSize={10}
         outerSize={34}
         innerScale={1}
@@ -90,9 +92,9 @@ export default function RootLayout({ children }) {
         }}
     /> }
 
-    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <Analytics />}
-    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <SpeedInsights />}
-    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION ? <GoogleAnalytics gaId="G-T9LXE33ZEW"/> : null}
+    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <AnalyticsLazy />}
+    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <SpeedInsightsLazy />}
+    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION ? <GoogleAnalyticsLazy gaId="G-T9LXE33ZEW"/> : null}
 
     </body>
     </html>
