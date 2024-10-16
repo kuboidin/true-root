@@ -8,6 +8,7 @@ const plant = {
     path: "/how-to-grow/tomato",
     datePublished: "2024-10-10 09:00:00 AM",
     dateModified: "2024-10-10 09:00:00 AM",
+    cover: "/assets/plants/vegetable/tomato/t4.webp",
     images: [
         {src: "/assets/plants/vegetable/tomato/t3.jpeg", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },
         {src: "/assets/plants/vegetable/tomato/t1.webp", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },

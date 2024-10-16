@@ -51,7 +51,8 @@
 }
 
 .error-404 .title {
-    font-size: 300px;
+    @apply text-[150px] md:text-[300px];
+    /*font-size: 300px;*/
     line-height: 0.8;
     font-weight: 600;
     margin-bottom: 10px;
@@ -71,4 +72,12 @@
     position: absolute;
     left: -16px;
     top: 0;
+}
+
+.rounded-tr-7xl {
+    border-top-right-radius: 100px;
+}
+
+.rounded-tr-4xl {
+    border-top-right-radius: 35px;
 }
