@@ -81,3 +81,27 @@
 .rounded-tr-4xl {
     border-top-right-radius: 35px;
 }
+
+.rounded-br-7xl {
+    border-bottom-right-radius: 100px;
+}
+
+.rounded-br-4xl {
+    border-bottom-right-radius: 35px;
+}
+
+.rounded-bl-7xl {
+    border-bottom-left-radius: 100px;
+}
+
+.rounded-bl-4xl {
+    border-bottom-left-radius: 35px;
+}
+
+.rounded-tl-7xl {
+    border-top-left-radius: 100px;
+}
+
+.rounded-tl-4xl {
+    border-top-left-radius: 35px;
+}

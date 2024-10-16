@@ -10,7 +10,7 @@ const order = [
     ['col-span-4', 'col-span-3', 'col-span-2'],
     ['col-span-4', 'col-span-2', 'col-span-3']
 ];
-const imgs = [ImgSE, ImgEE, ImgSS, ImgTR, ImgSE, ImgEE, ImgSS, ImgTR, ImgSE, ImgEE, ImgSS, ImgTR];
+const imgs = [ImgTR, ImgBR, ImgBL, ImgTL, ImgTR, ImgBR, ImgBL, ImgTL, ImgTR, ImgBR, ImgBL, ImgTL, ImgTR, ImgBR, ImgBL, ImgTL];
 let row = order[0];
 export default function PlantsTile({ plants = []}) {
     return <>
@@ -37,18 +37,18 @@ export default function PlantsTile({ plants = []}) {
     </>;
 }
 
-function ImgSE({ cover, title }) {
-    return <Image width={400} height={300} src={cover} alt={title} className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3xl rounded-se-7xl max-md:rounded-se-4xl group-hover:rounded-se-3xl duration-500"/>
-}
-
-function ImgEE({ cover, title }) {
-    return <Image width={400} height={300} src={cover} alt={title} className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3xl rounded-ee-7xl max-md:rounded-ee-4xl group-hover:rounded-ee-3xl duration-500"/>
-}
-
-function ImgSS({ cover, title }) {
-    return <Image width={400} height={300} src={cover} alt={title} className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3xl rounded-ss-7xl max-md:rounded-ss-4xl group-hover:rounded-ss-3xl duration-500"/>
-}
-
 function ImgTR({ cover, title }) {
     return <Image width={400} height={300} src={cover} alt={title} className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3xl rounded-tr-7xl max-md:rounded-tr-4xl group-hover:rounded-tr-3xl duration-500"/>
+}
+
+function ImgBR({ cover, title }) {
+    return <Image width={400} height={300} src={cover} alt={title} className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3xl rounded-br-7xl max-md:rounded-br-4xl group-hover:rounded-br-3xl duration-500"/>
+}
+
+function ImgBL({ cover, title }) {
+    return <Image width={400} height={300} src={cover} alt={title} className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3xl rounded-bl-7xl max-md:rounded-bl-4xl group-hover:rounded-bl-3xl duration-500"/>
+}
+
+function ImgTL({ cover, title }) {
+    return <Image width={400} height={300} src={cover} alt={title} className="w-full h-[300px] max-sm:h-[150px] object-cover border-4 border-white rounded-3xl rounded-tl-7xl max-md:rounded-tl-4xl group-hover:rounded-tl-3xl duration-500"/>
 }
