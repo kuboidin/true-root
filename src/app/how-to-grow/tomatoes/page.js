@@ -48,6 +48,9 @@ export const metadata = {
                 alt: plant.seo.title,
             },
         ],
+    },
+    alternates: {
+        canonical: `${app.url}${plant.path}`,
     }
 };
 
@@ -151,7 +154,7 @@ export default function Page() {
                                 <div className="container flex flex-col gap-2">
                                     <div className="m-lg-b0 m-md-b30">
                                         <div className="mb-10 max-md:mb-5">
-                                            <h2 className="mb-2">Growing Tomatoes at Home (In Pots or Grow Bags)</h2>
+                                            <h2 className="mb-2">How to grow tomatoes at Home (In Pots or Grow Bags)</h2>
                                             <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                                                 <div className="grid gap-6 row-gap-10 grid-cols-2">
                                                     <div className="lg:py-6 lg:pr-16 col-span-full">
@@ -372,7 +375,7 @@ export default function Page() {
                                 <div className="container flex flex-col gap-2">
                                     <div>
                                         <div className="mb-10 max-md:mb-5">
-                                            <h2 className="mb-2">Growing Process & Schedule</h2>
+                                            <h2 className="mb-2">Process & Schedule (Grow Tomatoes)</h2>
                                             <p className="mb-4">
                                                 Tomatoes grow well in pots, raised beds, or directly in the ground.
                                                 Choose a sunny spot with at least 6-8 hours of sunlight daily.

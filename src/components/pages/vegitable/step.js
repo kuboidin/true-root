@@ -11,7 +11,7 @@ export default function Step({ step, heading, is_last = false, className = "", c
                 { !is_last && <div className="w-px h-full bg-lightGreen"/> }
             </div>
             <div className={cn("pt-1 pb-8", className)}>
-                <p className="mb-2 text-lg font-bold">{heading}</p>
+                <h3 className="mb-2 text-lg font-bold">{heading}</h3>
                 {children}
             </div>
         </div>
