@@ -1,3 +1,7 @@
+// import AnimatedCursor from "react-animated-cursor";
+// import { Analytics } from "@vercel/analytics/react"
+// import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { GoogleAnalytics } from '@next/third-parties/google';
 import dynamic from 'next/dynamic';
 
 import { Toaster } from "@/components/ui/toaster";
@@ -56,9 +60,8 @@ export const metadata = {
     category: 'saas',
 };
 
-const AnalyticsLazy = dynamic(() => import("@vercel/analytics/react").then((mod) => mod.Analytics));
-const SpeedInsightsLazy = dynamic(() => import("@vercel/speed-insights/next").then((mod) => mod.SpeedInsights));
-const GoogleAnalyticsLazy = dynamic(() => import("@next/third-parties/google").then((mod) => mod.GoogleAnalytics ?? <></>));
+const AnalyticsLazy = dynamic(() => import("@vercel/analytics/react").then((lib) => lib.Analytics));
+const SpeedInsightsLazy = dynamic(() => import("@vercel/speed-insights/next").then((lib) => lib.SpeedInsights));
 const AnimatedCursorLazy = dynamic(() => import("react-animated-cursor"));
 
 export default function RootLayout({ children }) {
@@ -94,7 +97,7 @@ export default function RootLayout({ children }) {
 
     {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <AnalyticsLazy />}
     {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <SpeedInsightsLazy />}
-    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION ? <GoogleAnalyticsLazy gaId="G-T9LXE33ZEW"/> : null}
+    {/*{process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION ? <GoogleAnalytics gaId="G-T9LXE33ZEW"/> : null}*/}
 
     </body>
     </html>
