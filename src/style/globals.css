@@ -5334,6 +5334,18 @@ video {
     --fade-green: #f0faf0;
     --dark-green: #002112;
     --lemon-green: #84D814;
+    --prime-one: #FF8C24;
+    --prime-two: #FF733B;
+    --prime-three: #6A45FF;
+    --prime-four: #FFCD45;
+    --prime-five: #007BFF;
+    --prime-six: #FFD338;
+    --prime-seven: linear-gradient(-90deg, #FF7DF2 0%, #FF275B 100%);
+    --prime-eight: #FFED4E;
+    --prime-nine: #FF1292;
+    --prime-ten: #FF3294;
+    --prime-eleven: #FFCE4C;
+    --prime-twelve: #FFE500;
 }
 
 * {

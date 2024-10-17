@@ -1,6 +1,41 @@
 import app from "@/config/app";
 import ContactForm from "@/components/layout/contact-form";
 
+export const metadata = {
+    title: `Contact Support - ${app.name}`,
+    description: `Get in touch with ${app.name} for immediate assistance.`,
+    keywords: [...app.meta.keywords, 'contact', 'support', 'contact us', 'email'],
+    openGraph: {
+        title: `Contact Support - ${app.name}`,
+        description: `Get in touch with ${app.name} for immediate assistance. Reach out to us directly for immediate assistance.`,
+        images: [
+            {
+                url: app.og.image,
+                width: 1517,
+                height: 727,
+                alt: app.name,
+            },
+        ],
+        url: `${app.url}/support`,
+        type: 'website',
+    },
+    twitter: {
+        title: `Contact Support - ${app.name}`,
+        description: `Get in touch with ${app.name} for immediate assistance. Reach out to us directly for immediate assistance.`,
+        images: [
+            {
+                url: app.og.image,
+                width: 1517,
+                height: 727,
+                alt: app.name,
+            },
+        ],
+    },
+    alternates: {
+        canonical: `${app.url}/support`,
+    }
+};
+
 export default function Page() {
     return <>
         <div className="lg:pt-25 md:pt-20 pt-13.5 pb-5 bg-light">

@@ -5,7 +5,6 @@ import {category} from '@/config/plant';
 import PlantsTile from "@/components/pages/plants-tile";
 import newDate from "@/lib/date";
 import Link from "next/link";
-import plant from "@/json/vegetable/tomatoes";
 
 export const metadata = {
     title: app.title,
@@ -17,8 +16,8 @@ export const metadata = {
         images: [
             {
                 url: app.og.image,
-                width: 1582,
-                height: 718,
+                width: 1517,
+                height: 727,
                 alt: app.name,
             },
         ],
@@ -31,8 +30,8 @@ export const metadata = {
         images: [
             {
                 url: app.og.image,
-                width: 1582,
-                height: 718,
+                width: 1517,
+                height: 727,
                 alt: app.name,
             },
         ],
