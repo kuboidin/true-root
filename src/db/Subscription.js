@@ -10,7 +10,7 @@ const user = {
     email character varying not null,
     interest jsonb null,
     constraint True_Root_Subscription_pkey primary key (id),
-    constraint True_Root_Subscription_user_id_fkey foreign key (user_id) references "User" (id) on update cascade on delete cascade
+    constraint True_Root_Subscription_email_key unique (email)
   ) tablespace pg_default;`
 };
 
