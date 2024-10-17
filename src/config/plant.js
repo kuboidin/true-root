@@ -1,6 +1,9 @@
 export const category = {
     GROW: 'grow',
     PLANT: 'plant',
+    FRUIT: 'fruit',
+    FLOWER: 'flower',
+    SPICE: 'spice',
     GUIDE: 'guide',
     PRODUCT: 'product',
     DIY: 'diy',

@@ -3,19 +3,19 @@ import Link from "next/link";
 import {GiBee, GiFarmTractor, GiFootprint, GiPlantRoots, GiWaterDrop} from "react-icons/gi";
 
 const plant = {
-    name: "Tomatoes",
-    plural: "Tomatoes",
-    singular: "Tomato",
+    name: "",
+    plural: "",
+    singular: "",
     other_name: ["Tomato", "टमाटर"],
     path: "/how-to-grow/tomatoes",
     datePublished: "2024-10-10 09:00:00 AM",
     dateModified: "2024-10-10 09:00:00 AM",
     cover: "/assets/plants/vegetable/tomato/t4.webp",
     images: [
-        {src: "/assets/plants/vegetable/tomato/t3.jpeg", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },
-        {src: "/assets/plants/vegetable/tomato/t1.webp", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },
-        {src: "/assets/plants/vegetable/tomato/t2.jpg", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },
-        {src: "/assets/plants/vegetable/tomato/t4.webp", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },
+        {src: "/assets/plants/vegetable/tomato/t3.jpeg", alt: ` - ${app.name}` },
+        {src: "/assets/plants/vegetable/tomato/t1.webp", alt: ` - ${app.name}` },
+        {src: "/assets/plants/vegetable/tomato/t2.jpg", alt: ` - ${app.name}` },
+        {src: "/assets/plants/vegetable/tomato/t4.webp", alt: `How to Grow Tomatoes: Complete Guide for Home, Garden | Health Benefits & Uses - ${app.name}` },
     ],
     seo: {
         images: [ // for structured markup - article
@@ -26,8 +26,7 @@ const plant = {
         ],
         title: `How to Grow Tomatoes: Complete Guide & Care - ${app.name}`,
         description: `A full guide on growing tomatoes at home and garden. Learn about benefits, nutritional value, ecological impact, fertilisers and more only on ${app.name}.`,
-        keywords: ["grow tomato", "grow tomatoes", "how to grow tomatoes", "tomato growing tips", "tomato nutrition", "health benefits of tomatoes", "organic tomato farming", "grow tomatoes at home", "tomato planting guide", "tomato uses", "tomato seeds guide",
-            "NPK for tomatoes", "eco-friendly tomato farming", "Ayurvedic benefits of tomatoes", "medicinal uses of tomatoes", "tomato diseases and cures", ...app.meta.keywords],
+        keywords: [, ...app.meta.keywords],
         thumbnail: `${app.url}/assets/og/how-to-grow/tomato.png`,
     },
     hero: {
@@ -35,7 +34,7 @@ const plant = {
         sub_heading: "Solanum lycopersicum, Vegetable (Fruit)",
         eco_badge: {
             score: 4,
-            information: "Tomatoes are relatively eco-friendly when grown in appropriate conditions. They have moderate water needs and, with proper mulching, irrigation, and organic practices, they can thrive with less water. Growing tomatoes locally and organically reduces the carbon footprint."
+            information: " carbon footprint."
         },
         about_quick_list: [ // keep it to max 3
             "One of the easiest vegetables to grow",
@@ -69,68 +68,20 @@ const plant = {
     },
     tabs: {
         good_to_know: {
-            heading: `Tomatoes grow well in pots, raised beds, or directly in the ground. Choose a sunny spot with at least 6-8 hours of sunlight daily. Ensure proper spacing between plants (45-60 cm apart) to allow air circulation and prevent fungal infections.`,
+            heading: ``,
             health_benefits: [
                 {
                     heading: "Heart Health",
-                    detail: `Tomatoes are rich in potassium and lycopene, which are known to reduce blood pressure and lower the risk of heart disease by improving circulation and reducing inflammation`,
+                    detail: `reducing inflammation`,
                     source: {
                         link: "https://pubmed.ncbi.nlm.nih.gov/12587984/",
                         title: "PubMed"
                     }
                 },
-                {
-                    heading: "Cancer Prevention",
-                    detail: `The antioxidant properties of lycopene may help reduce the risk of several cancers, including prostate, lung, and stomach cancers.`,
-                    source: {
-                        link: "https://newsroom.osfhealthcare.org/cancer-fighting-power-of-tomatoes/#:~:text=Tomatoes%20contain%20phytochemicals%2C%20like%20lycopene,on%20an%20overall%20healthy%20diet",
-                        title: "OSF Healthcare"
-                    }
-                },
-                {
-                    heading: "Skin Protection",
-                    detail: `Vitamin C and lycopene in tomatoes help protect the skin against UV damage, reduce wrinkles, and improve skin elasticity.`,
-                    source: {
-                        link: "https://www.healthline.com/health/tomato-benefits-for-skin#potential-benefits",
-                        title: "Healthline"
-                    }
-                },
-                {
-                    heading: "Eye Health",
-                    detail: `Rich in vitamin A, tomatoes support vision, prevent night blindness, and protect against macular degeneration.`,
-                    source: {
-                        link: "https://www.webmd.com/food-recipes/ss/slideshow-tomato-health-benefits",
-                        title: "WebMD"
-                    }
-                },
-                {
-                    heading: "Improved Digestion",
-                    detail: `The fiber in tomatoes aids digestion, prevents constipation and maintains a healthy gut flora.`,
-                    source: {
-                        link: "https://www.medanta.org/patient-education-blog/researchers-have-discovered-that-tomatoes-are-healthy-for-gut-bacteria#:~:text=Additionally%2C%20tomatoes%20contain%20vitamins%2C%20minerals,promote%20a%20healthy%20digestive%20system.",
-                        title: "Medanta"
-                    }
-                },
-                {
-                    heading: "Improved Digestion",
-                    detail: `Tomatoes contain vitamin K and calcium, both crucial for maintaining bone density and preventing osteoporosis.`,
-                    source: {
-                        link: "https://www.health.com/nutrition/health-benefits-tomatoes",
-                        title: "Health.com"
-                    }
-                },
-                {
-                    heading: "Hypertension",
-                    detail: `Some studies have found that eating tomatoes may help prevent and manage hypertension. One study found that people who ate more than 110 grams of tomatoes per day had a lower risk of hypertension.`,
-                    source: {
-                        link: "https://academic.oup.com/eurjpc/article/31/8/922/7450162",
-                        title: "Oxford Academic"
-                    }
-                }
             ],
             right_section: {
                 heading: "Risks and Things to Consider",
-                information: <>Make sure that you thoroughly wash or cook raw tomatoes before consuming them. As with other fresh produce, raw tomatoes can have germs that cause foodborne illnesses like Listeria and Salmonella. Foodborne illness is a greater concern for those who:
+                information: <>Listeria and Salmonella. Foodborne illness is a greater concern for those who:
                     <span className="text-2xs">Source: <Link href="https://academic.oup.com/eurjpc/article/31/8/922/7450162" target="_blank" className="green-link">Oxford Academic</Link></span>
                 </>,
                 content: <>
@@ -147,7 +98,10 @@ const plant = {
                 </>
             },
             nutrition: {
-                top: <>One whole raw tomato provides the following nutrients: <span className="text-2xs">Source: <Link href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/1103276/nutrients" target="_blank" className="green-link">USDA</Link></span></>,
+                top: <>One whole raw tomato provides the following nutrients:
+                    <span className="text-2xs">Source: <Link href="https://fdc.nal.usda.gov/" target="_blank" className="green-link">
+                        USDA</Link>
+                    </span></>,
                 list: [
                     {name: "Calories", value: "22.5"},
                     {name: "Fat", value: "0.25g"},
@@ -156,7 +110,7 @@ const plant = {
                     {name: "Fiber", value: "1.5g"},
                     {name: "Protein", value: "1.1g"},
                 ],
-                bottom: <>Whole, fresh tomatoes are also a source of several micronutrients, including Folate, Potassium, Vitamin C, and Vitamin K.</>
+                bottom: <>Potassium, Vitamin C, and Vitamin K.</>
             },
             ecological_effects: [
                 {
