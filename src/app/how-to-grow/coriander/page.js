@@ -134,7 +134,7 @@ export default function Page() {
                                                         <Step step={0} heading="Step 0: Prepare the seed and soil (Important)">
                                                             <ul className="flex flex-col gap-2 text-gray-700">
                                                                 <li><MoveRight size={18} className="-mt-2 mr-2"/>Always use high-quality, fresh seeds. Older seeds tend to have a lower germination rate, which can affect the success of your crop.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Some people gently crush the coriander seed to split them before sowing, which strictly depend on the seed, for this guide, I did not crush the seeds. </li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Some people gently crush the coriander seeds to split them before sowing, but this strictly depends on the seed. For this guide, I did not crush the seeds.</li>
                                                                 <li><MoveRight size={18} className="-mt-2 mr-2"/>Some people also soak the seeds in water for 24 hours to speed up germination but that doesn't affect much, so no need.</li>
                                                                 <li><MoveRight size={18} className="-mt-2 mr-2"/>To cultivate healthy coriander, the soil mix should be soft and well-draining. A recommended mixture is:
                                                                     1 part garden soil, ½ part compost, ½ part sand, ¼ part cocopeat, Neem khali (powder) (optional, for additional pest control)</li>
@@ -178,10 +178,10 @@ export default function Page() {
 
                                                         <Step step={5} heading="Day 20 - Optional Light Fertilizer">
                                                             <ul className="flex flex-col gap-2 text-gray-700">
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>If your initial soil mix contained compost, additional fertilizer is not required at this stage. However, if you did not use compost, apply a light dose of organic fertilizer such as:
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>If your initial soil mix contained compost, additional fertilizer is not required at this stage. <br/>However, if you did not use compost, apply a light dose of organic fertilizer such as
                                                                     Mustard cake fertilizer,
                                                                     Cow dung cake fertilizer,
-                                                                    Homemade options like onion peel or banana peel fertilizer.</li>
+                                                                    or homemade options like onion peel or banana peel fertilizer.</li>
                                                                 <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <TabLink section="Watering Schedule">watering guide</TabLink> for more information</li>
                                                             </ul>
                                                         </Step>
@@ -197,7 +197,7 @@ export default function Page() {
                                                         <Step step={7} heading="Day 27 - Fertilizer After First Harvest">
                                                             <ul className="flex flex-col gap-2 text-gray-700">
                                                                 <li><MoveRight size={18} className="-mt-2 mr-2"/>After the first harvest, apply mustard cake fertilizer to replenish the soil nutrients. This is generally the only fertilizer application needed, as mustard cake fertilizer is potent enough to sustain the plants for their remaining growth cycles.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Coriander does not require much fertilizer, so adding fertilizer only once in it&apos;s life time is recommended, which means, if you have added fertilizer before, do not add now.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Coriander does not require much fertilizer, so adding fertilizer only once in its lifetime is recommended, which means, that if you have added fertilizer before, do not add it now.</li>
                                                                 <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <TabLink section="Watering Schedule">watering guide</TabLink> for more information</li>
                                                             </ul>
                                                         </Step>
