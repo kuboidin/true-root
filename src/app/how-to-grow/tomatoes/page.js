@@ -110,7 +110,7 @@ export default function Page() {
         </section>
 
 
-        <section className="max-lg:pt-13.5">
+        <section className="max-lg:pt-13.5 mb-20">
             <div className="w-full">
                 <div className="product-description">
                     <div>

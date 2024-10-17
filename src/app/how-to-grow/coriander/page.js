@@ -7,7 +7,7 @@ import {Asterisk, Bean, Droplets, MoveRight, Shrub, Sprout} from "lucide-react";
 import Nutrition from "@/components/pages/vegitable/nutrition";
 import {GiFertilizerBag} from "react-icons/gi";
 import {FaBacteria} from "react-icons/fa";
-import {PiPlantFill} from "react-icons/pi";
+import { MdCompost } from "react-icons/md";
 import Share from "@/components/comp/share";
 import app from "@/config/app";
 import InformationTab from "@/components/pages/vegitable/information-tab";
@@ -110,7 +110,7 @@ export default function Page() {
         </section>
 
 
-        <section className="max-lg:pt-13.5">
+        <section className="max-lg:pt-13.5 mb-20">
             <div className="w-full">
                 <div className="product-description">
                     <div>
@@ -131,129 +131,94 @@ export default function Page() {
                                             <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                                                 <div className="grid gap-6 row-gap-10 grid-cols-2">
                                                     <div className="lg:py-6 lg:pr-16 col-span-full">
-                                                        <Step step={1} heading="Step 1: Choose the Right Variety to grow coriander">
+                                                        <Step step={0} heading="Step 0: Prepare the seed and soil (Important)">
                                                             <ul className="flex flex-col gap-2 text-gray-700">
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Determinate: </strong> Stay short, Dwarf, Good for pots and balcony</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Indeterminate: </strong> Keep on growing until they die, Good for Gardens</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Coriander’ if growing in pots or grow bags.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Always use high-quality, fresh seeds. Older seeds tend to have a lower germination rate, which can affect the success of your crop.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Some people gently crush the coriander seed to split them before sowing, which strictly depend on the seed, for this guide, I did not crush the seeds. </li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Some people also soak the seeds in water for 24 hours to speed up germination but that doesn't affect much, so no need.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>To cultivate healthy coriander, the soil mix should be soft and well-draining. A recommended mixture is:
+                                                                    1 part garden soil, ½ part compost, ½ part sand, ¼ part cocopeat, Neem khali (powder) (optional, for additional pest control)</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Coriander is a delicate plant and does not respond well to transplanting. Therefore, avoid seedling trays and sow directly into the final container or garden bed.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Use a shallow pot, about 6 inches deep, as coriander does not require significant depth.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Ensure the pot has drainage holes to prevent water logging, which can damage the roots.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Water the soil deeply, ensuring moisture reaches the bottom of the container. Don’t worry about overwatering, as the drainage holes will prevent water buildup. Pre-watering the soil before sowing seeds helps avoid disturbing the seeds later.</li>
                                                             </ul>
                                                         </Step>
 
-                                                        <Step step={2} heading="Step 2: Prepare the seedling tray (Recommended for beginners)">
+                                                        <Step step={1} heading="Day 0: Seeding">
                                                             <ul className="flex flex-col gap-2 text-gray-700">
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> Seeding soil is different, it should be light, airy, free of debris, neutral pH, and hold moisture.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the seeding tray has drainage holes.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Soil + Compost + Coco peat (Coco peat helps retain moisture for longer, if you do not have Coco peat it&apos;s Okay, just maintain the proper moisture).</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> See the <TabLink section="Seeding Process">Seeding process</TabLink> on this page for tips and things to care about.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Again, as mentioned above, Coriander is a delicate plant and does not respond well to transplanting. Therefore, avoid seedling trays and sow directly into the final container or garden bed.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Simply spread the seeds evenly across the surface of the soil. There's no need to worry about leaving gaps between seeds.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Cover the seeds with a thin layer of cocopeat (about 1 cm thick). Cocopeat retains moisture and provides a soft cover for the seeds.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Water lightly using a spray bottle. Avoid using a direct stream of water as this may displace the seeds. Since the soil is already pre-watered, you only need to ensure the cocopeat is moist.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Place the pot in a location that receives 2-3 hours of indirect sunlight. Seeds themselves don’t require sunlight for germination, but they’ll need light once they sprout.</li>
                                                             </ul>
                                                         </Step>
 
-                                                        <Step step={3} heading="Day 0: Seeding">
+                                                        <Step step={2} heading="Day 7 - Germination Begins">
                                                             <ul className="flex flex-col gap-2 text-gray-700">
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> Sow seeds at 0.5 - 2.5 cm depth, just cover them with a thin layer of coco peat, compost, or soil and water them.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> If you are a beginner then use a seedling tray, seedling tray helps for easy movement, you can place them under sunlight during moving but move them inside during noon to protect them from harsh heat and so on.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> Keep in low sunlight or inside (not dark) if possible.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> See the <TabLink section="Seeding Process">Seeding process</TabLink> on this page for tips and temperature and environment conditions.</li>
-                                                            </ul>
-                                                        </Step>
-
-                                                        <Step step={4} heading="Day 7: Sprouting">
-                                                            <ul className="flex flex-col gap-2 text-gray-700">
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> The Seed should sprout in a week.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> They need full light from day one of germination.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> Shift them to 1-2 hours of sunlight when you see 2 leaves, at this stage plants start looking for sunlight, if you do not put them in sunlight they will grow weak but longer and in multi-direction in search of sunlight (We don&apos;t want that).</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> Seed provides all the required nutrients to support the life of the plant for 2 weeks.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Do not add any fertilizer of any kind.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>By day 6 or 7, you should start seeing signs of germination. Small sprouts will begin to appear.</li>
                                                                 <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <TabLink section="Watering Schedule">watering guide</TabLink> for more information</li>
                                                             </ul>
                                                         </Step>
 
-                                                        <Step step={5} heading="Day 15: First organic fertilizer">
+                                                        <Step step={3} heading="Day 12 - Full Germination">
                                                             <ul className="flex flex-col gap-2 text-gray-700">
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> Provide liquid onion peel fertilizer in small dosages.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> Onion peel fertilizer is rich in Potassium, Phosphorus, Nitrogen, Calcium, Iron, and Magnesium, see the <TabLink section="Nutritional Requirements">nutritional requirement</TabLink> section for more information.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> Add bone meal and vermicompost for nutrients.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Do not use NPK, DAP, or chemical fertilizer at this stage, the plant will not be able to handle and die</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>By day 12, the majority of your seeds should have fully germinated, resulting in a healthy spread of seedlings.</li>
                                                                 <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <TabLink section="Watering Schedule">watering guide</TabLink> for more information</li>
                                                             </ul>
                                                         </Step>
 
-                                                        <Step step={6} heading="Day 28: Shift to a larger pot (Only if you planted it in the seedling tray)">
+                                                        <Step step={4} heading="Day 17 - Dense Growth">
                                                             <ul className="flex flex-col gap-2 text-gray-700">
-                                                                <li>From seeding to 1 month, plants are very delicate, do not remove them or shift them, only perform shifting after 4 weeks of seeding. At this stage, seeds should have grown into small plants.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Use at least a 12-18 inch deep pot or grow bag.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/><strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the pot has drainage holes.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Add Neem powder (Neem Khali) to the soil to protect the roots from fungus and other germs.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>When you shift the plants from seedling to ground, grow bags or pots, make sure the roots are not exposed to air. Try not to disturb the roots.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Be slow and gentle when removing from the seeding tray and planting in the pot or grow bags.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>If roots are exposed to air or you see no soil with roots or if the plant is weathered (when you borrow from your friend), then <strong>sock the plant&apos;s root in water for 5-7 minutes</strong>. If plants are in very bad condition add 1 spoon of sugar in water and dip plants for 15 minutes. It will revive the plants and stabilize them.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Perform shifting in the evening only and add plenty of water.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Plants will/might show some stress like leaves withering after shifting, but they will recover soon if you have shifted correctly.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>To shift them in larger pots, put at least 40-50% of the plant stem under the soil, this will help in growing stronger roots.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>After seedlings have grown and become plants, they need at least 5-6 hours of sunlight every day.</li>
-                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/><strong>Tip: </strong> Add a layer of small stones or broken pots at the bottom of the grow bag or pots to improve drainage.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Around day 17, you should notice dense coriander growth, but the plants are not yet ready for harvest.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <TabLink section="Watering Schedule">watering guide</TabLink> for more information</li>
                                                             </ul>
                                                         </Step>
 
-                                                        <Step step={12} heading="Day 120: Fruit of hard work">
-                                                            <>
-                                                                <p className="text-gray-700">
-                                                                    Harvest the fruit of your hard work. This is not the end, Coriander will keep on provided with minimal watering and care at this time.
-                                                                </p>
-                                                                <ul className="flex flex-col gap-2 text-gray-700">
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Remove weeds and keep looking for diseases, check the diseases section of how to find and fix the plant diseases.</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Tip: </strong> Keep providing fertilizer every 15-20 days.</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> You must not let the soil dry, Water is very important.</li>
-                                                                    <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Fertilizer: </strong> See the Fertilizer section for homemade and nutrient-rich fertilizers.</li>
-                                                                </ul>
-                                                            </>
+                                                        <Step step={5} heading="Day 20 - Optional Light Fertilizer">
+                                                            <ul className="flex flex-col gap-2 text-gray-700">
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>If your initial soil mix contained compost, additional fertilizer is not required at this stage. However, if you did not use compost, apply a light dose of organic fertilizer such as:
+                                                                    Mustard cake fertilizer,
+                                                                    Cow dung cake fertilizer,
+                                                                    Homemade options like onion peel or banana peel fertilizer.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <TabLink section="Watering Schedule">watering guide</TabLink> for more information</li>
+                                                            </ul>
                                                         </Step>
 
-                                                        <Step step={13} is_last={true} heading="Continue">
+                                                        <Step step={6} heading="Day 25 - Ready for Harvest">
+                                                            <ul className="flex flex-col gap-2 text-gray-700">
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>When your coriander plants reach about 5-6 inches in height, they are ready to harvest.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>For continued growth, make sure to cut the leaves 3 inches above the soil. This allows the plant to regenerate, enabling multiple harvests (up to 3-4 times).</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Avoid watering a day before harvesting and water after the harvesting.</li>
+                                                            </ul>
+                                                        </Step>
+
+                                                        <Step step={7} heading="Day 27 - Fertilizer After First Harvest">
+                                                            <ul className="flex flex-col gap-2 text-gray-700">
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>After the first harvest, apply mustard cake fertilizer to replenish the soil nutrients. This is generally the only fertilizer application needed, as mustard cake fertilizer is potent enough to sustain the plants for their remaining growth cycles.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/>Coriander does not require much fertilizer, so adding fertilizer only once in it&apos;s life time is recommended, which means, if you have added fertilizer before, do not add now.</li>
+                                                                <li><MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> Only water them if the top soil is dry, Avoid excess water at this stage, see the <TabLink section="Watering Schedule">watering guide</TabLink> for more information</li>
+                                                            </ul>
+                                                        </Step>
+
+                                                        <Step step={8} heading="End of Harvest Cycle">
+                                                            <ul className="flex flex-col gap-2 text-gray-700">
+                                                                <li>After three harvests, the plants may take longer to regenerate and the quality of the leaves may decrease. By the fourth harvest, it’s time to pull the plants out by the roots and restart the cycle with new seeds.</li>
+                                                            </ul>
+                                                        </Step>
+
+                                                        <Step step={9} is_last={true} heading="Continue">
                                                             <>
                                                                 <p className="text-gray-700">
-                                                                    Along with these steps and stages, there are a few things you need to perform throughout the process to grow Coriander, each thing will take only 20-30 minutes a week of your time. <br/>
-                                                                    Please see the related section for more information on each step, tips, and homemade recipes for fertilizers and plant care. <br/>
-                                                                </p>
-
-                                                                <p className="my-4 text-lg font-bold">Perform these steps every 3 weeks after 40 days of seeding (after shifting).</p>
-                                                                <p className="my-2">
-                                                                    <MoveRight size={18} className="-mt-2 mr-2"/> <strong>Watering: </strong> <br/>
-                                                                    Until you see the flowers on the plant, you will water them normally i.e. Only water them if the top soil is dry.<br/>
-                                                                    If you water excessively, plants might get fungus, and attract more diseases, flowers will wither before time and fruiting will be delayed. <br/>
-                                                                    When you see fruit, then you must not let the soil dry, Coriander may turn black if face water scarcity at this stage. <br/>
-                                                                    Check the <TabLink section="Watering Schedule">watering section</TabLink> for more information.
+                                                                    Coriander does not require much care after the seeding, just water occasionally and enjoy.
                                                                 </p>
 
                                                                 <p className="my-2">
-                                                                    <MoveRight size={18} className="-mt-2 mr-2"/> <strong>Weeding & Caring: </strong> <br/>
-                                                                    Remove weeds regularly. <br/>
-                                                                    Perform Pinching. <br/>
-                                                                    Remove Suckers. <br/>
-                                                                    Check the <TabLink section="Weeding & Caring">weeding & caring</TabLink> section for more information.
-                                                                </p>
-
-                                                                <p className="my-2">
-                                                                    <MoveRight size={18} className="-mt-2 mr-2"/> <strong>Fertilizer: </strong> <br/>
-                                                                    Until when you don&apos;t see the small Coriander, you will have to provide liquid fertilizer every 20 days.<br/>
-                                                                    After you see bigger flowers and small fruits, add fertilizers containing micronutrients, such as seaweed (spray), onion peel liquid, and banana peel liquid, provide liquid fertilizer every 15 days, keep on changing, and try not to repeat the same fertilizer.<br/>
-                                                                    Check the <TabLink section="Fertilizer Requirements">fertilizer section</TabLink> for more information.
-                                                                </p>
-
-                                                                <p className="my-2">
-                                                                    <MoveRight size={18} className="-mt-2 mr-2"/> <strong>Diseases: </strong> <br/>
-                                                                    Plants are prone to diseases, you need to look for signs and take care before they spread or ruin your hard work. <br/>
-                                                                    There is very little chance of diseases in a controlled environment. <br/>
-                                                                    Check the <TabLink section="Diseases - Know & Treat">diseases section</TabLink> for more information.
-                                                                </p>
-
-                                                                <p className="my-2">
-                                                                    <MoveRight size={18} className="-mt-2 mr-2"/> <strong>Pollination: </strong> <br/>
+                                                                    <MoveRight size={18} className="-mt-2 mr-2"/>
                                                                     We believe in harmony, plants grow better with other plants and insects, try not to restrict your garden to birds, insects, bugs, and other organisms. <br/>
-                                                                    Birds, and insects not only help in pollination but also improve the positivity of the environment, and help in nutrition circulation. <br/>
-                                                                    Birds can eat small bugs and protect plants from diseases for free. <br/>
-                                                                    Check the <TabLink section="Diseases - Know & Treat">Flowers Withering (No Pollination) section</TabLink> for more information.
+                                                                    Birds, and insects not only help in pollination (which you don&apos;t need if you don&apos;t intend to get seeds from Coriander) but also improve the positivity of the environment, and help in nutrition circulation. <br/>
+                                                                    Birds can eat small bugs and protect plants from diseases for free.
                                                                 </p>
                                                             </>
                                                         </Step>
@@ -313,7 +278,7 @@ export default function Page() {
 
                                         <div className="product-info">
                                             <div className="md:mb-10 sm:mb-3.6 mb-2.5">
-                                                <h4 className="font-bold text-xl max-md:text-lg mb-2"><Sprout size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Soil Mix</h4>
+                                                <h4 className="font-bold text-xl max-md:text-lg mb-2"><MdCompost size={20} className="-mt-1 mr-2"/> Soil Mix</h4>
                                                 <ul className="flex flex-col gap-4">
                                                     <li><span className="font-normal">1 part garden soil</span></li>
                                                     <li><span className="font-normal">½ part compost</span></li>
@@ -386,13 +351,36 @@ export default function Page() {
                                         <div className="md:mb-10 sm:mb-3.6 mb-2.5" id="diseases">
                                             <h4 className="font-bold text-xl max-md:text-lg mb-2"><FaBacteria size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Diseases - Know & Treat</h4>
 
+                                            <h6 className="font-bold text-base">Powdery Mildew</h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Cause: <span className="font-normal">Caused by poor air circulation.</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Treat by improving ventilation and using Neem oil spray.</span></h6></li>
+                                            </ul>
 
-                                            <h6 className="font-bold text-base">Leaf miner</h6>
+                                            <h6 className="font-bold text-base mt-3">Rot Root</h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Cause: <span className="font-normal">Caused by over watering.</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">Ensure proper drainage and reduce watering frequency.</span></h6></li>
+                                            </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Bolting</h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Cause: <span className="font-normal">Coriander tends to bolt, going straight to flowering instead of producing leaves, due to heat, transplanting, or lack of water.</span></h6></li>
+                                                <li><h6>Treatment: <span className="font-normal">To extend leaf production, keep the soil moist, plant in partial shade, and ensure it gets enough sun.</span></h6></li>
+                                            </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Powdery Mildew</h6>
                                             <ul className="flex flex-col gap-1">
                                                 <li><h6>Sign: <span className="font-normal">White linings on leaves, germs & bugs.</span></h6></li>
-                                                <li><h6>When: <span className="font-normal">They often attack during the flowering process, treat them then and there and they will not attack again.</span></h6></li>
+                                                <li><h6>Cause: <span className="font-normal">They often attack during the flowering process, treat them then and there and they will not attack again.</span></h6></li>
                                                 <li><h6>Treatment: <span className="font-normal">Neem oil + garlic water - treat/spray for 2-3 days regularly.</span></h6></li>
                                                 <li><h6>Note: <span className="font-normal">It is important to remove/treat them completely at the very beginning to stop the spread, you can pluck/cut the leaves & stem if infection is high.</span></h6></li>
+                                            </ul>
+
+                                            <h6 className="font-bold text-base mt-3">Protecting from Insects (Natural Ways)</h6>
+                                            <ul className="flex flex-col gap-1">
+                                                <li><h6>Aphids: <span className="font-normal">Use neem oil or a soap water spray to control aphid infestations.</span></h6></li>
+                                                <li><h6>Caterpillars: <span className="font-normal">Hand-pick caterpillars or use Bacillus thuringiensis (Bt), a natural bacteria that targets them.</span></h6></li>
                                             </ul>
                                         </div>
 
@@ -415,11 +403,8 @@ export default function Page() {
                                                 <li><span className="font-normal">Coriander prefers cooler temperatures, so grow it in partial shade if your area is too hot.</span></li>
                                                 <li><span className="font-normal">Continuous harvesting of leaves encourages new growth.</span></li>
                                                 <li><span className="font-normal">Ensure proper spacing between plants to avoid overcrowding.</span></li>
-                                                <li><span className="font-normal">Pesticides are rarely needed, but always wash thoroughly before consumption</span></li>
-                                                <li><span className="font-normal"> </span></li>
-                                                <li><span className="font-normal"> </span></li>
-                                                <li><span className="font-normal"> </span></li>
-                                                <li><span className="font-normal"> </span></li>
+                                                <li><span className="font-normal">Pesticides are rarely needed, but always wash thoroughly before consumption.</span></li>
+                                                <li><span className="font-normal">Sow seeds every 5-6 weeks for a continuous harvest.</span></li>
                                             </ul>
                                         </div>
                                     </div>
