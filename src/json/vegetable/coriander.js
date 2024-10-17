@@ -14,14 +14,14 @@ const plant = {
     images: [
         {src: "/assets/plants/spice/coriander/coriander_1.jpg", alt: `How to Grow Coriander (Cilantro) at Home: Easy Organic Tips for Beginners - ${app.name}` },
         {src: "/assets/plants/spice/coriander/coriander_2.jpg", alt: `How to Grow Coriander (Cilantro) at Home: Easy Organic Tips for Beginners - ${app.name}` },
-        {src: "/assets/plants/spice/coriander/coriander_3.jpg", alt: `How to Grow Coriander (Cilantro) at Home: Easy Organic Tips for Beginners - ${app.name}` },
+        // {src: "/assets/plants/spice/coriander/coriander_3.jpg", alt: `How to Grow Coriander (Cilantro) at Home: Easy Organic Tips for Beginners - ${app.name}` },
         {src: "/assets/plants/spice/coriander/coriander_4.jpg", alt: `How to Grow Coriander (Cilantro) at Home: Easy Organic Tips for Beginners - ${app.name}` },
     ],
     seo: {
         images: [ // for structured markup - article
             "/assets/plants/spice/coriander/coriander_1.jpg",
             "/assets/plants/spice/coriander/coriander_2.jpg",
-            "/assets/plants/spice/coriander/coriander_3.jpg",
+            // "/assets/plants/spice/coriander/coriander_3.jpg",
             "/assets/plants/spice/coriander/coriander_4.jpg"
         ],
         title: `How to Grow Coriander (Cilantro) at Home: Easy Organic Tips for Beginners - ${app.name}`,

@@ -39,7 +39,7 @@ export default function EcoBadge({ score = 3, information = null }) {
     }
 
     return <>
-        <TooltipProvider>
+        <TooltipProvider delayDuration={0}>
             <Tooltip>
                 <TooltipTrigger>
                     <Image src={`/assets/eco/eco-${score}.png`} alt={info.description} width={64} height={64} className="w-14 h-14 mr-2" />

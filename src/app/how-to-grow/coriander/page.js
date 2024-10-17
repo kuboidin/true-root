@@ -208,7 +208,7 @@ export default function Page() {
                                                             </ul>
                                                         </Step>
 
-                                                        <Step step={9} is_last={true} heading="Continue">
+                                                        <Step step={9} is_last={true} heading="A Word of Wisdom">
                                                             <>
                                                                 <p className="text-gray-700">
                                                                     Coriander does not require much care after the seeding, just water occasionally and enjoy.
