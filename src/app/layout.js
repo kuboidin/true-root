@@ -13,6 +13,7 @@ import Header from "@/components/layout/header";
 import app from "@/config/app";
 import Footer from "@/components/layout/footer";
 import constant from "@/config/constant";
+import Script from "next/script";
 
 export const metadata = {
     // title: app.title,
@@ -98,6 +99,7 @@ export default function RootLayout({ children }) {
     {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <AnalyticsLazy />}
     {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <SpeedInsightsLazy />}
     {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION ? <GoogleAnalytics gaId="G-T9LXE33ZEW"/> : null}
+    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION ? <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5679038553107442" crossOrigin="anonymous"></Script> : null}
 
     </body>
     </html>
