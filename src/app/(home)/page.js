@@ -6,6 +6,7 @@ import PlantsTile from "@/components/pages/plants-tile";
 import newDate from "@/lib/date";
 import Link from "next/link";
 import {ArrowRight, ChevronRight} from "lucide-react";
+import Social from "@/components/pages/social";
 
 export const metadata = {
     title: app.title,
@@ -63,7 +64,6 @@ export default function Home() {
         {/* Add JSON-LD to your page */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}/>
         {/* ... */}
-
 
         {/* hero section */}
         <div className="overflow-hidden relative main-slider style-2">
@@ -152,31 +152,13 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute top-5 left-6.1 xl:block hidden">
-                    <ul className="flex items-center flex-col">
-                        <li className="py-5 [writing-mode:tb-rl]">
-                            <a className="text-sm font-semibold uppercase tracking-widest"
-                               href="https://www.instagram.com/dexignzone/" target="_blank">Instagram</a>
-                        </li>
-                        <li className="py-5 [writing-mode:tb-rl]">
-                            <a className="text-sm font-semibold uppercase tracking-widest"
-                               href="https://www.facebook.com/dexignzone" target="_blank">Facebook</a>
-                        </li>
-                        <li className="py-5 [writing-mode:tb-rl]">
-                            <a className="text-sm font-semibold uppercase tracking-widest"
-                               href="https://twitter.com/dexignzones" target="_blank">twitter</a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="https://pixio.dexignzone.com/tailwind/demo/contact-us-2.html"
-                   className="max-lg:hidden btn py-3.6 px-1.5 text-sm uppercase font-Lufga block leading-[1.2] bg-[#24262B] text-white rounded-xl duration-700 absolute bottom-7 left-[26px] overflow-hidden rotate-180 [writing-mode:vertical-rl]">Let’s
-                    talk</a>
+                <Social />
+                <Link target="_blank" href="https://kuboid.in" className="max-lg:hidden btn py-3.6 px-1.5 text-sm uppercase font-Lufga block leading-[1.2] bg-[#24262B] text-white rounded-xl duration-700 absolute bottom-7 left-[26px] overflow-hidden rotate-180 [writing-mode:vertical-rl]">Let’s talk</Link>
             </div>
         </div>
 
         {/*  featured */}
-
-        <div className="3xl:pt-25 3xl:pb-17 md:pt-17 md:pb-10 sm:pt-13.5 sm:pb-5 pt-10 pb-5 relative z-1 rounded-4xl bg-lightdark mx-20 max-3xl:mx-10 max-lg:mx-5 category-section">
+        <div className="3xl:pt-25 3xl:pb-17 md:pt-17 md:pb-10 sm:pt-13.5 sm:pb-5 pt-10 pb-5 relative z-1 rounded-4xl bg-lightdark mx-20 max-3xl:mx-10 max-lg:mx-5 category-section mb-20">
             <div className="container">
                 <div className="mb-10 max-md:mb-5 md:flex justify-between items-center">
                     <div className="left-content">
@@ -197,118 +179,118 @@ export default function Home() {
         </div>
 
         {/* DIY */}
-        <section className="3xl:pt-25 3xl:pb-17 md:pt-17 md:pb-10 sm:pt-13.5 sm:pb-5 pt-10 pb-5 ">
-            <div className="container">
-                <div className="mb-10 max-md:mb-5 wow fadeInUp md:flex justify-between items-center">
-                    <div className="left-content">
-                        <h2 className="title">Latest in DIY Natural Products</h2>
-                        <p>Discover the latest and most trending DIY Natural Products.</p>
-                    </div>
-                    <Link className="btn btn-secondary " href="/how-to-make">View All</Link>
-                </div>
-                <div className="row blog-shap">
-                    <div className="lg:w-1/2 w-full max-xl:mb-7.5 mb-13.5 wow fadeInUp">
-                        <div className="relative mb-7.5 dz-card">
-                            <div className="rounded-3.5xl max-lg:rounded-b-none relative overflow-hidden">
-                                <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/blog/blogpost-3/pic1.jpg" alt="/" className="w-full"/>
-                            </div>
-                            <div className="bg-white py-6.1 px-7.5 w-[440px] bottom-0 absolute left-0 z-1 rounded-se-3.5xl rounded-es-3.5xl max-xl:p-5 max-xl:w-full max-lg:static max-lg:flex max-lg:flex-col max-lg:rounded-t-none max-lg:rounded-b-3.5xl">
-                                <div className="mb-2.5">
-                                    <ul>
-                                        <li className="py-1.1 px-3 inline-block rounded-md text-2xs bg-title text-white leading-[1.2] mb-[3px] font-semibold">17 May 2024</li>
-                                    </ul>
-                                </div>
-                                <h3 className="mb-2 max-xl:text-lg">
-                                    <a href="post-standard.html">Trendsetter Chronicles: Unveiling the Latest in Fashion</a>
-                                </h3>
-                                <a href="post-standard.html" className="text-sm mt-auto flex items-center gap-[5px]">Read More
-                                    <ChevronRight size={16}/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="lg:w-1/2 w-full max-xl:mb-7.5 mb-13.5 wow fadeInUp">
-                        <div className="row">
-                            <div className="lg:w-full md:w-1/2 mb-7.5">
-                                <div className="flex bg-white rounded-3.5xl max-lg:block dz-card blog-half">
-                                    <div className="relative overflow-hidden dz-media">
-                                        <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/blog/blogpost-4/pic2.jpg" alt="/" className="object-cover rounded-l-3.5xl max-lg:rounded-t-3.5xl max-lg:rounded-b-none size-full"/>
-                                    </div>
-                                    <div className="p-6.1 pt-7.5 flex flex-col justify-center rounded-r-3.5xl max-lg:rounded-b-3.5xl max-lg:rounded-t-none">
-                                        <div className="mb-2.5">
-                                            <ul>
-                                                <li className="py-1.1 px-3 inline-block rounded-md text-2xs bg-title font-medium text-white leading-[1.2] mb-[3px]">17 May 2024</li>
-                                            </ul>
-                                        </div>
-                                        <h3 className="mb-7.5">
-                                            <a href="blog-both-sidebar.html">Dress to Impress: Elevate Your Everyday Style</a>
-                                        </h3>
-                                        <a href="post-standard.html" className="text-sm mt-auto flex items-center gap-[5px] font-semibold">Read More
-                                            <ChevronRight size={16}/>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="lg:w-full md:w-1/2 mb-7.5">
-                                <div className="flex bg-white rounded-3.5xl max-lg:block dz-card blog-half">
-                                    <div className="relative overflow-hidden dz-media">
-                                        <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/blog/blogpost-4/pic3.jpg" alt="/" className="object-cover rounded-l-3.5xl max-lg:rounded-t-3.5xl max-lg:rounded-b-none size-full"/>
-                                    </div>
-                                    <div className="p-6.1 pt-7.5 flex flex-col justify-center rounded-r-3.5xl max-lg:rounded-b-3.5xl max-lg:rounded-t-none">
-                                        <div className="mb-2.5">
-                                            <ul>
-                                                <li className="py-1.1 px-3 inline-block rounded-md text-2xs bg-title font-medium text-white leading-[1.2] mb-[3px]">17 May 2024</li>
-                                            </ul>
-                                        </div>
-                                        <h3 className="mb-7.5">
-                                            <a href="blog-both-sidebar.html">Chic &amp; Unique: Personalized Fashion Finds</a>
-                                        </h3>
-                                        <a href="post-standard.html" className="text-sm mt-auto flex items-center gap-[5px] font-semibold">Read More
-                                            <ChevronRight size={16}/>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {/*<section className="3xl:pt-25 3xl:pb-17 md:pt-17 md:pb-10 sm:pt-13.5 sm:pb-5 pt-10 pb-5 ">*/}
+        {/*    <div className="container">*/}
+        {/*        <div className="mb-10 max-md:mb-5 wow fadeInUp md:flex justify-between items-center">*/}
+        {/*            <div className="left-content">*/}
+        {/*                <h2 className="title">Latest in DIY Natural Products</h2>*/}
+        {/*                <p>Discover the latest and most trending DIY Natural Products.</p>*/}
+        {/*            </div>*/}
+        {/*            <Link className="btn btn-secondary " href="/how-to-make">View All</Link>*/}
+        {/*        </div>*/}
+        {/*        <div className="row blog-shap">*/}
+        {/*            <div className="lg:w-1/2 w-full max-xl:mb-7.5 mb-13.5 wow fadeInUp">*/}
+        {/*                <div className="relative mb-7.5 dz-card">*/}
+        {/*                    <div className="rounded-3.5xl max-lg:rounded-b-none relative overflow-hidden">*/}
+        {/*                        <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/blog/blogpost-3/pic1.jpg" alt="/" className="w-full"/>*/}
+        {/*                    </div>*/}
+        {/*                    <div className="bg-white py-6.1 px-7.5 w-[440px] bottom-0 absolute left-0 z-1 rounded-se-3.5xl rounded-es-3.5xl max-xl:p-5 max-xl:w-full max-lg:static max-lg:flex max-lg:flex-col max-lg:rounded-t-none max-lg:rounded-b-3.5xl">*/}
+        {/*                        <div className="mb-2.5">*/}
+        {/*                            <ul>*/}
+        {/*                                <li className="py-1.1 px-3 inline-block rounded-md text-2xs bg-title text-white leading-[1.2] mb-[3px] font-semibold">17 May 2024</li>*/}
+        {/*                            </ul>*/}
+        {/*                        </div>*/}
+        {/*                        <h3 className="mb-2 max-xl:text-lg">*/}
+        {/*                            <a href="post-standard.html">Trendsetter Chronicles: Unveiling the Latest in Fashion</a>*/}
+        {/*                        </h3>*/}
+        {/*                        <a href="post-standard.html" className="text-sm mt-auto flex items-center gap-[5px]">Read More*/}
+        {/*                            <ChevronRight size={16}/>*/}
+        {/*                        </a>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*            <div className="lg:w-1/2 w-full max-xl:mb-7.5 mb-13.5 wow fadeInUp">*/}
+        {/*                <div className="row">*/}
+        {/*                    <div className="lg:w-full md:w-1/2 mb-7.5">*/}
+        {/*                        <div className="flex bg-white rounded-3.5xl max-lg:block dz-card blog-half">*/}
+        {/*                            <div className="relative overflow-hidden dz-media">*/}
+        {/*                                <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/blog/blogpost-4/pic2.jpg" alt="/" className="object-cover rounded-l-3.5xl max-lg:rounded-t-3.5xl max-lg:rounded-b-none size-full"/>*/}
+        {/*                            </div>*/}
+        {/*                            <div className="p-6.1 pt-7.5 flex flex-col justify-center rounded-r-3.5xl max-lg:rounded-b-3.5xl max-lg:rounded-t-none">*/}
+        {/*                                <div className="mb-2.5">*/}
+        {/*                                    <ul>*/}
+        {/*                                        <li className="py-1.1 px-3 inline-block rounded-md text-2xs bg-title font-medium text-white leading-[1.2] mb-[3px]">17 May 2024</li>*/}
+        {/*                                    </ul>*/}
+        {/*                                </div>*/}
+        {/*                                <h3 className="mb-7.5">*/}
+        {/*                                    <a href="blog-both-sidebar.html">Dress to Impress: Elevate Your Everyday Style</a>*/}
+        {/*                                </h3>*/}
+        {/*                                <a href="post-standard.html" className="text-sm mt-auto flex items-center gap-[5px] font-semibold">Read More*/}
+        {/*                                    <ChevronRight size={16}/>*/}
+        {/*                                </a>*/}
+        {/*                            </div>*/}
+        {/*                        </div>*/}
+        {/*                    </div>*/}
+        {/*                    <div className="lg:w-full md:w-1/2 mb-7.5">*/}
+        {/*                        <div className="flex bg-white rounded-3.5xl max-lg:block dz-card blog-half">*/}
+        {/*                            <div className="relative overflow-hidden dz-media">*/}
+        {/*                                <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/blog/blogpost-4/pic3.jpg" alt="/" className="object-cover rounded-l-3.5xl max-lg:rounded-t-3.5xl max-lg:rounded-b-none size-full"/>*/}
+        {/*                            </div>*/}
+        {/*                            <div className="p-6.1 pt-7.5 flex flex-col justify-center rounded-r-3.5xl max-lg:rounded-b-3.5xl max-lg:rounded-t-none">*/}
+        {/*                                <div className="mb-2.5">*/}
+        {/*                                    <ul>*/}
+        {/*                                        <li className="py-1.1 px-3 inline-block rounded-md text-2xs bg-title font-medium text-white leading-[1.2] mb-[3px]">17 May 2024</li>*/}
+        {/*                                    </ul>*/}
+        {/*                                </div>*/}
+        {/*                                <h3 className="mb-7.5">*/}
+        {/*                                    <a href="blog-both-sidebar.html">Chic &amp; Unique: Personalized Fashion Finds</a>*/}
+        {/*                                </h3>*/}
+        {/*                                <a href="post-standard.html" className="text-sm mt-auto flex items-center gap-[5px] font-semibold">Read More*/}
+        {/*                                    <ChevronRight size={16}/>*/}
+        {/*                                </a>*/}
+        {/*                            </div>*/}
+        {/*                        </div>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+        {/*    </div>*/}
+        {/*</section>*/}
 
         {/* Blog */}
-        <section className="3xl:pt-25 3xl:pb-17 md:pt-17 md:pb-10 sm:pt-13.5 sm:pb-5 pt-10 pb-5">
-            <div className="container">
-                <div className="mb-10 max-md:mb-5 md:flex justify-between items-center">
-                    <div className="left-content">
-                        <h2 className="mb-2">latest Post</h2>
-                        <p className="mb-4">Discover the latest and most trending post on plants and nature.</p>
-                    </div>
-                    <Link href="/blog" className="btn py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm font-Lufga inline-block font-medium leading-[1.2] border border-secondary bg-secondary text-white rounded-xl duration-700 relative overflow-hidden mb-7.5">View All</Link>
-                </div>
-                <div className="grid grid-cols-2 justify-between">
-                    <div className="max-xl:mb-7.5 mb-13.5">
-                        <div className="lg:flex rounded-3.5xl bg-white block">
-                            <div className="xl:w-[275px] xl:min-w-[275px] xl:h-[320px] lg:w-[200px] lg:min-w-[200px] lg:h-[260px] size-full min-w-full relative overflow-hidden">
-                                <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/blog/blogpost-4/pic1.jpg" alt="/" className="size-full object-cover [mask-size:100%_100%] [mask-image:url(/assets/theme/images/shape/shape-1.png)] max-lg:[mask-image:none] max-lg:rounded-t-3.5xl"/>
-                            </div>
-                            <div className="flex w-full flex-col justify-center p-6.1 max-2lg:p-5 pt-7.5 relative">
-                                <div className="mb-2.5">
-                                    <ul className="flex items-center flex-wrap">
-                                        <li className="py-1.1 px-3 inline-block rounded-md text-2xs bg-title font-medium text-white leading-[1.2] mb-[3px]">18 May 2024</li>
-                                    </ul>
-                                </div>
-                                <h4 className="text-2xl max-2lg:text-lg mb-7.5 font-medium">
-                                    <a href="blog-both-sidebar.html">Trendsetter Chronicles: Unveiling the Latest in Fashion</a>
-                                </h4>
-                                <a href="blog-both-sidebar.html" className="py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm inline-block font-medium font-Lufga leading-[1.2] border border-secondary rounded-xl uppercase mt-auto duration-700 hover:bg-primary hover:border-primary hover:text-white relative w-fit">
-                                    Read more
-                                    <ArrowRight className="border-secondary rounded-full absolute -right-3 z-9 bg-white text-center !text-title size-6.1 leading-6 -mt-[4px]"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {/*<section className="3xl:pt-25 3xl:pb-17 md:pt-17 md:pb-10 sm:pt-13.5 sm:pb-5 pt-10 pb-5">*/}
+        {/*    <div className="container">*/}
+        {/*        <div className="mb-10 max-md:mb-5 md:flex justify-between items-center">*/}
+        {/*            <div className="left-content">*/}
+        {/*                <h2 className="mb-2">latest Post</h2>*/}
+        {/*                <p className="mb-4">Discover the latest and most trending post on plants and nature.</p>*/}
+        {/*            </div>*/}
+        {/*            <Link href="/blog" className="btn py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm font-Lufga inline-block font-medium leading-[1.2] border border-secondary bg-secondary text-white rounded-xl duration-700 relative overflow-hidden mb-7.5">View All</Link>*/}
+        {/*        </div>*/}
+        {/*        <div className="grid grid-cols-2 justify-between">*/}
+        {/*            <div className="max-xl:mb-7.5 mb-13.5">*/}
+        {/*                <div className="lg:flex rounded-3.5xl bg-white block">*/}
+        {/*                    <div className="xl:w-[275px] xl:min-w-[275px] xl:h-[320px] lg:w-[200px] lg:min-w-[200px] lg:h-[260px] size-full min-w-full relative overflow-hidden">*/}
+        {/*                        <img src="https://pixio.dexignzone.com/tailwind/demo/assets/images/blog/blogpost-4/pic1.jpg" alt="/" className="size-full object-cover [mask-size:100%_100%] [mask-image:url(/assets/theme/images/shape/shape-1.png)] max-lg:[mask-image:none] max-lg:rounded-t-3.5xl"/>*/}
+        {/*                    </div>*/}
+        {/*                    <div className="flex w-full flex-col justify-center p-6.1 max-2lg:p-5 pt-7.5 relative">*/}
+        {/*                        <div className="mb-2.5">*/}
+        {/*                            <ul className="flex items-center flex-wrap">*/}
+        {/*                                <li className="py-1.1 px-3 inline-block rounded-md text-2xs bg-title font-medium text-white leading-[1.2] mb-[3px]">18 May 2024</li>*/}
+        {/*                            </ul>*/}
+        {/*                        </div>*/}
+        {/*                        <h4 className="text-2xl max-2lg:text-lg mb-7.5 font-medium">*/}
+        {/*                            <a href="blog-both-sidebar.html">Trendsetter Chronicles: Unveiling the Latest in Fashion</a>*/}
+        {/*                        </h4>*/}
+        {/*                        <a href="blog-both-sidebar.html" className="py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm inline-block font-medium font-Lufga leading-[1.2] border border-secondary rounded-xl uppercase mt-auto duration-700 hover:bg-primary hover:border-primary hover:text-white relative w-fit">*/}
+        {/*                            Read more*/}
+        {/*                            <ArrowRight className="border-secondary rounded-full absolute -right-3 z-9 bg-white text-center !text-title size-6.1 leading-6 -mt-[4px]"/>*/}
+        {/*                        </a>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+        {/*    </div>*/}
+        {/*</section>*/}
     </>;
 }

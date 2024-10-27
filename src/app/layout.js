@@ -1,7 +1,7 @@
 // import AnimatedCursor from "react-animated-cursor";
 // import { Analytics } from "@vercel/analytics/react"
 // import { SpeedInsights } from "@vercel/speed-insights/next";
-// import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import dynamic from 'next/dynamic';
 
 import { Toaster } from "@/components/ui/toaster";
@@ -97,7 +97,7 @@ export default function RootLayout({ children }) {
 
     {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <AnalyticsLazy />}
     {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION && <SpeedInsightsLazy />}
-    {/*{process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION ? <GoogleAnalytics gaId="G-T9LXE33ZEW"/> : null}*/}
+    {process.env.NEXT_PUBLIC_APP_ENV === constant.ENV.PRODUCTION ? <GoogleAnalytics gaId="G-T9LXE33ZEW"/> : null}
 
     </body>
     </html>

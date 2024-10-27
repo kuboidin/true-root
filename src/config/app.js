@@ -38,7 +38,18 @@ const app = {
         link: 'https://kuboid.in',
     },
     social: {
-        insta: "true_root"
+        insta: {
+            handle: "trueroot_in",
+            url: "https://www.instagram.com/trueroot_in/"
+        },
+        twitter: {
+            handle: "trueroot_",
+            url: "https://x.com/trueroot_"
+        },
+        fb: {
+            handle: "True Root",
+            url: "https://www.facebook.com/profile.php?id=61567378841406"
+        },
     }
 };
 // 7/27/2023, 12:13:26 AM EST
