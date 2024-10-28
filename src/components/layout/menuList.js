@@ -9,8 +9,8 @@ const menuList = [
         },
         sub_headings: [
             {
-                name: "Vegetable",
-                href: "/how-to-grow/vegetable",
+                name: "Vegetables",
+                href: "/how-to-grow/vegetables",
                 items: [
                     {
                         name: 'Tomatoes',

@@ -8,7 +8,7 @@ const gc = [
     {
         name: 'Tomatoes',
         created_on: "2024-10-10 09:00:00 AM",
-        category: [ c.GROW, c.PLANT, c.GUIDE ],
+        category: [ c.GROW, c.PLANT, c.GUIDE, c.VEGETABLE ],
         ref: tomato,
         trending: 10
     },
