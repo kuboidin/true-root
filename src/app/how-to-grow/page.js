@@ -52,7 +52,7 @@ export default function Page() {
             <div className="container relative z-1 table h-full">
                 <div className="text-center py-[90px] max-sm:py-10 table-cell align-middle h-[250px] max-sm:h-[230px]">
                     <h1 className="mb-2.5 lg:text-4.5xl md:text-3xl sm:text-2.5xl text-2xl text-white">How to grow</h1>
-                    <h2 className="mb-2.5 text-white text-sm">Discover easy, step-by-step guides for growing herbs, vegetables, fruits and more at home, in the garden, or on your balcony. Learn soil requirements, watering schedules, and organic care tips for each plant.'</h2>
+                    <h2 className="mb-2.5 text-white text-sm">Discover easy, step-by-step guides for growing herbs, vegetables, fruits and more at home, in the garden, or on your balcony. Learn soil requirements, watering schedules, and organic care tips for each plant.</h2>
                     <nav>
                         <ul className="text-white">
                             <li className="mr-[3px] inline-block text-base font-medium"><Link href="/" className="text-white"> Home</Link></li>

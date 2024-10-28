@@ -5,8 +5,16 @@ import {category} from '@/config/plant';
 import PlantsTile from "@/components/pages/plants-tile";
 import newDate from "@/lib/date";
 import Link from "next/link";
-import {ArrowRight, ChevronRight} from "lucide-react";
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from "@/components/ui/dialog";
 import Social from "@/components/pages/social";
+import SubscriptionForm from "@/components/layout/subscription-form";
 
 export const metadata = {
     title: app.title,
@@ -85,10 +93,27 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className="content-btn" data-swiper-parallax="-60">
-                                        <span className="btn py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm font-Lufga inline-block font-medium leading-[1.2] border border-secondary bg-secondary text-white rounded-xl duration-700 relative overflow-hidden xl:mr-4 mr-2">
-                                        Subscribe to Newsletter</span>
-                                        <Link href="/how-to-grow" className="btn py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm inline-block font-medium font-Lufga leading-[1.2] border border-secondary rounded-xl duration-700 hover:bg-secondary hover:text-white relative overflow-hidden ">
-                                            View All Plants</Link>
+                                        <Dialog>
+                                            <DialogTrigger className="btn py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm font-Lufga inline-block font-medium leading-[1.2] border border-secondary bg-secondary text-white rounded-xl duration-700 relative overflow-hidden xl:mr-4 mr-2">
+                                                Subscribe to Newsletter
+                                            </DialogTrigger>
+                                            <DialogContent>
+                                                <DialogHeader>
+                                                    <DialogTitle>Subscribe to Our Newsletter</DialogTitle>
+                                                    <DialogDescription>
+                                                        <>
+                                                            <p className="text-[18px] leading-8 text-[#878787] lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px] mb-2">🤝 that&apos;s it, we only need you email, no spam! I Promise! 🤞</p>
+                                                            <SubscriptionForm/>
+                                                        </>
+                                                    </DialogDescription>
+                                                </DialogHeader>
+                                            </DialogContent>
+                                        </Dialog>
+                                        <Link href="/how-to-grow">
+                                            <button className="btn py-3 px-7.5 max-sm:px-6 text-base max-sm:text-sm inline-block font-medium font-Lufga leading-[1.2] border border-secondary rounded-xl duration-700 hover:bg-secondary hover:text-white relative overflow-hidden mt-10">
+                                                View All Plants
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

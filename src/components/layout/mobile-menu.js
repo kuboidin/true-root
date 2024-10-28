@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import {useRouter} from "next/navigation";
 import Image from "next/image";
-import {Menu} from "lucide-react";
+import {Mail, Menu} from "lucide-react";
 import app from "@/config/app";
 import {cn} from "@/lib/utils";
 import {Button} from "@/components/ui/button";
@@ -12,6 +12,7 @@ import {ScrollArea} from "@/components/ui/scroll-area";
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
 import menuList from "@/components/layout/menuList";
 import {Separator} from "@/components/ui/separator";
+import SubscriptionForm from "@/components/layout/subscription-form";
 
 
 export default function MobileMenu() {
@@ -61,6 +62,22 @@ export default function MobileMenu() {
                                     <Separator className="my-4"/>
                                 </div>
                             ))}
+
+                            <Separator/>
+                            <div className="flex flex-col gap-2">
+                                <MobileLink href="/support"><h5 className="font-bold text-xl">Support</h5></MobileLink>
+
+                                <div className="grid grid-cols-1 justify-between gap-4">
+                                    <div className="mx-3">
+                                        <MobileLink href="/support"><h5 className="font-bold text-base mb-1.5">Contact us</h5></MobileLink>
+                                        <MobileLink href="/about"><h5 className="font-bold text-base mb-1.5">About us</h5></MobileLink>
+                                        <MobileLink href="/privacy"><h5 className="font-bold text-base mb-1.5">Privacy Policy</h5></MobileLink>
+                                        <MobileLink href="/terms-of-service"><h5 className="font-bold text-base mb-1.5">Terms of Servic</h5></MobileLink>
+                                    </div>
+                                </div>
+
+                                <Separator className="my-4"/>
+                            </div>
                         </div>
                     </div>
                 </ScrollArea>
@@ -70,17 +87,13 @@ export default function MobileMenu() {
 }
 
 
-function MobileLink({
-                        href, onOpenChange, className, children, ...props
-                    }) {
+function MobileLink({href, onOpenChange, className, children, ...props}) {
     const router = useRouter();
     return (
         <Link href={href} onClick={() => {
             router.push(href.toString());
             onOpenChange?.(false);
-        }}
-              className={cn(className)}{...props}
-        >
+        }} className={cn(className)}{...props}>
             {children}
         </Link>
     );
