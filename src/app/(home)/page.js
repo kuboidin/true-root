@@ -124,7 +124,7 @@ export default function Home() {
                                     <div className="border border-[#DFDFDF] absolute bottom-[-7%] right-[-7%] w-[50%] h-[35%] rounded-ee-[150px] -z-1"></div>
 
                                     <div className="overflow-hidden" data-swiper-parallax="-100">
-                                        <Image width={450} height={525} src="/assets/other/bg_2.jpg" alt="You ultimate guide to growing anything and everything" className="w-full object-cover rounded-2xl border-2 border-white"/>
+                                        <Image width={450} height={525} src="/assets/other/bg_2.jpg" alt="You ultimate guide to growing anything and everything" className="w-full object-cover rounded-2xl border-2 border-white" priority/>
                                     </div>
                                     <Link href={plants[0].ref.path}>
                                         <div className="w-[250px] p-5 absolute top-[38%] right-[-5vw] duration-700 rounded-2xl bg-[#ffffffb3] shadow-wrapper backdrop-blur-[7px] flex items-center max-3xl:w-[200px] max-3xl:p-3.6 max-3xl:right-[1vw] max-md:hidden hover:-translate-y-2.5">

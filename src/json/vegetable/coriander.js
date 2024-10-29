@@ -11,6 +11,7 @@ const plant = {
     datePublished: "2024-10-11 09:00:00 AM",
     dateModified: "2024-10-11 09:00:00 AM",
     cover: "/assets/plants/spice/coriander/coriander_1.jpg",
+    search: `coriander, धनिया, cilantro, coriander leaves`,
     images: [
         {src: "/assets/plants/spice/coriander/coriander_1.jpg", alt: `How to Grow Coriander (Cilantro) at Home: Easy Organic Tips for Beginners - ${app.name}` },
         {src: "/assets/plants/spice/coriander/coriander_2.jpg", alt: `How to Grow Coriander (Cilantro) at Home: Easy Organic Tips for Beginners - ${app.name}` },

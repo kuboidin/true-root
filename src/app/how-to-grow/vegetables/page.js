@@ -79,7 +79,7 @@ export default function Page() {
                                     </li></ul>
                                 </div>
                                 <h4 className="mb-2">
-                                    <Link className="text-white" href={plant.ref.path}>How to grow ${plant.ref.hero.heading}</Link>
+                                    <Link className="text-white" href={plant.ref.path}>How to grow {plant.ref.hero.heading}</Link>
                                 </h4>
                                 <Link href={plant.ref.path} className="text-sm mt-auto flex items-center gap-[5px] text-white">Read More
                                     <ChevronRight size={16}/>

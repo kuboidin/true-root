@@ -40,19 +40,19 @@ export default function MobileMenu() {
                         <Separator/>
 
                         <div className="flex flex-col gap-4 mt-4">
-                            <MobileLink href="/"><h5 className="font-bold text-xl">Home</h5></MobileLink>
+                            <MobileLink onOpenChange={setOpen} href="/"><h5 className="font-bold text-xl">Home</h5></MobileLink>
                             <Separator/>
                             {menuList.map((menu, i) => (
                                 <div className="flex flex-col gap-2" key={i}>
-                                    <MobileLink href={menu.href}><h5 className="font-bold text-xl">{menu.heading}</h5></MobileLink>
+                                    <MobileLink onOpenChange={setOpen} href={menu.href}><h5 className="font-bold text-xl">{menu.heading}</h5></MobileLink>
 
                                     <div className="grid grid-cols-2 justify-between gap-4">
                                         {menu.sub_headings.map((sub, j) => (
                                             <div className="mx-3" key={j}>
-                                                <MobileLink href={sub.href}><h5 className="font-bold text-base mb-1.5">{sub.name}</h5></MobileLink>
+                                                <MobileLink onOpenChange={setOpen} href={sub.href}><h5 className="font-bold text-base mb-1.5">{sub.name}</h5></MobileLink>
 
                                                 <div className="flex flex-col gap-1">
-                                                    {sub.items.map((m, k) => <div key={k}><MobileLink href={m.href} className="underline">{m.name}</MobileLink></div>)}
+                                                    {sub.items.map((m, k) => <div key={k}><MobileLink onOpenChange={setOpen} href={m.href} className="underline">{m.name}</MobileLink></div>)}
                                                 </div>
                                             </div>
 
@@ -65,14 +65,14 @@ export default function MobileMenu() {
 
                             <Separator/>
                             <div className="flex flex-col gap-2">
-                                <MobileLink href="/support"><h5 className="font-bold text-xl">Support</h5></MobileLink>
+                                <MobileLink onOpenChange={setOpen} href="/support"><h5 className="font-bold text-xl">Support</h5></MobileLink>
 
                                 <div className="grid grid-cols-1 justify-between gap-4">
                                     <div className="mx-3">
-                                        <MobileLink href="/support"><h5 className="font-bold text-base mb-1.5">Contact us</h5></MobileLink>
-                                        <MobileLink href="/about"><h5 className="font-bold text-base mb-1.5">About us</h5></MobileLink>
-                                        <MobileLink href="/privacy"><h5 className="font-bold text-base mb-1.5">Privacy Policy</h5></MobileLink>
-                                        <MobileLink href="/terms-of-service"><h5 className="font-bold text-base mb-1.5">Terms of Servic</h5></MobileLink>
+                                        <MobileLink onOpenChange={setOpen} href="/support"><h5 className="font-bold text-base mb-1.5">Contact us</h5></MobileLink>
+                                        <MobileLink onOpenChange={setOpen} href="/about"><h5 className="font-bold text-base mb-1.5">About us</h5></MobileLink>
+                                        <MobileLink onOpenChange={setOpen} href="/privacy"><h5 className="font-bold text-base mb-1.5">Privacy Policy</h5></MobileLink>
+                                        <MobileLink onOpenChange={setOpen} href="/terms-of-service"><h5 className="font-bold text-base mb-1.5">Terms of Service</h5></MobileLink>
                                     </div>
                                 </div>
 
