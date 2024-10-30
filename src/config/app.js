@@ -29,7 +29,7 @@ const app = {
     logo: {
         dark: 'https://wbppindsgvprdldvrrti.supabase.co/storage/v1/object/public/mera-skool/brand/logo/mera_skool_logo_dark_transparent.png',
         light: 'https://wbppindsgvprdldvrrti.supabase.co/storage/v1/object/public/mera-skool/brand/logo/mera_skool_logo_light_transparent.png?t=2023-12-05T06%3A32%3A09.486Z',
-        default: 'https://wbppindsgvprdldvrrti.supabase.co/storage/v1/object/public/mera-skool/brand/logo/mera_skool_logo_light_transparent.png',
+        default: '/assets/logo/logo.png',
         transparent_bg: 'https://wbppindsgvprdldvrrti.supabase.co/storage/v1/object/public/mera-skool/brand/logo/mera_skool_logo_dark_transparent.png',
         white_bg: 'https://wbppindsgvprdldvrrti.supabase.co/storage/v1/object/public/mera-skool/brand/logo/mera_skool_logo.png'
     },
