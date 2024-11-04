@@ -7,35 +7,34 @@ import Image from "next/image";
 import common from "@/config/common";
 import * as React from "react";
 
-export function generateMetadata({searchParams}) {
-    const { q } = searchParams;
+export function generateMetadata() {
     return {
-        title: `Searching for ${q}. Complete Guide for Herbs, Vegetables, Fruits and more.`,
+        title: `Searching... Complete Guide for Herbs, Vegetables, Fruits and more.`,
         description: 'Discover easy, step-by-step guides for growing herbs, vegetables, fruits and more at home, in the garden, or on your balcony. Learn soil requirements, watering schedules, and organic care tips for each plant.',
         keywords:  ["how to grow plants at home", "grow vegetables at home", "grow herbs indoors", "balcony gardening tips", "organic gardening guide", "grow fruits at home", "plant care tips", "watering schedule plants", "soil mix guide for plants", "beginner gardening tips"],
         openGraph: {
-            title: `Searching for ${q}. Complete Guide for Herbs, Vegetables, Fruits and more.`,
+            title: `Searching... Complete Guide for Herbs, Vegetables, Fruits and more.`,
             description: 'Discover easy, step-by-step guides for growing herbs, vegetables, fruits and more at home, in the garden, or on your balcony. Learn soil requirements, watering schedules, and organic care tips for each plant.',
             images: [
                 {
                     url: app.og.image,
                     width: 1517,
                     height: 727,
-                    alt: `Searching for ${q}. Complete Guide for Herbs, Vegetables, Fruits and more.`,
+                    alt: `Searching... Complete Guide for Herbs, Vegetables, Fruits and more.`,
                 },
             ],
             url: `${app.url}/search`,
             type: 'website'
         },
         twitter: {
-            title: `Searching for ${q}. Complete Guide for Herbs, Vegetables, Fruits and more.`,
+            title: `Searching... Complete Guide for Herbs, Vegetables, Fruits and more.`,
             description: 'Discover easy, step-by-step guides for growing herbs, vegetables, fruits and more at home, in the garden, or on your balcony. Learn soil requirements, watering schedules, and organic care tips for each plant.',
             images: [
                 {
                     url: app.og.image,
                     width: 1517,
                     height: 727,
-                    alt: `Searching for ${q}. Complete Guide for Herbs, Vegetables, Fruits and more.`,
+                    alt: `Searching... Complete Guide for Herbs, Vegetables, Fruits and more.`,
                 },
             ],
         },
@@ -50,13 +49,13 @@ export default async function Page({ searchParams }) {
 
     gc.sort((a, b) => newDate(b.created_on).toMillis() - newDate(a.created_on).toMillis());
     gc.sort((a, b) => (b.trending ?? 0) - (a.trending ?? 0));
-    const plants = gc.filter(g => g.ref.search.toLowerCase().includes(q.trim()));
+    const plants = gc.filter(g => g.ref.search.toLowerCase().includes(q ? q.trim() : ""));
 
     return <>
         <div className="relative min-h-[250px] max-sm:min-h-[230px] bg-cover bg-center z-[2] w-full overlay-black-light before:bg-black before:opacity-40 bg-[url('/assets/img/img_7.jpg')]">
             <div className="container relative z-1 table h-full">
                 <div className="text-center py-[90px] max-sm:py-10 table-cell align-middle h-[250px] max-sm:h-[230px]">
-                    <h1 className="mb-2.5 lg:text-4.5xl md:text-3xl sm:text-2.5xl text-2xl text-white">Searching: {q.trim()}</h1>
+                    <h1 className="mb-2.5 lg:text-4.5xl md:text-3xl sm:text-2.5xl text-2xl text-white">Searching: {q?.trim()}</h1>
                     <h2 className="mb-2.5 text-white text-sm">Discover easy, step-by-step guides for growing herbs, vegetables, fruits and more at home, in the garden, or on your balcony. Learn soil requirements, watering schedules, and organic care tips for each plant.</h2>
                     <nav>
                         <ul className="text-white">

@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /private/
+Disallow: /privacy
+Disallow: /terms-of-service
+Disallow: /unsubscribe
+Disallow: /_next/
 Sitemap: https://www.trueroot.in/sitemap.xml
