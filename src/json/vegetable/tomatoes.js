@@ -362,7 +362,177 @@ const plant = {
                     </>
                 ]
             }
-        ]
+        ],
+        process: {
+            quick_info: `Tomatoes grow well in pots, raised beds, or directly in the ground.
+                        Choose a sunny spot with at least 6-8 hours of sunlight daily.
+                        Ensure proper spacing between plants (45-60 cm apart) to allow air circulation and prevent fungal infections.`,
+            quick_points: [
+                "The Life of a tomato plant is 5-6 months.",
+                "Tomatoes can be grown in spring (February), monsoon (July Mid) & Autumn (September end).",
+                "Summers are tough on tomatoes, when temperature increases, tomatoes ripen prematurely, and tomatoes cannot grow fully and ripen before time."
+            ],
+            nutritional_requirements: [
+                {name: "Promotes leafy growth", value: "N (Nitrogen)"},
+                {name: "Aids in root development and fruiting", value: "P (Phosphorus)"},
+                {name: "Improving fruit & flower quality.", value: "K (Potassium)"},
+                {name: "Prevents blossom-end rot", value: "Ca (Calcium)"},
+                {name: "Photosynthesis and fruit ripening", value: "Mg (Magnesium)"},
+            ],
+            seeding_process: <>Tomato seeds need water to sprout, infect it&apos;s all they need. <br/>
+                The seed coat absorbs the water, swells & cracks, allowing the tiny plant inside to emerge and begin its life. <br/>
+                Not enough moisture and the best thing is that the seeds won&apos;t sprout until it&apos;s enough, and worst. The worst thing is that they manage to sprout but quickly perish. <br/>
+                Too much water can draw the seedlings.<br/>
+                <strong>Testing moisture -</strong> The seeding soil must retain its shape when squeezed tightly, yet it should not drip much water if any at all.
+            </>,
+            more_info: [
+                {
+                    heading: "Seed Selection",
+                    info: "Choose high-quality heirloom or hybrid seeds for your climate."
+                },
+                {
+                    heading: "Sowing",
+                    info: "Sow seeds 0.5 cm - 2.5 cm deep in seed trays or pots indoors, 6-8 weeks before the last frost date."
+                },
+                {
+                    heading: "Temperature",
+                    info: "Seeds germinate best at 23-29°C."
+                },
+                {
+                    heading: "Environment",
+                    info: "Keep in a warm, sunny spot or use grow lights. Maintain high humidity."
+                },
+                {
+                    heading: "Tips",
+                    info: "Avoid over watering as it can lead to damping-off disease. Seedlings should be hardened off before transplanting outdoors."
+                },
+                {
+                    heading: "Time to Seed",
+                    info: "Germination takes 5-10 days. Once seedlings develop 2-3 true leaves, they are ready for transplanting."
+                },
+                {
+                    heading: "Note",
+                    info: "The initial soil mix plays a very important role in seed germination. The soil needs to be light and rich in nutrients. Use soil + compost at the bottom and coco peat at the top. Coco peat alone is not good as it lacks vital nutrients for growth."
+                }
+            ],
+            germination_stage: [
+                { heading: "Radicle Emergence", info: "Within 3-4 days, the first root appears." },
+                { heading: "Shoot Development", info: "Leaves begin to sprout after a week." },
+                { heading: "True Leaves", info: "Typically appear by day 10. This is a critical phase for ensuring good light exposure and proper moisture." }
+            ],
+            what_affect_quality: [
+                { heading: "Sunlight", info: "More sunlight leads to sweeter tomatoes." },
+                { heading: "Watering", info: "Consistent watering prevents flavor dilution." },
+                { heading: "Soil Nutrients", info: "Adequate potassium improves flavor. Onion peel fertilizer is rich in potassium." }
+            ],
+            fertilizer_requirements: {
+                organic: [
+                    "Use compost, aged manure, bone meal, or worm castings.",
+                    "Use seaweed, it contains all the necessary nutrients, good for the early stage of plantation.",
+                    "Use onion peel fertilizer - Onion peel fertilizer is rich in Potassium, Phosphorus, Nitrogen, Calcium, Iron, and Magnesium.",
+                    "Use banana peel fertilizer - Banana peels contain calcium, which promotes root growth, and helps add oxygen to your soil. Magnesium, which assists with photosynthesis. Sulfur, helps plants develop strong roots and repel pests."
+                ],
+                chemical: [
+                    "A balanced NPK fertilizer such as 10:10:10 at planting, followed by a 5:10:10 fertilizer during flowering and fruiting stages."
+                ],
+                how_to: [
+                    "Until you don't see the small tomatoes, you will have to provide liquid fertilizer every 20 days.",
+                    "After bigger flowers and small fruits add other fertilizers containing micronutrients every 15 days.",
+                    "keep on changing the type of fertilizers, and try not to the repeat same."
+                ],
+                tips: [
+                    "Please dig and loosen the 6-10 inches of soil around the plant when/before you add fertilizer. Plants thrive in loose soil because air and water can circulate better, and soil life remains healthy. Take care of the roots and try not to damage them.",
+                    "Add fertilizer in the evening only."
+                ]
+            },
+            watering_schedule: [
+                {
+                    heading: "Early Stage",
+                    info: "Until you see the flowers on the plant, you will water them normally, i.e., only water them if the top soil is dry."
+                },
+                {
+                    heading: "Flowering & Fruiting",
+                    info: "When you see fruit, then you must not let the soil dry; tomatoes may turn black if they face water scarcity at this stage."
+                },
+                {
+                    heading: "Flowering & Fruiting",
+                    info: "Water deeply but infrequently, ensuring the soil remains moist but not waterlogged. Regular watering is key during flowering and fruiting stages to prevent blossom end rot."
+                },
+                {
+                    heading: "Excess Watering",
+                    info: "If you water excessively, plants might get fungus, attract more diseases, flowers will wither before time, and fruiting will be delayed."
+                }
+            ],
+            diseases: [
+                {
+                    heading: "Black Flies",
+                    info: [
+                        { label: "Sign", detail: "Small black insect-sized flies." },
+                        { label: "When", detail: "Throughout but mostly at the time of fruiting." },
+                        { label: "Treatment", detail: "Neem oil - treat/spray for 2-3 days regularly." },
+                        { label: "Note", detail: "You can use Neem oil to treat most germs and pests." }
+                    ]
+                },
+                {
+                    heading: "Leaf Curl",
+                    info: [
+                        { label: "Sign", detail: "You might see that some leaves curled up." },
+                        { label: "Treatment", detail: "Remove the whole stem of curled leaves." },
+                        { label: "Treatment", detail: "Buttermilk (25%) + Water (75%) - spray on leaves and whole plant." },
+                        { label: "Note", detail: "Try to treat them at the very beginning to avoid spread." }
+                    ]
+                },
+                {
+                    heading: "Bursting Tomatoes",
+                    info: [
+                        { label: "Treatment", detail: "Remove the affected tomatoes." },
+                        { label: "Treatment", detail: "Raw Milk (25%) + Water (75%) - spray on leaves and whole plant." }
+                    ]
+                },
+                {
+                    heading: "Black Tomatoes",
+                    info: [
+                        { label: "Why", detail: "This happens because of nutrient scarcity and lack of calcium." },
+                        { label: "Treatment", detail: "Add proper nutrients and micro nutrient-rich fertilizer specifically calcium." },
+                        { label: "Treatment", detail: "Use fertilizer such as eggshell powder, bone meal, wood ash, etc." }
+                    ]
+                },
+                {
+                    heading: "Tomatoes Not Ripening",
+                    info: [
+                        { label: "Why", detail: "Tomatoes need heat to ripen." },
+                        { label: "Treatment", detail: "Mustard cake fertilizer liquid - will provide the required heat." },
+                        { label: "Treatment", detail: "Maintain proper temperature." }
+                    ]
+                },
+                {
+                    heading: "Flowers Withering (No Pollination)",
+                    info: [
+                        { label: "Why", detail: "Flowers may wither and fall down without turning into fruits due to lack of pollination." },
+                        { label: "Treatment", detail: "Manual pollination - gently shake the plant for 1-2 minutes for manual pollination." },
+                        { label: "Treatment", detail: "Open the garden or environment for birds, bees, and insects." }
+                    ]
+                }
+            ],
+            weeding_caring: [
+                { heading: "Remove weeds regularly", info: "" },
+                { heading: "Remove Suckers", info: "Suckers are leaves that are growing between two branches they take plant's nutrients and we don't want them." },
+                { heading: "Pinching", info: "The act of pinching involves the removal of the growing point of a shoot along with a few leaves. About 1-2 cm of a growing shoot of a young plant is snapped off with fingers." },
+            ],
+            good_for_cultivation: [
+                "Tomatoes are ready for harvest when they have a uniform color and are firm yet yield slightly to pressure. Depending on the variety, fruit can be harvested when fully red (or the designated ripe color for the cultivar)."
+            ],
+            tips: [
+                "Water deeply but infrequently, ensuring the soil remains moist but not waterlogged. Regular watering is key during flowering and fruiting stages to prevent blossom end rot.",
+                "Apply a balanced fertilizer every 20 days during the growing season and every 15 days in fruiting season.",
+                "Regularly prune and stake plants to promote airflow and prevent fungal diseases.",
+                "Companion plants such as marigolds or basil can help repel common pests.",
+                "Row covers or insecticidal soaps are effective against aphids and whiteflies.",
+                "Tomatoes need at least 6-8 hours of sunlight a day for best growth.",
+                "Prune suckers and diseased leaves to ensure proper airflow and focus energy on fruit production.",
+                "Regularly inspect for pests and diseases, and use organic or biological controls to manage outbreaks early."
+            ]
+        }
     }
 };
 
