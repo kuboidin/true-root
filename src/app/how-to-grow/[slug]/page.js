@@ -10,20 +10,24 @@ import InformationTab from "@/components/pages/vegitable/information-tab";
 import Social from "@/components/pages/social";
 import newDate from "@/lib/date";
 import metaSEO from "@/service/meta";
-
-// plant JSON
-import plant from "@/json/vegetable/tomatoes";
 import HowToGrowTab from "@/components/pages/vegitable/how-to-grow-tab";
 import ProcessTab from "@/components/pages/vegitable/process-tab";
+import gc from "@/json/global";
 
-export function generateMetadata() {
+export async function generateMetadata({params}) {
+    const {slug} = await params;
+    const crop = gc.find(c => c.slug === slug);
+    const plant = crop.ref;
     return metaSEO(plant, {
         img_width: 1582,
         img_height: 718
     }, "article");
 }
 
-export default function Page() {
+export default async function Page({ params }) {
+    const {slug} = await params;
+    const crop = gc.find(c => c.slug === slug);
+    const plant = crop.ref;
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Article",

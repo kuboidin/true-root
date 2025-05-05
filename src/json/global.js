@@ -7,6 +7,7 @@ import coriander from "@/json/vegetable/coriander";
 const gc = [
     {
         name: 'Tomatoes',
+        slug: 'tomatoes',
         created_on: "2024-10-10 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE, c.VEGETABLE ],
         ref: tomato,
@@ -14,6 +15,7 @@ const gc = [
     },
     {
         name: 'Coriander',
+        slug: 'coriander',
         created_on: "2024-10-11 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE, c.SPICE ],
         ref: coriander,
