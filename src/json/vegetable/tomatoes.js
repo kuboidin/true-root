@@ -1,6 +1,7 @@
 import app from "@/config/app";
 import Link from "next/link";
 import {GiBee, GiFarmTractor, GiFootprint, GiPlantRoots, GiWaterDrop} from "react-icons/gi";
+import TabLink from "@/components/pages/tab-link";
 
 const plant = {
     name: "Tomatoes",
@@ -186,7 +187,27 @@ const plant = {
                     description: "Homegrown tomatoes reduce food miles, thus lowering the carbon footprint associated with transportation and storage."
                 }
             ]
-        }
+        },
+        how_to_grow: [
+            {
+                heading: "Step 1: Choose the Right Variety to grow tomatoes",
+                steps: [
+                    <><strong>Determinate: </strong> Stay short, Dwarf, Good for pots and balcony</>,
+                    <><strong>Indeterminate: </strong> Keep on growing until they die, Good for Gardens</>,
+                    "Opt for compact or determinate varieties like ‘Patio’ or ‘Cherry Tomatoes’ if growing in pots or grow bags.",
+                    "Key Info: Dwarf varieties perform better in containers due to their smaller size and faster fruiting."
+                ]
+            },
+            {
+                heading: "Step 2: Prepare the seedling tray (Recommended for beginners)",
+                steps: [
+                    "Seeding soil is different, it should be light, airy, free of debris, neutral pH, and hold moisture.",
+                    <><strong>Soil Mix: </strong> Use a well-draining potting mix enriched with compost. Ensure the seeding tray has drainage holes.</>,
+                    <><strong>Tip: </strong> Soil + Compost + Coco peat (Coco peat helps retain moisture for longer, if you do not have Coco peat it&apos;s Okay, just maintain the proper moisture).</>,
+                    <><strong>Tip: </strong> See the <TabLink section="Seeding Process">Seeding process</TabLink> on this page for tips and things to care about.</>
+                ]
+            }
+        ]
     }
 };
 
