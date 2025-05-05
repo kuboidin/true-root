@@ -3,17 +3,11 @@ import Breadcrumbs from "@/components/comp/breadcrumbs";
 import EcoBadge from "@/components/comp/eco-badge";
 import {Separator} from "@/components/ui/separator";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
-import {Asterisk, Bean, Droplets, MoveRight, Shrub, Sprout} from "lucide-react";
 import Nutrition from "@/components/pages/vegitable/nutrition";
-import {GiFertilizerBag} from "react-icons/gi";
-import {FaBacteria} from "react-icons/fa";
-import {PiPlantFill} from "react-icons/pi";
 import Share from "@/components/comp/share";
 import app from "@/config/app";
 import InformationTab from "@/components/pages/vegitable/information-tab";
 import Social from "@/components/pages/social";
-import Step from "@/components/pages/vegitable/step";
-import TabLink from "@/components/pages/tab-link";
 import newDate from "@/lib/date";
 import metaSEO from "@/service/meta";
 
