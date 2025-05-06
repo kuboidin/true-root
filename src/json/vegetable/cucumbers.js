@@ -7,11 +7,11 @@ const plant = {
     name: "Cucumbers",
     plural: "Cucumbers",
     singular: "Cucumber",
-    other_name: ["Cucumber", "खीरा", "Kheera"],
+    other_name: ["Cucumber", "खीरा", "Kheera", "Kakdi", "Vellarikkai", "Kakara"],
     path: "/how-to-grow/cucumbers",
     datePublished: "2025-05-05 09:00:00 AM",
     dateModified: "2025-05-05 09:00:00 AM",
-    cover: "/assets/plants/vegetable/cucumber/c4.webp",
+    cover: "/assets/plants/vegetable/cucumber/c1.webp",
     search: `Cucumber, खीरा, Kheera, Kakdi, Vellarikkai, Kakara, Cucumbers`, // used for search algorithm
     images: [
         {src: "/assets/plants/vegetable/cucumber/c0.jpg", alt: `How to Grow Cucumbers: Complete Guide for Home, Garden, & Large-Scale Farming | Health Benefits & Uses - ${app.name}` },
@@ -45,7 +45,7 @@ const plant = {
             "Highly suitable for hydroponic cultivation"
         ],
         snippet: <>
-            Cucumbers are one of the most rewarding vegetables to grow in home gardens, offering crisp, refreshing produce with minimal effort. <br/>
+            Cucumbers are one of the most rewarding vegetables to grow in home gardens across India, offering crisp, refreshing produce with minimal effort. <br/>
             Low in calories but high in water content, cucumbers are nutritionally valuable and offer numerous health benefits including hydration support and weight management. <br/>
             In Ayurvedic medicine, cucumber (known as Trapusha) is considered cooling and is used to treat conditions like difficulty in urination, excessive thirst, headaches, and insomnia. <br/>
             Whether you&apos;re a beginner or an experienced gardener, cucumbers are rewarding to cultivate at home with minimal effort and thrive in India&apos;s diverse climate conditions.
@@ -82,7 +82,7 @@ const plant = {
                 },
                 {
                     heading: "Hydration Support",
-                    detail: `Consisting of 95% water and rich in electrolytes, cucumbers help prevent dehydration, especially valuable during hot summers.`,
+                    detail: `Consisting of 95% water and rich in electrolytes, cucumbers help prevent dehydration, especially valuable during India's hot summers.`,
                     source: {
                         link: "https://www.healthline.com/nutrition/7-health-benefits-of-cucumber",
                         title: "Healthline"
@@ -131,7 +131,7 @@ const plant = {
                         <li>May cause digestive discomfort in some individuals if consumed in large quantities</li>
                         <li>Those with cucumber allergies should avoid cultivation and consumption</li>
                         <li>Prone to certain pests and diseases in humid conditions</li>
-                        <li>Regular monitoring is required during monsoon season to prevent fungal issues</li>
+                        <li>Regular monitoring is required during India&#39;s monsoon season to prevent fungal issues</li>
                     </ul>
                 </>,
                 footer_info: <>
@@ -146,9 +146,15 @@ const plant = {
                     {name: "Protein", value: "1g"},
                     {name: "Carbohydrates", value: "1.2g"},
                     {name: "Fat", value: "0.6g"},
-                    {name: "Fiber", value: "0.7g"},
+                    {name: "Fiber", value: "0.7g (NSP)"},
                 ],
                 bottom: <>Cucumbers also contain folic acid and Vitamin A (carotene) in the skin, making them nutritionally valuable despite their low calorie content.</>
+            },
+            ayurvedic_info: {
+                heading: "Ayurvedic/Medicinal Information",
+                content: <>
+                    In Ayurvedic medicine, cucumber (known as Trapusha) is considered cooling and is used to treat conditions like difficulty in urination, excessive thirst, headaches, and insomnia. It has pitta-pacifying properties and is recommended for liver conditions. Modern Ayurvedic practitioners note its potential in supporting liver cancer treatments.
+                </>
             },
             ecological_effects: [
                 {
@@ -271,7 +277,7 @@ const plant = {
             }
         ],
         process: {
-            quick_info: `Cucumbers are one of the most rewarding vegetables to grow in home gardens across India, offering crisp, refreshing produce with minimal effort. They grow well in pots, raised beds, or directly in the ground, and thrive when grown vertically on supports.`,
+            quick_info: `Cucumbers are one of the most rewarding vegetables to grow in home gardens across India, offering crisp, refreshing produce with minimal effort. This comprehensive guide provides everything Indian home gardeners need to know about growing cucumbers successfully, from planting to harvest.`,
             quick_points: [
                 "Cucumbers need at least 6 hours of direct sunlight daily",
                 "Consistent moisture is crucial for cucumber development",
@@ -324,12 +330,30 @@ const plant = {
                 {
                     heading: "Note",
                     info: "The initial soil mix plays a very important role in seed germination. The soil needs to be light and rich in nutrients. Use soil + compost at the bottom and coco peat at the top."
+                },
+                {
+                    heading: "Planting Seasons in India",
+                    info: "Main Season: June (with monsoon onset); Secondary Season: January to April; Protected Cultivation: Year-round possibility with appropriate structures."
                 }
             ],
             germination_stage: [
                 { heading: "Radicle Emergence", info: "Within 2-3 days, the first root appears." },
                 { heading: "Shoot Development", info: "Cotyledons (seed leaves) emerge after 3-5 days." },
                 { heading: "True Leaves", info: "Typically appear by day 7-10. This is when seedlings should receive adequate sunlight." }
+            ],
+            month_by_month: [
+                {
+                    heading: "Month 1: Preparation and Planting",
+                    info: "Week 1: Soil preparation, compost addition; Week 2: Seed treatment and sowing; Week 3: Seedling emergence, monitoring moisture; Week 4: Thinning seedlings, initial pest monitoring."
+                },
+                {
+                    heading: "Month 2: Growth and Care",
+                    info: "Week 1: Training vines on supports, applying first side dressing of nitrogen; Week 2: Regular watering, monitoring for flowering; Week 3: Continued training of vines, pest management; Week 4: Flower formation, pollination (for open-pollinated varieties)."
+                },
+                {
+                    heading: "Month 3: Fruiting and Harvest",
+                    info: "Week 1: Beginning of fruit formation; Week 2: Early harvest of pickling varieties if grown; Week 3: Main harvest begins for slicing varieties; Week 4: Peak harvest period, continuous picking to encourage production."
+                }
             ],
             what_affect_quality: [
                 { heading: "Sunlight", info: "Adequate sunlight ensures proper development and flavor." },
@@ -381,7 +405,11 @@ const plant = {
                 "Apply mulch around plants to conserve moisture and prevent weed growth.",
                 "Avoid overhead watering to prevent fungal diseases; use drip irrigation if possible.",
                 "Regularly inspect for pests and diseases, and use organic or biological controls to manage outbreaks early.",
-                "Plant in succession every 2-3 weeks for continuous harvest throughout the growing season."
+                "Plant in succession every 2-3 weeks for continuous harvest throughout the growing season.",
+                "Cucumbers grow best when temperatures range between 24-30°C (75-85°F).",
+                "During monsoon season, focus on drainage and fungal disease prevention.",
+                "Protected cultivation can extend growing seasons and improve yields.",
+                "Choose varieties suited to your specific region in India."
             ],
             fertilizer_requirements: {
                 organic: [
@@ -398,11 +426,12 @@ const plant = {
                     "For container growing: Use balanced water-soluble fertilizer (NPK 20:20:20) every 2-3 weeks",
                     "Reduce nitrogen application once fruiting begins to prevent excessive foliage growth"
                 ],
-                npk: {
-                    n: "Nitrogen: Essential for vegetative growth and leaf development",
-                    p: "Phosphorus: Important for root development and flowering",
-                    k: "Potassium: Critical for fruit development and disease resistance"
-                }
+                how_to: [
+                    "Mix compost into soil before planting",
+                    "Apply liquid fertilizer around root zone every 2 weeks",
+                    "Top-dress with vermicompost or wood ash during fruiting"
+                ],
+                tips: []
             },
             harvesting: {
                 heading: "Harvesting Cucumbers",
