@@ -1,52 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://www.trueroot.in/</loc>
-  <lastmod>2024-10-28T05:40:52+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.trueroot.in/how-to-grow</loc>
-  <lastmod>2024-10-28T05:40:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.trueroot.in/how-to-grow/vegetables</loc>
-  <lastmod>2024-10-28T05:40:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.trueroot.in/how-to-grow/tomatoes</loc>
-  <lastmod>2024-10-28T05:40:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.trueroot.in/how-to-grow/spices</loc>
-  <lastmod>2024-10-28T05:40:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.trueroot.in/how-to-grow/coriander</loc>
-  <lastmod>2024-10-28T05:40:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.trueroot.in/support</loc>
-  <lastmod>2024-10-28T05:40:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.trueroot.in/about</loc>
-  <lastmod>2024-10-28T05:40:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://www.trueroot.in/</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/search?q=</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/how-to-grow</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/how-to-grow/vegetables</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/how-to-grow/tomatoes</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/how-to-grow/cucumber</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/how-to-grow/brinjal</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/how-to-grow/bottle-guard</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/how-to-grow/spices</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/how-to-grow/coriander</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/support</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.trueroot.in/about</loc>
+    <lastmod>2025-05-11T12:26:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
 
 </urlset>
