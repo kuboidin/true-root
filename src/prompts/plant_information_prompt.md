@@ -8,6 +8,13 @@ You are tasked with creating comprehensive, accurate, and detailed information a
 - The output must be in valid JSON format that can be directly used in the TrueRoot.in codebase
 - Include all required sections with detailed, accurate information specific to PLANT_NAME_GOES_HERE
 - Ensure all content is factually accurate and tailored to Indian gardening conditions
+- Use JSX format for all content containing HTML or React tags:
+  - Incorrect: "This is <strong>bold</strong> text" (as a string)
+  - Correct: <>This is <strong>bold</strong> text</> (as JSX)
+  - Always wrap JSX content in fragment tags: <> content </>
+- Highlight important information using appropriate formatting:
+  - Use <strong> tags for critical information that must not be overlooked
+  - Use <em> tags for helpful tips and suggestions
 
 ## Template JSON Schema
 ```javascript
@@ -121,10 +128,19 @@ const plant = {
             //     steps: [
             //       "Step instruction 1 - Be specific and actionable",
             //       "Step instruction 2 - Include measurements and timing",
-            //       "JSX formatted instruction with <strong> tags for emphasis"
+            //       <><strong>Important:</strong> Highlight critical information using bold formatting</>,
+            //       <><em>Tip:</em> Use italic formatting for helpful tips and suggestions</>
             //     ]
             //   }
             // ]
+            // IMPORTANT: 
+            // 1. Use JSX format for all content containing HTML or React tags
+            //    - Incorrect: "This is <strong>bold</strong> text" (as a string)
+            //    - Correct: <>This is <strong>bold</strong> text</> (as JSX)
+            // 2. Highlight important parts of instructions using <strong> or <em> tags
+            // 3. Use <strong> for critical information that must not be overlooked
+            // 4. Use <em> for helpful tips and suggestions
+            // 5. Wrap JSX content in fragment tags: <> content </>
             // Provide at least 8-10 detailed steps covering the entire growing cycle
         ],
 
@@ -132,11 +148,50 @@ const plant = {
         process: {
             quick_info: "", // Brief overview of growing process
             quick_points: [], // Array of key points about growing the plant
-            nutritional_requirements: [], // Array of nutrient objects
-            seeding_process: "", // Description of the seeding process
-            more_info: [], // Array of information objects about seeding
-            germination_stage: [], // Array of germination stage objects
-            what_affect_quality: [], // Array of quality factor objects
+            nutritional_requirements: [
+                // Array of nutrient objects (provide at least 3-5 major nutrients)
+                // For each nutrient, explain its function in the plant's development
+                // Schema: [ { name: "Function description", value: "Nutrient name/symbol" }, ]
+                // Example: { name: "Promotes leafy growth", value: "N (Nitrogen)" },
+                // Example: { name: "Aids in root development and fruiting", value: "P (Phosphorus)" },
+                // Be specific about how each nutrient affects the particular plant
+                // Include both macronutrients and important micronutrients
+            ],
+            seeding_process: "", // Description of the seeding process (use JSX for formatting)
+                               // Example: <>Tomato seeds need water to sprout, in fact it's all they need. <br/>
+                               // The seed coat absorbs the water, swells & cracks, allowing the tiny plant inside to emerge and begin its life. <br/>
+                               // Not enough moisture and the seeds won't sprout; too much water can drown the seedlings.<br/>
+                               // <strong>Testing moisture -</strong> The seeding soil must retain its shape when squeezed tightly, yet it should not drip much water if any at all.</>
+                               // Provide comprehensive, detailed information about:
+                               // 1. Optimal conditions for germination (moisture, temperature, light)
+                               // 2. The germination process specific to this plant
+                               // 3. Common issues and how to avoid them
+                               // 4. How to test for proper conditions
+                               // 5. Include specific details about soil preparation, depth of planting, and care during germination
+                               // Use JSX format with <br/> for line breaks and <strong> for emphasis
+            more_info: [
+                // Array of information objects about seeding - Include at least 5-7 detailed points
+                // Schema: [ { heading: "Information category - Keep concise but descriptive", info: "Detailed explanation - Provide specific, actionable advice" } ]
+                // Example: { heading: "Seed Selection", info: "Choose high-quality heirloom or hybrid seeds for your climate." },
+                // Example: { heading: "Sowing", info: "Sow seeds 0.5 cm - 2.5 cm deep in seed trays or pots indoors, 6-8 weeks before the last frost date." },
+                // Include categories such as Seed Selection, Sowing Depth, Temperature Requirements, Environment/Light Needs, Watering Practices, etc.
+            ],
+            germination_stage: [
+                // Array of germination stage objects - Include 3-4 key stages
+                // Schema: [ { heading: "Stage name - Be specific about the development phase", info: "Detailed explanation" } ]
+                // Example: { heading: "Radicle Emergence", info: "Within 3-4 days, the first root appears." },
+                // Example: { heading: "Shoot Development", info: "Leaves begin to sprout after a week." },
+                // Provide specific timeframes and descriptions for each stage
+                // Include any critical care requirements at each stage
+            ],
+            what_affect_quality: [
+                // Array of quality factor objects - Include at least 3-5 factors
+                // Schema: [ { heading: "Factor name - Be specific about what influences quality", info: "Detailed explanation" } ]
+                // Example: { heading: "Sunlight", info: "More sunlight leads to sweeter tomatoes." },
+                // Example: { heading: "Watering", info: "Consistent watering prevents flavor dilution." },
+                // Focus on factors that gardeners can control
+                // Explain how each factor specifically affects the quality of this particular plant
+            ],
             fertilizer_requirements: {
                 organic: [
                     // Array of organic fertilizer recommendations - Include at least 3-4 options

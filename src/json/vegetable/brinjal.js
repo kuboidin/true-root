@@ -1,5 +1,6 @@
 import app from "@/config/app";
 import Link from "next/link";
+import {GiBee, GiFarmTractor, GiFootprint, GiPlantRoots, GiWaterDrop} from "react-icons/gi";
 
 const plant = {
     "name": "Brinjals",
@@ -14,9 +15,9 @@ const plant = {
         "Badanekayi",
         "Vangi"
     ],
-    "path": "/how-to-grow/brinjals",
-    "datePublished": "2025-05-11 03:40:00 PM",
-    "dateModified": "2025-05-11 03:40:00 PM",
+    "path": "/how-to-grow/brinjal",
+    "datePublished": "2025-05-10 09:00:00 AM",
+    "dateModified": "2025-05-10 09:00:00 AM",
     "cover": "/assets/plants/vegetable/brinjal/b1.webp",
     search: "brinjal eggplant aubergine baingan solanum melongena vegetable gardening",
     images: [
@@ -133,7 +134,7 @@ const plant = {
             ],
             right_section: {
                 heading: "Risks and Things to Consider",
-                information: "While brinjals offer many health benefits, there are some considerations to keep in mind. <span className=\"text-2xs\">Source: <Link href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3693607/\" target=\"_blank\" className=\"green-link\">NCBI</Link></span>",
+                information: <>While brinjals offer many health benefits, there are some considerations to keep in mind. <span className="text-2xs">Source: <Link href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3693607/" target="_blank" className="green-link">NCBI</Link></span></>,
                 content: "<ul><li>Brinjals are part of the nightshade family, which some individuals may be sensitive to</li><li>They contain solanine, which in very large amounts could cause digestive issues</li><li>Individuals with kidney or gallbladder problems should consult healthcare providers before consuming large amounts</li><li>Some people may experience allergic reactions</li></ul>",
                 footer_info: "Always wash brinjals thoroughly before cooking to remove any surface pesticides. Cooking brinjals properly reduces any potential anti-nutrient content."
             },
@@ -154,27 +155,27 @@ const plant = {
             },
             ecological_effects: [
                 {
-                    icon: "GiBee",
+                    icon: <GiBee className="text-yellow-400 -mt-2 mr-2" size={30}/>,
                     title: "Supports Pollinators",
                     description: "Brinjal flowers attract bees and other beneficial insects, supporting local pollinator populations essential for ecosystem health and biodiversity."
                 },
                 {
-                    icon: "GiPlantRoots",
+                    icon: <GiPlantRoots className="text-emerald-400 -mt-2 mr-2" size={30}/>,
                     title: "Soil Health Improvement",
                     description: "When grown with proper crop rotation practices, brinjals can help break pest cycles and improve soil structure through their root systems."
                 },
                 {
-                    icon: "GiFarmTractor",
+                    icon: <GiFarmTractor className="text-orange-400 -mt-2 mr-2" size={30}/>,
                     title: "Crop Diversity",
                     description: "As part of sustainable farming practices, brinjals contribute to crop diversity, reducing reliance on monocultures and improving overall agricultural resilience."
                 },
                 {
-                    icon: "GiWaterDrop",
+                    icon: <GiWaterDrop className="text-teal-400 -mt-2 mr-2" size={30}/>,
                     title: "Moderate Water Usage",
                     description: "While requiring regular watering, established brinjal plants with proper mulching can withstand short dry periods, making them suitable for water-conscious gardening."
                 },
                 {
-                    icon: "GiFootprint",
+                    icon: <GiFootprint className="text-rose-400 -mt-2 mr-2" size={30}/>,
                     title: "Reduced Carbon Footprint",
                     description: "Growing brinjals locally reduces the carbon footprint associated with transportation and storage of commercially produced vegetables."
                 }
@@ -298,31 +299,31 @@ const plant = {
                 "Moderately heavy feeders requiring regular fertilization"
             ],
             nutritional_requirements: [
-                { name: "Nitrogen (N)", info: "Moderate to high - Essential for leafy growth during early development stage" },
-                { name: "Phosphorus (P)", info: "High - Critical for root development, flowering, and fruit setting" },
-                { name: "Potassium (K)", info: "High - Important for overall plant health, disease resistance, and fruit quality" },
-                { name: "Calcium (Ca)", info: "Moderate - Prevents blossom end rot and strengthens cell walls" },
-                { name: "Magnesium (Mg)", info: "Moderate - Essential component of chlorophyll for photosynthesis" }
+                { value: "Nitrogen (N)", name: "Moderate to high - Essential for leafy growth during early development stage" },
+                { value: "Phosphorus (P)", name: "High - Critical for root development, flowering, and fruit setting" },
+                { value: "Potassium (K)", name: "High - Important for overall plant health, disease resistance, and fruit quality" },
+                { value: "Calcium (Ca)", name: "Moderate - Prevents blossom end rot and strengthens cell walls" },
+                { value: "Magnesium (Mg)", name: "Moderate - Essential component of chlorophyll for photosynthesis" }
             ],
             seeding_process: "Brinjal seeds require warm soil temperatures (24°C-32°C) for optimal germination. Seeds typically germinate within 7-14 days when conditions are favorable.",
             more_info: [
-                { name: "Seed Depth", info: "1/4 inch (0.6 cm)" },
-                { name: "Germination Temperature", info: "24°C - 32°C" },
-                { name: "Days to Germination", info: "7-14 days" },
-                { name: "Seed Viability", info: "3-4 years when properly stored in cool, dry conditions" }
+                { heading: "Seed Depth", info: "1/4 inch (0.6 cm)" },
+                { heading: "Germination Temperature", info: "24°C - 32°C" },
+                { heading: "Days to Germination", info: "7-14 days" },
+                { heading: "Seed Viability", info: "3-4 years when properly stored in cool, dry conditions" }
             ],
             germination_stage: [
-                { name: "Moistening", info: "Keep soil consistently moist but not waterlogged" },
-                { name: "Lighting", info: "Seeds don't require light to germinate, but seedlings need bright light once emerged" },
-                { name: "Heat", info: "Use of a heating mat can improve germination rates in cooler weather" },
-                { name: "Covering", info: "Cover seed trays with plastic to maintain humidity until germination" }
+                { heading: "Moistening", info: "Keep soil consistently moist but not waterlogged" },
+                { heading: "Lighting", info: "Seeds don't require light to germinate, but seedlings need bright light once emerged" },
+                { heading: "Heat", info: "Use of a heating mat can improve germination rates in cooler weather" },
+                { heading: "Covering", info: "Cover seed trays with plastic to maintain humidity until germination" }
             ],
             what_affect_quality: [
-                { name: "Consistent Watering", info: "Irregular watering can cause bitter fruits and blossom end rot" },
-                { name: "Sunlight Exposure", info: "Insufficient sunlight results in poor fruit development and pale coloration" },
-                { name: "Nutrient Balance", info: "Excess nitrogen produces lush foliage at the expense of fruit production" },
-                { name: "Temperature", info: "Extreme heat (above 35°C) or cold (below 10°C) affects fruit set and quality" },
-                { name: "Pest Management", info: "Early detection and control of pests ensures unblemished fruits" }
+                { heading: "Consistent Watering", info: "Irregular watering can cause bitter fruits and blossom end rot" },
+                { heading: "Sunlight Exposure", info: "Insufficient sunlight results in poor fruit development and pale coloration" },
+                { heading: "Nutrient Balance", info: "Excess nitrogen produces lush foliage at the expense of fruit production" },
+                { heading: "Temperature", info: "Extreme heat (above 35°C) or cold (below 10°C) affects fruit set and quality" },
+                { heading: "Pest Management", info: "Early detection and control of pests ensures unblemished fruits" }
             ],
             fertilizer_requirements: {
                 organic: [
