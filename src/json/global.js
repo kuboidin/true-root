@@ -4,6 +4,7 @@ import {category as c} from '@/config/plant';
 import tomato from "@/json/vegetable/tomatoes";
 import coriander from "@/json/vegetable/coriander";
 import cucumbers from "@/json/vegetable/cucumbers";
+import brinjal from "@/json/vegetable/brinjal";
 
 const gc = [
     {
@@ -28,6 +29,14 @@ const gc = [
         created_on: "2025-05-05 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE, c.SPICE ],
         ref: cucumbers,
+        trending: 9
+    },
+    {
+        name: 'Brinjal',
+        slug: 'brinjal',
+        created_on: "2025-05-10 09:00:00 AM",
+        category: [ c.GROW, c.PLANT, c.GUIDE, c.SPICE ],
+        ref: brinjal,
         trending: 9
     }
 ];

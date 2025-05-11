@@ -16,6 +16,14 @@ const menuList = [
                         name: 'Tomatoes',
                         href: '/how-to-grow/tomatoes'
                     },
+                    {
+                        name: 'Cucumbers',
+                        href: '/how-to-grow/cucumber'
+                    },
+                    {
+                        name: 'Brinjals',
+                        href: '/how-to-grow/brinjal'
+                    },
                     // {
                     //     name: "Potato",
                     //     href: '/how-to-grow/tomatoes'
