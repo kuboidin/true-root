@@ -4,11 +4,11 @@ import {GiBee, GiFarmTractor, GiFootprint, GiPlantRoots, GiWaterDrop} from "reac
 import TabLink from "@/components/pages/tab-link";
 
 const plant = {
-    name: "Cucumbers",
+    name: "Cucumber",
     plural: "Cucumbers",
     singular: "Cucumber",
     other_name: ["Cucumber", "खीरा", "Kheera", "Kakdi", "Vellarikkai", "Kakara"],
-    path: "/how-to-grow/cucumbers",
+    path: "/how-to-grow/cucumber",
     datePublished: "2025-05-05 09:00:00 AM",
     dateModified: "2025-05-05 09:00:00 AM",
     cover: "/assets/plants/vegetable/cucumber/c1.webp",
