@@ -27,7 +27,7 @@ const gc = [
         name: 'Cucumber',
         slug: 'cucumber',
         created_on: "2025-05-05 09:00:00 AM",
-        category: [ c.GROW, c.PLANT, c.GUIDE, c.SPICE ],
+        category: [ c.GROW, c.PLANT, c.GUIDE, c.VEGETABLE ],
         ref: cucumbers,
         trending: 9
     },
@@ -35,7 +35,7 @@ const gc = [
         name: 'Brinjal',
         slug: 'brinjal',
         created_on: "2025-05-10 09:00:00 AM",
-        category: [ c.GROW, c.PLANT, c.GUIDE, c.SPICE ],
+        category: [ c.GROW, c.PLANT, c.GUIDE, c.VEGETABLE ],
         ref: brinjal,
         trending: 9
     }

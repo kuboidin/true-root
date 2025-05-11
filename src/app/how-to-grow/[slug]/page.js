@@ -13,10 +13,17 @@ import metaSEO from "@/service/meta";
 import HowToGrowTab from "@/components/pages/vegitable/how-to-grow-tab";
 import ProcessTab from "@/components/pages/vegitable/process-tab";
 import gc from "@/json/global";
+import {notFound} from "next/navigation";
 
 export async function generateMetadata({params}) {
     const {slug} = await params;
     const crop = gc.find(c => c.slug === slug);
+    if (!crop) {
+        return {
+            title: app.seo_title,
+            description: app.meta.description,
+        }
+    }
     const plant = crop.ref;
     return metaSEO(plant, {
         img_width: 1582,
@@ -27,6 +34,9 @@ export async function generateMetadata({params}) {
 export default async function Page({ params }) {
     const {slug} = await params;
     const crop = gc.find(c => c.slug === slug);
+    if (!crop) {
+        notFound();
+    }
     const plant = crop.ref;
     const jsonLd = {
         "@context": "https://schema.org",
