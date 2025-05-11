@@ -158,27 +158,27 @@ const plant = {
             },
             ecological_effects: [
                 {
-                    icon: <GiWaterDrop className="text-teal-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiWaterDrop className="-mt-2 mr-2" color="#2dd4bf" size={30}/>,
                     title: "Water Efficiency",
                     description: "Cucumber cultivation is relatively water-efficient, producing 1 kg of cucumber from just 30-35 liters of water."
                 },
                 {
-                    icon: <GiFarmTractor className="text-orange-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiFarmTractor className="-mt-2 mr-2" color="#fb923c" size={30}/>,
                     title: "Protected Cultivation",
                     description: "Can be grown in various protected structures, reducing the need for pesticides and optimizing resource use."
                 },
                 {
-                    icon: <GiPlantRoots className="text-emerald-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiPlantRoots className="-mt-2 mr-2" color="#34d399" size={30}/>,
                     title: "Soil Health Support",
                     description: "Rotation with cucumbers can help break pest and disease cycles in garden soil."
                 },
                 {
-                    icon: <GiBee className="text-yellow-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiBee className="-mt-2 mr-2" color="#facc15" size={30}/>,
                     title: "Biodiversity Support",
                     description: "Flowering cucumber plants attract pollinators when grown outdoors, enhancing garden biodiversity."
                 },
                 {
-                    icon: <GiFootprint className="text-rose-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiFootprint className="-mt-2 mr-2" color="#fb7185" size={30}/>,
                     title: "Efficient Space Utilization",
                     description: "Vertical growing methods maximize space and improve air circulation, reducing fungal disease issues."
                 }

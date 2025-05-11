@@ -258,13 +258,13 @@ const plant = {
                 // Explain both the what and why of each task
             ],
             good_for_cultivation: [
-                // Array of harvest readiness indicators - Include at least 2-3 specific indicators
+                // Array of harvest readiness indicators (string) - Include at least 2-3 specific indicators
                 // Example: "Tomatoes are ready for harvest when they have a uniform color (red, yellow, or other variety-specific color) and are firm yet yield slightly to pressure."
                 // Include visual cues, size indicators, timing information
                 // Mention taste or quality considerations
             ],
             tips: [
-                // Array of general tips for growing the plant - Include at least 5-8 diverse tips
+                // Array of general tips for growing the plant (string) - Include at least 5-8 diverse tips
                 // Example: "Water deeply but infrequently, ensuring the soil remains moist but not waterlogged. Regular watering is key during flowering and fruiting stages."
                 // Include a mix of tips covering different aspects:
                 // - Watering best practices

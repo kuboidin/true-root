@@ -148,12 +148,12 @@ const plant = {
             },
             ecological_effects: [
                 {
-                    icon: <GiBee className="text-yellow-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiBee className="-mt-2 mr-2" color="#facc15" size={30}/>,
                     title: "Biodiversity Support",
                     description: "Coriander attract pollinators such as bees, which enhance overall garden health. Encourages biodiversity by attracting beneficial insects like bees."
                 },
                 {
-                    icon: <GiPlantRoots className="text-emerald-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiPlantRoots className="-mt-2 mr-2" color="#34d399" size={30}/>,
                     title: "Soil Health",
                     description: "Coriander improves soil health by reducing erosion when grown in clusters."
                 },
@@ -163,7 +163,7 @@ const plant = {
                     description: "Can act as a natural insect repellent for other plants. Reduces the need for synthetic pesticides when grown organically."
                 },
                 {
-                    icon: <GiWaterDrop className="text-teal-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiWaterDrop className="-mt-2 mr-2" color="#2dd4bf" size={30}/>,
                     title: "Water Usage",
                     description: "Requires relatively low water, making it sustainable for home gardening."
                 },

@@ -24,6 +24,10 @@ const menuList = [
                         name: 'Brinjals',
                         href: '/how-to-grow/brinjal'
                     },
+                    {
+                        name: 'Bottle Guard',
+                        href: '/how-to-grow/bottle-guard'
+                    },
                     // {
                     //     name: "Potato",
                     //     href: '/how-to-grow/tomatoes'

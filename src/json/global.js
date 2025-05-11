@@ -5,6 +5,7 @@ import tomato from "@/json/vegetable/tomatoes";
 import coriander from "@/json/vegetable/coriander";
 import cucumbers from "@/json/vegetable/cucumbers";
 import brinjal from "@/json/vegetable/brinjal";
+import bottleGuard from "@/json/vegetable/bottle-guard";
 
 const gc = [
     {
@@ -37,6 +38,14 @@ const gc = [
         created_on: "2025-05-10 09:00:00 AM",
         category: [ c.GROW, c.PLANT, c.GUIDE, c.VEGETABLE ],
         ref: brinjal,
+        trending: 9
+    },
+    {
+        name: 'Bottle Gourd',
+        slug: 'bottle-guard',
+        created_on: "2025-05-11 09:00:00 AM",
+        category: [ c.GROW, c.PLANT, c.GUIDE, c.VEGETABLE ],
+        ref: bottleGuard,
         trending: 9
     }
 ];

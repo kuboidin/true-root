@@ -16,7 +16,6 @@
  * 6. The tomato examples shown are NOT applicable to all plants - each plant has unique needs and characteristics.
  * 7. Focus on creating comprehensive, educational content that helps home gardeners successfully grow the plant.
  */
-import TabLink from "@/components/pages/tab-link";
 
 const plant = {
     // Basic plant information - Essential details about the plant for identification and categorization
@@ -293,13 +292,13 @@ const plant = {
                 // Schema: [{ icon: "JSX React icon component - Choose the most appropriate icon", title: "Effect title - Keep concise but descriptive", description: "Detailed explanation - Explain the specific ecological benefit" }],
                 // Example for tomatoes:
                 // {
-                //     icon: <GiBee className="text-yellow-400 -mt-2 mr-2" size={30}/>, // React icon component - Choose the most appropriate icon
+                //     icon: <GiBee className="-mt-2 mr-2" color="#facc15" size={30}/>, // React icon component - Choose the most appropriate icon
                 //     title: "Biodiversity Support", // Effect title - Keep concise but descriptive
                 //     description: "Tomatoes attract pollinators such as bees, which enhance overall garden health." // Detailed explanation - Explain the specific ecological benefit
                 // },
                 // Example for carrots:
                 // {
-                //     icon: <GiPlantRoots className="text-emerald-400 -mt-2 mr-2" size={30}/>,
+                //     icon: <GiPlantRoots className="-mt-2 mr-2" color="#34d399" size={30}/>,
                 //     title: "Soil Health",
                 //     description: "Carrot cultivation, especially when practiced with crop rotation, helps break up compacted soil and improve its structure through their deep taproots."
                 // },

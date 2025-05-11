@@ -155,27 +155,27 @@ const plant = {
             },
             ecological_effects: [
                 {
-                    icon: <GiBee className="text-yellow-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiBee className="-mt-2 mr-2" color="#facc15" size={30}/>,
                     title: "Supports Pollinators",
                     description: "Brinjal flowers attract bees and other beneficial insects, supporting local pollinator populations essential for ecosystem health and biodiversity."
                 },
                 {
-                    icon: <GiPlantRoots className="text-emerald-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiPlantRoots className="-mt-2 mr-2" color="#34d399" size={30}/>,
                     title: "Soil Health Improvement",
                     description: "When grown with proper crop rotation practices, brinjals can help break pest cycles and improve soil structure through their root systems."
                 },
                 {
-                    icon: <GiFarmTractor className="text-orange-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiFarmTractor className="-mt-2 mr-2" color="#fb923c" size={30}/>,
                     title: "Crop Diversity",
                     description: "As part of sustainable farming practices, brinjals contribute to crop diversity, reducing reliance on monocultures and improving overall agricultural resilience."
                 },
                 {
-                    icon: <GiWaterDrop className="text-teal-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiWaterDrop className="-mt-2 mr-2" color="#2dd4bf" size={30}/>,
                     title: "Moderate Water Usage",
                     description: "While requiring regular watering, established brinjal plants with proper mulching can withstand short dry periods, making them suitable for water-conscious gardening."
                 },
                 {
-                    icon: <GiFootprint className="text-rose-400 -mt-2 mr-2" size={30}/>,
+                    icon: <GiFootprint className="-mt-2 mr-2" color="#fb7185" size={30}/>,
                     title: "Reduced Carbon Footprint",
                     description: "Growing brinjals locally reduces the carbon footprint associated with transportation and storage of commercially produced vegetables."
                 }
