@@ -22,7 +22,7 @@ const plant = {
     dateModified: "", // Last modification date in format "YYYY-MM-DD HH:MM:SS AM/PM"
     cover: "", // Leave empty - Path to the main cover image
     search: "", // Keywords for search functionality, including translations
-
+    images: [], // Leave empty - Will be populated with image paths
     // SEO-related information
     seo: {
         images: [], // Leave empty - Will be populated with image paths
