@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import {useRouter} from "next/navigation";
 import Image from "next/image";
-import {Mail, Menu} from "lucide-react";
+import {Menu} from "lucide-react";
 import app from "@/config/app";
 import {cn} from "@/lib/utils";
 import {Button} from "@/components/ui/button";
@@ -12,10 +12,9 @@ import {ScrollArea} from "@/components/ui/scroll-area";
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
 import menuList from "@/components/layout/menuList";
 import {Separator} from "@/components/ui/separator";
-import SubscriptionForm from "@/components/layout/subscription-form";
 
 
-export default function MobileMenu() {
+export default function MobileMenu({topPosts = []}) {
     const [open, setOpen] = React.useState(false);
 
     return (
@@ -41,7 +40,22 @@ export default function MobileMenu() {
 
                         <div className="flex flex-col gap-4 mt-4">
                             <MobileLink onOpenChange={setOpen} href="/"><h5 className="font-bold text-xl">Home</h5></MobileLink>
-                            <MobileLink onOpenChange={setOpen} href="/blog"><h5 className="font-bold text-xl">Blog</h5></MobileLink>
+
+                            {/* Blog with dynamic Top 10 */}
+                            <div className="flex flex-col gap-2">
+                                <MobileLink onOpenChange={setOpen} href="/blog"><h5 className="font-bold text-xl">Blog</h5></MobileLink>
+                                {topPosts && topPosts.length > 0 && (
+                                    <div className="mx-3 flex flex-col gap-1">
+                                        {topPosts.map((p, i) => (
+                                            <MobileLink key={i} onOpenChange={setOpen} href={`/blog/${p.slug}`} className="underline truncate">{p.title || p.slug}</MobileLink>
+                                        ))}
+                                        <div className="mt-2">
+                                            <MobileLink onOpenChange={setOpen} href="/blog" className="font-semibold">Browse all →</MobileLink>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+
                             <Separator/>
                             {menuList.map((menu, i) => (
                                 <div className="flex flex-col gap-2" key={i}>

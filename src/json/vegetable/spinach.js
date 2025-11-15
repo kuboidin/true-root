@@ -1,7 +1,5 @@
 import app from "@/config/app";
-import Link from "next/link";
 import {GiBee, GiFarmTractor, GiFootprint, GiPlantRoots, GiWaterDrop} from "react-icons/gi";
-import TabLink from "@/components/pages/tab-link";
 
 const plant = {
     "name": "Spinach",
@@ -432,7 +430,8 @@ const plant = {
                 }
             ],
 
-            "seeding_process": <>Spinach seeds require moisture to initiate germination. The seed coat absorbs water, swells and cracks, allowing the tiny plant inside to emerge. Not enough moisture and seeds won't sprout; too much water can cause rot. <br/> <strong>Testing Moisture:</strong> The seeding soil must retain its shape when squeezed tightly, yet should not drip much water if any at all. Soil should feel like a wrung-out sponge—moist but not soggy. <br/> <strong>Optimal Germination Conditions:</strong> Spinach seeds germinate best at soil temperatures between 10-22°C (50-72°F), with 15-20°C (59-68°F) being ideal for fastest germination (5-7 days). At cooler temperatures (10°C / 50°F), germination takes 14-21 days. Seeds will not germinate if soil temperature exceeds 22°C (72°F) for extended periods. <br/> <strong>Moisture Management During Germination:</strong> Keep soil consistently moist during the 7-10 day germination window. Daily light misting with a fine spray prevents surface crusting while avoiding waterlogging. Maintain air circulation around seedbeds to prevent fungal issues. <br/> <strong>Light Requirements:</strong> Spinach seeds don't require light to germinate, but once sprouted, seedlings need 4-6 hours of light daily to develop strong stems and prevent etiolation (weak, pale growth).</>,
+            "seeding_process": <>Spinach seeds require moisture to initiate germination. The seed coat absorbs water, swells and cracks, allowing the tiny plant inside to emerge. Not enough moisture and seeds won&#39;t sprout; too much water can cause rot. <br/> <strong>Testing Moisture:</strong> The seeding soil must retain its shape when squeezed tightly, yet should not drip much water if any at all. Soil should feel like a wrung-out sponge—moist but not soggy. <br/> <strong>Optimal Germination Conditions:</strong> Spinach seeds germinate best at soil temperatures between 10-22°C (50-72°F), with 15-20°C (59-68°F) being ideal for fastest germination (5-7 days). At cooler temperatures (10°C / 50°F), germination takes 14-21 days. Seeds will not germinate if soil temperature exceeds 22°C (72°F) for extended periods. <br/> <strong>Moisture Management During Germination:</strong> Keep soil consistently moist during the 7-10 day germination window. Daily light misting with a fine spray
+                prevents surface crusting while avoiding waterlogging. Maintain air circulation around seedbeds to prevent fungal issues. <br/> <strong>Light Requirements:</strong> Spinach seeds don&#39;t require light to germinate, but once sprouted, seedlings need 4-6 hours of light daily to develop strong stems and prevent etiolation (weak, pale growth).</>,
 
             "more_info": [
                 {

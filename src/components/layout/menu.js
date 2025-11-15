@@ -4,16 +4,54 @@ import menuList from "@/components/layout/menuList";
 import {cn} from "@/lib/utils";
 import {Mail} from "lucide-react";
 import SubscriptionForm from "@/components/layout/subscription-form";
+import {getAllPosts} from "@/lib/markdown";
 
 export default function Menu() {
+    const topPosts = getAllPosts().slice(0, 10);
     return <>
         <div className="header-nav w3menu navbar-collapse justify-start">
             <ul className="nav navbar-nav">
                 <li className="has-mega-menu sub-menu-down">
                     <Link href="/"><span>Home</span><i className="fas fa-chevron-down tabindex"></i></Link>
                 </li>
+
+                {/* Blog with dynamic Top 10 */}
                 <li className="has-mega-menu sub-menu-down">
                     <Link href="/blog"><span>Blog</span><i className="fas fa-chevron-down tabindex"></i></Link>
+                    <div className="mega-menu shop-menu">
+                        <div className="grid grid-cols-3 gap-4">
+                            <div className="col-span-full">
+                                <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
+                                    <div>
+                                        <h6 className="menu-title">Top posts</h6>
+                                        <ul>
+                                            {topPosts.map((p, i) => (
+                                                <li key={i} className="flex items-center gap-3 py-1.5">
+                                                    {p.cover ? (
+                                                        <Link href={`/blog/${p.slug}`} className="relative block w-12 h-12 rounded-md overflow-hidden shrink-0">
+                                                            <Image src={p.cover} alt={p.title || p.slug} fill className="object-cover"/>
+                                                        </Link>
+                                                    ) : null}
+                                                    <div className="min-w-0">
+                                                        <Link href={`/blog/${p.slug}`} className="block truncate hover:text-primary font-medium">
+                                                            {p.title || p.slug}
+                                                        </Link>
+                                                        {p.date && <span className="text-2xs text-muted-foreground">{p.date}</span>}
+                                                    </div>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h6 className="menu-title">Browse all</h6>
+                                        <ul>
+                                            <li><Link href="/blog" className="hover:text-primary">Go to Blog index →</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
 
                 {menuList.map((menu, i) => (<li className="has-mega-menu sub-menu-down" key={i}>

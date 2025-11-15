@@ -5,8 +5,10 @@ import Image from "next/image";
 import Menu from "@/components/layout/menu";
 import MobileMenu from "@/components/layout/mobile-menu";
 import Search from "@/components/layout/search";
+import {getAllPosts} from "@/lib/markdown";
 
 export default function Header({}) {
+    const topPosts = getAllPosts().slice(0, 10);
     return <>
         <header className="site-header mo-left header style-2">
             <div className="bg-light2 relative z-99 max-lg:hidden">
@@ -29,7 +31,7 @@ export default function Header({}) {
                 <div className="main-bar relative after:block after:content-[''] after:clear-both">
                     <div className="container after:block after:content-[''] after:clear-both lg:flex block">
                         <Menu />
-                        <MobileMenu />
+                        <MobileMenu topPosts={topPosts}/>
                     </div>
                 </div>
             </div>
