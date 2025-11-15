@@ -1,0 +1,166 @@
+/* Scoped Markdown styles for blog posts
+   Apply to a wrapper: <div className={styles.markdownBody}> ... </div>
+   Goals based on prior design updates:
+   - Reduce main H1 size on mobile, comfortable on desktop
+   - Increase vertical rhythm between paragraphs and headings
+   - Improve list spacing and readability
+   - Pleasant blockquotes, images rounded, code blocks readable
+   - Respect light/dark themes using CSS variables where available
+*/
+
+.markdownBody {
+    line-height: 1.8; /* comfortable leading */
+    font-size: 1rem; /* base 16px */
+}
+
+/* Headings scale and spacing */
+.markdownBody h1,
+.markdownBody h2,
+.markdownBody h3,
+.markdownBody h4,
+.markdownBody h5,
+.markdownBody h6 {
+    font-weight: 800;
+    line-height: 1.25;
+    margin-top: 2.25rem; /* default top margin */
+    margin-bottom: 0.75rem;
+}
+
+/* Specific heading sizes (mobile first) */
+.markdownBody h1 {
+    font-size: 1.875rem; /* text-3xl */
+}
+
+.markdownBody h2 {
+    font-size: 1.5rem; /* text-2xl */
+}
+
+.markdownBody h3 {
+    font-size: 1.25rem; /* text-xl  */
+}
+
+.markdownBody h4 {
+    font-size: 1.125rem; /* text-lg  */
+}
+
+/* Larger top margins for section breaks */
+.markdownBody h2 {
+    margin-top: 2.5rem;
+}
+
+.markdownBody h3 {
+    margin-top: 2rem;
+}
+
+/* Desktop upscaling similar to md:text-4xl for H1 */
+@media (min-width: 768px) {
+    .markdownBody h1 {
+        font-size: 2.25rem; /* text-4xl */
+    }
+
+    .markdownBody h2 {
+        font-size: 1.875rem; /* text-3xl */
+    }
+
+    .markdownBody h3 {
+        font-size: 1.5rem; /* text-2xl */
+    }
+}
+
+/* Paragraphs */
+.markdownBody p {
+    margin-top: 1.25rem; /* my-5 */
+    margin-bottom: 1.25rem;
+    line-height: 2; /* leading-8 */
+}
+
+/* Lists */
+.markdownBody ul,
+.markdownBody ol {
+    margin-top: 1.25rem; /* my-5 */
+    margin-bottom: 1.25rem;
+    padding-left: 1.25rem; /* pl-5 */
+}
+
+.markdownBody li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.markdownBody ul {
+    list-style: disc;
+}
+
+.markdownBody ol {
+    list-style: decimal;
+}
+
+/* Blockquote */
+.markdownBody blockquote {
+    margin: 1.5rem 0;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid rgb(16 185 129); /* emerald-500-ish (primary) */
+    background: rgba(16, 185, 129, 0.07);
+    border-radius: 0.5rem; /* rounded-lg */
+}
+
+/* Code */
+.markdownBody code {
+    background: rgb(243 244 246); /* gray-100 */
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.375rem; /* rounded-md */
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.9em;
+}
+
+.markdownBody pre {
+    padding: 1rem;
+    border-radius: 0.75rem; /* rounded-xl */
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.markdownBody pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* Images */
+.markdownBody img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem; /* rounded-xl */
+    margin: 1rem auto; /* center with vertical spacing */
+}
+
+/* Horizontal rule */
+.markdownBody hr {
+    margin: 2rem 0;
+    height: 1px;
+    border: 0;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+/* Tables (basic) */
+.markdownBody table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0;
+}
+
+.markdownBody th,
+.markdownBody td {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0.5rem 0.75rem;
+}
+
+.markdownBody thead th {
+    background: rgba(0, 0, 0, 0.03);
+    font-weight: 700;
+}
+
+/* Links */
+.markdownBody a {
+    text-decoration: underline;
+}

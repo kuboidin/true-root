@@ -137,7 +137,7 @@ Here's the truth: spinach is relatively pest-resistant, but problems can happen.
 
 **Leaf Miners**: Winding tunnels inside leaves. Remove affected leaves or use neem oil spray every 7-10 days.
 
-**Slugs \& Snails**: Ragged holes in leaves and slime trails. Hand-pick them in early morning or evening, use beer traps (they drown in it — the irony!), or sprinkle food-grade diatomaceous earth around plants.
+**Slugs & Snails**: Ragged holes in leaves and slime trails. Hand-pick them in early morning or evening, use beer traps (they drown in it — the irony!), or sprinkle food-grade diatomaceous earth around plants.
 
 **Prevention is Better**: Ensure good air circulation, avoid overhead watering, practice crop rotation, mulch properly, and monitor plants 2-3 times weekly for early signs of trouble.
 
