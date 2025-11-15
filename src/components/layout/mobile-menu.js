@@ -41,6 +41,7 @@ export default function MobileMenu() {
 
                         <div className="flex flex-col gap-4 mt-4">
                             <MobileLink onOpenChange={setOpen} href="/"><h5 className="font-bold text-xl">Home</h5></MobileLink>
+                            <MobileLink onOpenChange={setOpen} href="/blog"><h5 className="font-bold text-xl">Blog</h5></MobileLink>
                             <Separator/>
                             {menuList.map((menu, i) => (
                                 <div className="flex flex-col gap-2" key={i}>

@@ -12,6 +12,9 @@ export default function Menu() {
                 <li className="has-mega-menu sub-menu-down">
                     <Link href="/"><span>Home</span><i className="fas fa-chevron-down tabindex"></i></Link>
                 </li>
+                <li className="has-mega-menu sub-menu-down">
+                    <Link href="/blog"><span>Blog</span><i className="fas fa-chevron-down tabindex"></i></Link>
+                </li>
 
                 {menuList.map((menu, i) => (<li className="has-mega-menu sub-menu-down" key={i}>
                     <Link href={menu.href}><span>{menu.heading}</span><i className="fas fa-chevron-down tabindex"></i></Link>

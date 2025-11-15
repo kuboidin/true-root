@@ -17,6 +17,11 @@
  * 7. Focus on creating comprehensive, educational content that helps home gardeners successfully grow the plant.
  */
 
+import app from "@/config/app";
+import Link from "next/link";
+import {GiBee, GiFarmTractor, GiFootprint, GiPlantRoots, GiWaterDrop} from "react-icons/gi";
+import TabLink from "@/components/pages/tab-link";
+
 const plant = {
     // Basic plant information - Essential details about the plant for identification and categorization
     name: "", // The common name of the plant in plural form (e.g., "Tomatoes", "Carrots", "Bell Peppers")
@@ -25,10 +30,10 @@ const plant = {
     other_name: [], // Array of alternative names, including translations in Hindi and other Indian languages
                     // Example: ["Tomato", "टमाटर", "Tamatar"] or ["Carrot", "गाजर", "Gajar"] or ["Brinjal", "Eggplant", "बैंगन", "Baingan"]
                     // Include all common names and regional variations to improve searchability
-    path: "", // URL path for the plant page, should be lowercase and hyphenated
+    path: "", // LLM Ignore this - it will be populated manually - URL path for the plant page, should be lowercase and hyphenated
                 // Example: "/how-to-grow/tomatoes" or "/how-to-grow/carrots" or "/how-to-grow/bell-peppers"
-    datePublished: "", // Publication date in format "YYYY-MM-DD HH:MM:SS AM/PM" (e.g., "2024-05-15 10:30:00 AM")
-    dateModified: "", // Last modification date in format "YYYY-MM-DD HH:MM:SS AM/PM" (e.g., "2024-05-20 02:15:00 PM")
+    datePublished: "", // LLM Ignore this - it will be populated manually - Publication date in format "YYYY-MM-DD HH:MM:SS AM/PM" (e.g., "2024-05-15 10:30:00 AM")
+    dateModified: "", // LLM Ignore this - it will be populated manually - Last modification date in format "YYYY-MM-DD HH:MM:SS AM/PM" (e.g., "2024-05-20 02:15:00 PM")
     cover: "", // Leave this field empty to be filled manually - Path to the main cover image
     search: "", // Keywords for search functionality, including translations and common search terms
                // Example: "Tomato, टमाटर, Tamatar, Tomatoes, growing tomatoes, tomato plant"

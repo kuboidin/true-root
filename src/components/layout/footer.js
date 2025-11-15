@@ -79,6 +79,13 @@ export default function Footer() {
                                     Whether you&apos;re a beginner or an experienced grower, explore eco-friendly practices to nurture your plants and harvest the healthiest produce.
                                     Join us in cultivating a more sustainable world!
                                 </p>
+                                <div className="mt-4">
+                                    <h6 className="text-base font-semibold mb-2">Explore</h6>
+                                    <ul className="flex flex-col gap-2 text-sm">
+                                        <li><Link href="/blog" className="hover:text-primary">Blog</Link></li>
+                                        <li><Link href="/how-to-grow" className="hover:text-primary">How to Grow</Link></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div className="xl:w-1/4 md:w-1/3 sm:w-1/2 w-full">

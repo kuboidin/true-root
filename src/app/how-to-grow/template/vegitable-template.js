@@ -46,7 +46,7 @@ export default function VegitableTemplate({plant}) {
                         {plant.hero.sub_heading}
                       </span>
                                             <h1 className="lg:text-4xl sm:text-3xl text-2xl mb-1">How to grow {plant.hero.heading}.</h1>
-                                            <div className="flex flex-col md:flex-row justify-start md:justify-between gap-4">
+                                            <div className="flex flex-col md:flex-row justify-start gap-4">
                                                 <EcoBadge
                                                     score={plant.hero.eco_badge.score}
                                                     information={plant.hero.eco_badge.information}

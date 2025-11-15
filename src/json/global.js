@@ -6,6 +6,7 @@ import coriander from "@/json/vegetable/coriander";
 import cucumbers from "@/json/vegetable/cucumbers";
 import brinjal from "@/json/vegetable/brinjal";
 import bottleGuard from "@/json/vegetable/bottle-guard";
+import spinach from "@/json/vegetable/spinach";
 
 const gc = [
     {
@@ -47,6 +48,14 @@ const gc = [
         category: [ c.GROW, c.PLANT, c.GUIDE, c.VEGETABLE ],
         ref: bottleGuard,
         trending: 9
+    },
+    {
+        name: 'Spinach',
+        slug: 'spinach',
+        created_on: "2025-11-16 10:00:00 AM",
+        category: [ c.GROW, c.PLANT, c.GUIDE, c.VEGETABLE ],
+        ref: spinach,
+        trending: 10
     }
 ];
 
