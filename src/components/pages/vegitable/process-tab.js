@@ -29,12 +29,14 @@ export default function ProcessTab({ plant }) {
                 )}
                 <Separator className="my-4"/>
                 {plant?.tabs?.process?.nutritional_requirements && (
-                    <Nutrition heading="Nutritional Requirements" items={plant.tabs.process.nutritional_requirements}/>
+                    <div id="process-nutritional-requirements">
+                        <Nutrition heading="Nutritional Requirements" items={plant.tabs.process.nutritional_requirements}/>
+                    </div>
                 )}
                 <Separator className="my-4"/>
 
                 {plant?.tabs?.process?.seeding_process && plant?.plural && (
-                    <div className="xl:mb-6 md:mb-3.5 mb-2.5" id="seeding">
+                    <div className="xl:mb-6 md:mb-3.5 mb-2.5" id="process-seeding-process">
                         <h4 className="font-bold text-xl max-md:text-lg"><Bean size={20} strokeWidth={2.5} className="-mt-2 mr-2"/> Seeding Process of {plant.plural}</h4>
                         <p>{plant.tabs.process.seeding_process}</p>
                         <Separator className="my-4"/>
