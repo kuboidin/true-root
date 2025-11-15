@@ -3,7 +3,7 @@ title: Welcome to the TrueRoot Blog
 description: Discover weekly tips on organic gardening, composting, soil health, pest control, and sustainable growing tailored for Indian home gardeners.
 date: 2025-11-15
 tags: gardening, organic, compost, soil, india
-cover: /assets/og/og-image.jpg
+cover: /assets/og/home.png
 ---
 
 # Grow More, Waste Less: Introducing the TrueRoot Blog
@@ -16,15 +16,14 @@ Whether you have a balcony, terrace, or a tiny backyard, you can grow nutritious
 - Natural pest and disease control methods
 - Seasonal sowing calendars and checklists
 
-## What to expect
+--- 
 
-Every week, we publish easy-to-follow articles, tested at home, with local context:
+Welcome to True Root, your one-stop destination for everything green, fresh, and grown right at home! At True Root, we believe that growing your own food is not just a hobby but a joyful journey—one that reconnects you with nature, brings health to your family, and adds that extra zing to your meals.
 
-1. Composting 101: turn kitchen scraps into living soil
-2. Best potting mixes for balconies and terraces
-3. Low-cost drip irrigation for container gardens
-4. Natural pest repellents that are safe and effective
+Whether you're a beginner dipping your toes into the garden waters or a seasoned plant whisperer, True Root offers easy-to-follow, step-by-step guides crafted specially for Indian homes and climates. From soil secrets and watering wisdom to pest-banishing tips, we've got you covered.
 
-> TrueRoot exists to help you grow a greener future — one pot at a time.
+Our mission is simple: To empower every home gardener with trustable, reliable knowledge that transforms even the smallest balcony into a thriving oasis of fruits, vegetables, and greens. We celebrate organic practices, sustainability, and the pure joy of nurturing life from seed to harvest.
 
-Happy growing!
+Dive into our treasure trove of plant profiles, tutorials, and seasonal care advice at truerooot.in and join a community passionate about growing healthier, tastier food. Say hello to fresher meals, greener thumbs, and a happier you.
+
+True Root isn’t just about plants; it's about planting a better future, one root at a time. Welcome aboard!

@@ -47,7 +47,7 @@ const plant = {
             "spinach fertilizer",
             "spinach watering schedule"
         ],
-        thumbnail: `${app.url}/assets/plants/vegetable/spinach/s2.jpg`,
+        thumbnail: `${app.url}/assets/og/how-to-grow/spinach.png`,
     },
     "hero": {
         "heading": "Spinach (पालक)",
