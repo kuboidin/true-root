@@ -2,7 +2,7 @@ import SwiperComp from "@/components/comp/swiper";
 import Breadcrumbs from "@/components/comp/breadcrumbs";
 import EcoBadge from "@/components/comp/eco-badge";
 import {Separator} from "@/components/ui/separator";
-import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
+// Tabs removed in favor of anchor navigation
 import Nutrition from "@/components/pages/vegitable/nutrition";
 import Share from "@/components/comp/share";
 import app from "@/config/app";
@@ -99,28 +99,31 @@ export default function VegitableTemplate({plant}) {
                 <div className="w-full">
                     <div className="product-description">
                         <div>
-                            <Tabs defaultValue="grow" className="w-full">
-                                <TabsList className="flex flex-row justify-start md:justify-center flex-wrap px-0 md:px-12 mb-28 gap-2">
-                                    <TabsTrigger value="info" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">
-                                        Good to know
-                                    </TabsTrigger>
-                                    <TabsTrigger value="grow" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">
-                                        {`How to Grow ${cropPlural}`}
-                                    </TabsTrigger>
-                                    <TabsTrigger value="process" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark">
-                                        Growing Process & Schedule
-                                    </TabsTrigger>
-                                </TabsList>
-                                <TabsContent value="info" className="lg:pt-13.5 sm:pt-7.5 pt-5">
+                            {/* Anchor-style navigation keeping tab look */}
+                            <div className="w-full">
+                                <div className="flex flex-row justify-start md:justify-center flex-wrap px-0 md:px-12 mb-28 gap-2">
+                                    <a href="#info" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark px-4 py-2 rounded-md">Good to know</a>
+                                    <a href="#process" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark px-4 py-2 rounded-md">Growing Process & Schedule</a>
+                                    <a href="#grow" className="font-bold font-Lufga text-secondary text-xl md:text-2xl lg:text-4xl bg-lightdark px-4 py-2 rounded-md">{`How to Grow ${cropPlural}`}</a>
+                                </div>
+
+                                {/* Sections rendered sequentially without tabs */}
+                                <div id="info" className="lg:pt-13.5 sm:pt-7.5 pt-5 scroll-mt-28">
                                     <InformationTab plant={plant}/>
-                                </TabsContent>
-                                <TabsContent value="grow" className="lg:pt-13.5 sm:pt-7.5 pt-5">
-                                    <HowToGrowTab plant={plant}/>
-                                </TabsContent>
-                                <TabsContent value="process" className="lg:pt-13.5 sm:pt-7.5 pt-5">
+                                </div>
+
+                                <Separator className="my-10"/>
+
+                                <div id="process" className="lg:pt-13.5 sm:pt-7.5 pt-5 scroll-mt-28">
                                     <ProcessTab plant={plant}/>
-                                </TabsContent>
-                            </Tabs>
+                                </div>
+
+                                <Separator className="my-10"/>
+
+                                <div id="grow" className="lg:pt-13.5 sm:pt-7.5 pt-5 scroll-mt-28">
+                                    <HowToGrowTab plant={plant}/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

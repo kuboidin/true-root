@@ -6,7 +6,7 @@ export default function InformationTab({ plant }) {
     return <>
         <div className="row">
             <div className="w-full m-lg-b0 m-md-b30">
-                <div className="mb-10 max-md:mb-5 px-20">
+                <div className="mb-10 max-md:mb-5 px-20" id="info-overview">
                     <h2 className="mb-2">Good to know</h2>
                     <p className="mb-4">
                         {plant.tabs.good_to_know.heading}
@@ -20,7 +20,7 @@ export default function InformationTab({ plant }) {
                             <div className="container grid grid-cols-7 gap-4 my-20">
                                 <div className="col-span-full md:col-span-3">
                                     <div className="text-left inline-block">
-                                        <div className="title_block">
+                                        <div className="title_block" id="info-health-benefits">
                                             <p className="sub_title text-base pb-[22px] mb-0">Many benefits of {plant.plural}</p>
                                             <h4 className="text-white font-bold lg:text-[32px] text-3xl xl:leading-[48px] leading-9">Health benefits</h4>
                                         </div>
@@ -32,7 +32,7 @@ export default function InformationTab({ plant }) {
                                 </div>
                                 <div className="col-span-full md:col-span-1"></div>
                                 <div className="col-span-full md:col-span-3">
-                                    <div className="flex flex-col pb-7 gap-4 text-white">
+                                    <div className="flex flex-col pb-7 gap-4 text-white" id="info-ayurveda">
                                         <div className="flex flex-row items-center gap-4">
                                             <Image className="h-[40px] w-[40px]" decoding="async" width={50} height={50} alt={plant.name} src="/assets/theme/icons/icon5-1.webp"/>
                                             <h4 className="text-lightGreen">{plant.tabs.good_to_know.right_section.heading}</h4>
@@ -58,7 +58,7 @@ export default function InformationTab({ plant }) {
                 </div>
 
 
-                <div className="flex flex-col gap-1 bg-darkGreen -mt-1">
+                <div className="flex flex-col gap-1 bg-darkGreen -mt-1" id="info-nutrition">
                     <div className="container mx-auto px-[15px] overflow-hidden my-10">
                         <p className="sub-title text-base pb-2 mb-0 text-lightGreen">{plant.tabs.good_to_know.nutrition.top}</p>
                         <Nutrition heading="Nutritional Value" items={plant.tabs.good_to_know.nutrition.list}/>
@@ -66,7 +66,7 @@ export default function InformationTab({ plant }) {
                     </div>
                 </div>
 
-                <div className="bg-transparent" style={{backgroundImage: "linear-gradient(0deg, #002B17 90%, #002112 100%)"}}>
+                <div className="bg-transparent" style={{backgroundImage: "linear-gradient(0deg, #002B17 90%, #002112 100%)"}} id="info-ecological-effects">
                     <div className="w-full bg-no-repeat bg-auto" style={{backgroundImage: "url(/assets/theme/images/background/bg-product2.webp)", backgroundPosition: "bottom center"}}>
                         <div className="container mx-auto py-28 text-white">
                             <div className="grid grid-cols-12 gap-4 py-8">

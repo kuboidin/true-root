@@ -23,7 +23,7 @@ export default function ProcessTab({ plant }) {
 
                 <Separator className="mt-4 mb-2"/>
                 {plant?.tabs?.process?.quick_points && plant.tabs.process.quick_points.length > 0 && (
-                    <p className="my-4" id="nurtients">
+                    <p className="my-4" id="process-quick-points">
                         {plant.tabs.process.quick_points.map((pt, i) => <span key={i}><MoveRight size={18} className="-mt-2 mr-2"/> {pt} { i !== plant.tabs.process.quick_points.length - 1 && <br/>} </span>)}
                     </p>
                 )}
